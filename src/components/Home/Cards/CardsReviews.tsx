@@ -1,4 +1,3 @@
-import { SwiperSlide } from "swiper/react";
 import type { TypeReviews } from "../../../types";
 
 interface ReviewsProps {
