@@ -44,13 +44,13 @@ export default function Header() {
                             <div className="w-full">
                                 <label className="text-xs font-bold" htmlFor="">ANTIGUEDAD</label>
                                 <div className="">
-                                    <input className="py-4 text-xs my-2 px-3 rounded-lg bg-lightGray w-full" type="number" placeholder="5 años" />
+                                    <input className="py-4 text-xs my-2 px-3 rounded-lg bg-lightGray w-full" type="number" min={1} placeholder="5 años" />
                                 </div>
                             </div>
                             <div className="w-full">
                                 <label className="text-xs font-bold" htmlFor="">NÚMERO DE DEPARTAMENTOS</label>
                                 <div className="">
-                                    <input className="py-4 text-xs my-2 px-3 rounded-lg bg-lightGray w-full" type="number" placeholder="25" />
+                                    <input className="py-4 text-xs my-2 px-3 rounded-lg bg-lightGray w-full" type="number" min={1} placeholder="25" />
                                 </div>
                             </div>
                         </div>

@@ -4,6 +4,7 @@ import About from "./pages/About"
 import Layout from "./Layout"
 import PreferenteService from "./pages/PreferenteService"
 import PreferenteIndeciService from "./pages/PreferenteIndeciService"
+import Presencial from "./pages/Presencial"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
           <Route path="nosotros" element={<About />} />
           <Route path="serviciopreferente" element={<PreferenteService />} />
           <Route path="serviciopreferenteindeci" element={<PreferenteIndeciService />} />
+          <Route path="serviciopresencial" element={<Presencial />} />
         </Route>
       </Routes>
     </Router>
