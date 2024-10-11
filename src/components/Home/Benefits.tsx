@@ -8,7 +8,7 @@ export function Benefits() {
     return (
         <>
             <div className="h-auto pt-36 pb-1">
-                <div className="w-[1570px] m-auto">
+                <div className="max-w-[1570px] m-auto">
                     <h1 className="font-bold text-4xl text-primary text-center">Nuestros <span className="text-secondary underline">Beneficios</span></h1>
                     <div className="w-full flex gap-5 mt-28 mb-40">
                         {data2.map((cardbenefits) => (

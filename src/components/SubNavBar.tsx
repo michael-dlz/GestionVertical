@@ -6,7 +6,7 @@ export default function SubNavBar() {
     return (
         <>
             <nav className="bg-lightGray font-titilium sticky top-0 z-10 ">
-                <div className="w-[1570px] m-auto py-2 text-xs flex justify-between items-center">
+                <div className="max-w-[1570px] m-auto py-2 text-xs flex justify-between items-center">
                     <div className="flex flex gap-3">
                         <IconFacebook
                             stroke={"#000"}

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import type { TypeServices } from "../../../types";
 
 interface ServiceProps {
@@ -6,7 +7,7 @@ interface ServiceProps {
 
 export function CardsServices({ cardservice }: ServiceProps) {
 
-    const { title, description, price, condition, image } = cardservice
+    const { title, description, price, condition, image, url } = cardservice
 
     return (
         <>
@@ -25,9 +26,9 @@ export function CardsServices({ cardservice }: ServiceProps) {
                         <h1 className="font-medium">{condition}</h1>
                     </div>
                     <div className="p-10 w-full">
-                        <button className="bg-secondary w-full text-white px-7 py-4 rounded-lg text-l">
+                        <Link to={url} className="bg-secondary w-full text-white px-7 py-4 rounded-lg text-l">
                             Me Interesa
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -5,6 +5,7 @@ export type TypeServices = {
     price: string
     condition: string
     image: string
+    url: string
 
 }
 

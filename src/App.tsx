@@ -1,23 +1,21 @@
-import SubNavBar from "./components/SubNavBar"
-import Header from "./components/Home/Header"
-import Introduction from "./components/Home/Introduction"
-import { Services } from "./components/Home/Services"
-import { Benefits } from "./components/Home/Benefits"
-import { Reviews } from "./components/Home/Reviews"
-import Footer from "./components/Footer"
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
+import Home from "./pages/Home"
+import About from "./pages/About"
+import Layout from "./Layout"
+import PreferenteService from "./pages/PreferenteService"
 
 function App() {
 
   return (
-    <>
-      <SubNavBar />
-      <Header />
-      <Introduction />
-      <Services />
-      <Benefits />
-      <Reviews />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="nosotros" element={<About />} />
+          <Route path="serviciopreferente" element={<PreferenteService />} />
+        </Route>
+      </Routes>
+    </Router>
   )
 }
 

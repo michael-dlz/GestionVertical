@@ -8,6 +8,7 @@ export const dbservices: TypeServices[] = [
         price: "Entre S/ 60,00 - S/ 100,00",
         condition: "(precio por departamento, máximo 12)",
         image: "https://img.freepik.com/fotos-premium/diseno-arquitectonico-moderno-edificio-balcones_605022-179383.jpg?w=740",
+        url: "/serviciopreferente",
     },
     {
         id: 2,
@@ -16,6 +17,7 @@ export const dbservices: TypeServices[] = [
         price: "Entre S/ 20,00 - S/ 60,00",
         condition: "(precio por departamento, mínimo 12, máximo 100)",
         image: "https://img.freepik.com/fotos-premium/edificios-residenciales-modernos-gran-altura-munich-alemania_1048944-2246915.jpg?w=1380",
+        url: "/serviciopreferenteindeci",
     },
     {
         id: 3,
@@ -24,6 +26,7 @@ export const dbservices: TypeServices[] = [
         price: "Precio Negociable",
         condition: "(De acorde al caso)",
         image: "https://img.freepik.com/foto-gratis/angulo-edificios-oficinas-ciudad_23-2148798680.jpg?t=st=1728608053~exp=1728611653~hmac=4e94045a867539c7d647810e8ae648bcc94dd0f358ed968089ca89692d78c857&w=1380",
+        url: "/serviciopresencial",
     },
 ]
 

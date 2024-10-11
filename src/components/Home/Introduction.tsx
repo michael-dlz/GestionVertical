@@ -15,7 +15,7 @@ const fourthImage = "https://img.freepik.com/fotos-premium/edificio-cesped-verde
 export default function Introduction() {
     return (
         <>
-            <div className="w-[1570px] h-auto py-40 m-auto flex items-center gap-10">
+            <div className="max-w-[1570px] h-auto py-40 m-auto flex items-center gap-10">
                 <div className="w-1/2 flex flex-col items-start justify-center gap-10 text-wrap">
                     <h2 className="font-bold text-4xl text-primary">la <span className="text-secondary underline">administración perfecta</span> para tus propiedades</h2>
                     <p className="text-l">Somos expertos en administración de edificios residenciales, brindando soluciones personalizadas para la gestión de Juntas de Propietarios. Ya sea en grandes complejos o edificios pequeños, garantizamos eficiencia, cumplimiento de normativas y la satisfacción de los residentes. ¡Deja tu edificio en nuestras manos y disfruta de una administración sin preocupaciones!</p>
