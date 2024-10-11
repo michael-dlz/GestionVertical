@@ -3,7 +3,7 @@ import NavBar from "../NavBar"
 export default function Header() {
     return (
 
-        <div className="w-full h-[90vh] bg-banner-home bg-no-repeat bg-cover bg-center">
+        <div className="w-full h-auto bg-banner-home bg-no-repeat bg-cover bg-center">
             <div className="flex flex-col w-full h-full bg-gradient-to-r from-black/60 to-black/60">
                 <NavBar />
                 <div className="flex max-w-[1570px] w-full m-auto pb-20 gap-16">
@@ -11,26 +11,46 @@ export default function Header() {
                         <div className="">
                             <label className="text-xs font-bold" htmlFor="">NOMBRE Y APELLIDO</label>
                             <div className="">
-                                <input className="py-5 my-2 px-3 rounded-lg bg-lightGray w-full" type="text" placeholder="Luis Sandoval" />
+                                <input className="py-4 text-xs my-2 px-3 rounded-lg bg-lightGray w-full" type="text" placeholder="Luis Sandoval" />
                             </div>
                         </div>
                         <div className="mt-3">
                             <label className="text-xs font-bold" htmlFor="">CORREO ELECTRÓNICO</label>
                             <div className="">
-                                <input className="py-5 my-2 px-3 rounded-lg bg-lightGray w-full" type="email" placeholder="luissandoval@gmail.com" />
+                                <input className="py-4 text-xs my-2 px-3 rounded-lg bg-lightGray w-full" type="email" placeholder="luissandoval@gmail.com" />
                             </div>
                         </div>
                         <div className="mt-3 flex justify-between gap-5">
                             <div className="w-full">
                                 <label className="text-xs font-bold" htmlFor="">TELÉFONO</label>
                                 <div className="">
-                                    <input className="py-5 my-2 px-3 rounded-lg bg-lightGray w-full" type="phone" placeholder="+51 998 223 519" />
+                                    <input className="py-4 text-xs my-2 px-3 rounded-lg bg-lightGray w-full" type="phone" placeholder="+51 998 223 519" />
                                 </div>
                             </div>
                             <div className="w-full">
                                 <label className="text-xs font-bold" htmlFor="">DISTRITO</label>
                                 <div className="">
-                                    <input className="py-5 my-2 px-3 rounded-lg bg-lightGray w-full" type="text" placeholder="Santiago de Surco" />
+                                    <input className="py-4 text-xs my-2 px-3 rounded-lg bg-lightGray w-full" type="text" placeholder="Santiago de Surco" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="mt-3">
+                            <label className="text-xs font-bold" htmlFor="">EMPRESA ADMINISTRADORA LOCAL</label>
+                            <div className="">
+                                <input className="py-4 text-xs my-2 px-3 rounded-lg bg-lightGray w-full" type="text" placeholder="Empresa X Administración" />
+                            </div>
+                        </div>
+                        <div className="mt-3 flex justify-between gap-5">
+                            <div className="w-full">
+                                <label className="text-xs font-bold" htmlFor="">ANTIGUEDAD</label>
+                                <div className="">
+                                    <input className="py-4 text-xs my-2 px-3 rounded-lg bg-lightGray w-full" type="number" placeholder="5 años" />
+                                </div>
+                            </div>
+                            <div className="w-full">
+                                <label className="text-xs font-bold" htmlFor="">NÚMERO DE DEPARTAMENTOS</label>
+                                <div className="">
+                                    <input className="py-4 text-xs my-2 px-3 rounded-lg bg-lightGray w-full" type="number" placeholder="25" />
                                 </div>
                             </div>
                         </div>
