@@ -7,7 +7,10 @@ import { Autoplay } from "swiper/modules";
 export default function PreferenteService() {
     return (
         <>
-            <SubsHeader />
+            <SubsHeader
+                titleBanner="Servicio Preferente"
+                imageBanner="https://img.freepik.com/foto-gratis/arquitectura-moderna-apartamentos_1268-14696.jpg?t=st=1728677794~exp=1728681394~hmac=b87fd4fb6283621a667d5572e64ca38d6a3f817e9480faf537fd3f59292f5a81&w=1380"
+            />
             <div className="py-40 h-auto">
                 <div className="max-w-[1570px] mx-auto grid grid-cols-2 items-start gap-28 h-auto">
                     <div className="text-l">

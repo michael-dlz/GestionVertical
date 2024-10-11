@@ -3,7 +3,10 @@ import SubsHeader from "../components/SubsHeader"
 export default function About() {
   return (
     <>
-      <SubsHeader />
+      <SubsHeader 
+        titleBanner="Acerca de Nosotros"
+        imageBanner="https://img.freepik.com/foto-gratis/equipo-trabajando-juntos-proyecto_23-2149325409.jpg?t=st=1728666926~exp=1728670526~hmac=cc75ac9e5dce4ec18529ba4a5c46f846166f1bf7cbda007339c826f4cb21242d&w=1380"
+      />
       <div className="pt-40">
         <div className="">
           <div className="flex gap-28 items-center pb-40 max-w-[1570px] mx-auto">

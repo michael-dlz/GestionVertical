@@ -3,6 +3,7 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Layout from "./Layout"
 import PreferenteService from "./pages/PreferenteService"
+import PreferenteIndeciService from "./pages/PreferenteIndeciService"
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="nosotros" element={<About />} />
           <Route path="serviciopreferente" element={<PreferenteService />} />
+          <Route path="serviciopreferenteindeci" element={<PreferenteIndeciService />} />
         </Route>
       </Routes>
     </Router>

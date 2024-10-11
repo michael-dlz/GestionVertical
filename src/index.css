@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+html {
+    scroll-behavior: smooth;
+}
+
+* {
     font-family: "Titillium Web", "sans-serif";
+    transition: all 0.2s ease;
 }
 
 .mySwiper {
@@ -21,7 +26,7 @@
     color: #fff;
 }
 
-.mySwiper .swiper-slide img{
+.mySwiper .swiper-slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
