@@ -10,7 +10,7 @@ export default function Header() {
                     <div className="flex flex-col justify-center text-white gap-5">
                         <h2 className="font-bold text-5xl">GESTIÓN VERTICAL</h2>
                         <h3 className="text-s">Administración de Edificios</h3>
-                        <p className="font-semibold text-xl">!HACEMOS DE LA CONVIVENCIA, UN PLACER!</p>
+                        <p className="font-semibold text-xl italic">!HACEMOS DE LA CONVIVENCIA, UN PLACER!</p>
                     </div>
                 </div>
             </div>

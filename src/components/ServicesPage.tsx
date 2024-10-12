@@ -76,7 +76,7 @@ export default function ServicesPage({
                             Cotizar por WhatsApp
                         </a>
                     </div>
-                    <div className="bg-white shadow-2xl h-auto p-20 text-l rounded-3xl grid items-center sticky top-20">
+                    <div className="bg-white shadow-2xl h-auto p-20 text-l rounded-3xl grid items-center sticky top-40">
                         <div>
                             <h2 className="text-primary font-bold text-lg flex items-center gap-3"><IconQuote stroke="#000" size={30}/>ADQUIERE UNA COTIZACIÓN FORMAL</h2>
                             <div className="flex gap-1 text-xs py-6">
