@@ -30,7 +30,7 @@ export default function Form() {
                     </div>
                 </div>
                 <div className="mt-3">
-                    <label className="text-xs font-bold" htmlFor="">EMPRESA ADMINISTRADORA LOCAL</label>
+                    <label className="text-xs font-bold" htmlFor="">EMPRESA ADMINISTRADORA ACTUAL</label>
                     <div className="">
                         <input className="py-4 text-xs my-2 px-3 rounded-lg bg-lightGray w-full" type="text" placeholder="Empresa X Administración" />
                     </div>
