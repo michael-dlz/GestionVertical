@@ -7,6 +7,7 @@ import PreferenteService from "./pages/PreferenteService";
 import PreferenteIndeciService from "./pages/PreferenteIndeciService";
 import Presencial from "./pages/Presencial";
 import Contacto from "./pages/Contact";
+import ScrollToTop from "./hooks/ScrollToTop";
 
 const pageVariants = {
   initial: { opacity: 0 }, // Comienza completamente transparente
@@ -19,94 +20,95 @@ function AnimatedRoutes() {
 
   return (
     <AnimatePresence>
-      <Routes location={location} key={location.key}>
-        <Route path="/" element={<Layout />}>
-          <Route
-            index
-            element={
-              <motion.div
-                initial="initial"
-                animate="enter"
-                exit="exit"
-                variants={pageVariants}
-                transition={{ duration: 0.1 }} // Duración de la animación
-              >
-                <Home />
-              </motion.div>
-            }
-          />
-          <Route
-            path="nosotros"
-            element={
-              <motion.div
-                initial="initial"
-                animate="enter"
-                exit="exit"
-                variants={pageVariants}
-                transition={{ duration: 0.1 }}
-              >
-                <About />
-              </motion.div>
-            }
-          />
-          <Route
-            path="serviciopreferente"
-            element={
-              <motion.div
-                initial="initial"
-                animate="enter"
-                exit="exit"
-                variants={pageVariants}
-                transition={{ duration: 0.1 }}
-              >
-                <PreferenteService />
-              </motion.div>
-            }
-          />
-          <Route
-            path="serviciopreferenteindeci"
-            element={
-              <motion.div
-                initial="initial"
-                animate="enter"
-                exit="exit"
-                variants={pageVariants}
-                transition={{ duration: 0.1 }}
-              >
-                <PreferenteIndeciService />
-              </motion.div>
-            }
-          />
-          <Route
-            path="serviciopresencial"
-            element={
-              <motion.div
-                initial="initial"
-                animate="enter"
-                exit="exit"
-                variants={pageVariants}
-                transition={{ duration: 0.1 }}
-              >
-                <Presencial />
-              </motion.div>
-            }
-          />
-          <Route
-            path="contacto"
-            element={
-              <motion.div
-                initial="initial"
-                animate="enter"
-                exit="exit"
-                variants={pageVariants}
-                transition={{ duration: 0.1 }}
-              >
-                <Contacto />
-              </motion.div>
-            }
-          />
-        </Route>
-      </Routes>
+        <ScrollToTop />
+        <Routes location={location} key={location.key}>
+          <Route path="/" element={<Layout />}>
+            <Route
+              index
+              element={
+                <motion.div
+                  initial="initial"
+                  animate="enter"
+                  exit="exit"
+                  variants={pageVariants}
+                  transition={{ duration: 0.1 }} // Duración de la animación
+                >
+                  <Home />
+                </motion.div>
+              }
+            />
+            <Route
+              path="nosotros"
+              element={
+                <motion.div
+                  initial="initial"
+                  animate="enter"
+                  exit="exit"
+                  variants={pageVariants}
+                  transition={{ duration: 0.1 }}
+                >
+                  <About />
+                </motion.div>
+              }
+            />
+            <Route
+              path="serviciopreferente"
+              element={
+                <motion.div
+                  initial="initial"
+                  animate="enter"
+                  exit="exit"
+                  variants={pageVariants}
+                  transition={{ duration: 0.1 }}
+                >
+                  <PreferenteService />
+                </motion.div>
+              }
+            />
+            <Route
+              path="serviciopreferenteindeci"
+              element={
+                <motion.div
+                  initial="initial"
+                  animate="enter"
+                  exit="exit"
+                  variants={pageVariants}
+                  transition={{ duration: 0.1 }}
+                >
+                  <PreferenteIndeciService />
+                </motion.div>
+              }
+            />
+            <Route
+              path="serviciopresencial"
+              element={
+                <motion.div
+                  initial="initial"
+                  animate="enter"
+                  exit="exit"
+                  variants={pageVariants}
+                  transition={{ duration: 0.1 }}
+                >
+                  <Presencial />
+                </motion.div>
+              }
+            />
+            <Route
+              path="contacto"
+              element={
+                <motion.div
+                  initial="initial"
+                  animate="enter"
+                  exit="exit"
+                  variants={pageVariants}
+                  transition={{ duration: 0.1 }}
+                >
+                  <Contacto />
+                </motion.div>
+              }
+            />
+          </Route>
+        </Routes>
     </AnimatePresence>
   );
 }
