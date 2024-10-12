@@ -1,6 +1,7 @@
 import { email, phone, adress } from "../data/ContactInfo"
 import { socials } from "../data/ContactInfo"
 import { Link } from "react-router-dom"
+import { IconSend } from "../Icons/Icons"
 
 export default function Footer() {
 
@@ -40,8 +41,8 @@ export default function Footer() {
                         <div className="flex flex-col gap-2">
                             <p className="font-medium text-sm">Obtén nuestras últimas novedades directamente a tu correo.</p>
                             <div className="flex my-5 rounded-lg overflow-hidden">
-                                <input className="w-full h-full py-5 px-3 bg-inputColor" type="text" placeholder="Correo Electrónico" />
-                                <button className=" py-5 px-3 bg-secondary">Enviar</button>
+                                <input className="w-full h-full py-5 px-3 bg-inputColor text-textBlackp" type="text" placeholder="Correo Electrónico" />
+                                <button className="py-5 px-5 bg-secondary hover:shadow-2xl"><IconSend size={25} /></button>
                             </div>
                         </div>
                     </div>
