@@ -23,3 +23,7 @@ export type TypeReviews = {
     position: string
     comment: string
 }
+
+export type TypeDistricts = {
+    name: string
+}

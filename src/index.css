@@ -11,6 +11,11 @@ html {
     transition: all 0.2s ease;
 }
 
+input:focus {
+    outline: none;
+    border: none;
+}
+
 .mySwiper {
     width: 600px;
     height: 420px;

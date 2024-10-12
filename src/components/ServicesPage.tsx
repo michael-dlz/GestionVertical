@@ -94,7 +94,7 @@ export default function ServicesPage({
                                 <p>{priceService}</p>
                                 <p>{conditionService}</p>
                             </div>
-                            <a className="text-secondary font-semibold flex items-center gap-3" href=""><IconLink stroke="#16A085" size={30} /> GUÍA DE GASTOS COMUNES</a>
+                            <a className="text-secondary font-semibold flex items-center gap-3" target="_blank" href="https://www.dropbox.com/scl/fi/dejik074572mup02yksbx/Gu-a-de-Gastos-Comunes.docx?rlkey=djmubnrvtzjzd55nvbeh4ay91&st=j5chillu&dl=0"><IconLink stroke="#16A085" size={30} /> GUÍA DE GASTOS COMUNES</a>
                         </div>
                         <button className="bg-secondary w-full text-white px-14 py-8 rounded-lg text-l mt-10 hover:shadow-2xl">LO QUIERO</button>
                     </div>
