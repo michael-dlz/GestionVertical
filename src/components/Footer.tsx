@@ -1,5 +1,6 @@
-import {IconFacebook, IconInstagram, IconTiktok, IconLinkedin} from "../Icons/Icons"
 import { email, phone, adress } from "../data/ContactInfo"
+import { socials } from "../data/ContactInfo"
+import { Link } from "react-router-dom"
 
 export default function Footer() {
 
@@ -18,20 +19,20 @@ export default function Footer() {
                     <div className={blockStyle}>
                         <h2 className="font-bold text-m">CONTACTO</h2>
                         <div className="flex flex-col gap-2">
-                            <p className={linksStyle}>Dirección: {adress}</p>
-                            <p className={linksStyle}>Teléfono: {phone}</p>
-                            <p className={linksStyle}>Correo: {email}</p>
+                            <a href="" className={linksStyle}>Dirección: {adress}</a>
+                            <a href={`tel:${phone}`} className={linksStyle}>Teléfono: {phone}</a>
+                            <a href={`mailto:${email}`} className={linksStyle}>Correo: {email}</a>
                         </div>
                     </div>
                     <div className={blockStyle}>
                         <h2 className="font-bold text-m">ENLACES IMPORTANTES</h2>
                         <div className="flex flex-col gap-2">
-                            <a className={linksStyle} href="">Inicio</a>
-                            <a className={linksStyle} href="">Nosotros</a>
-                            <a className={linksStyle} href="">Servicios</a>
-                            <a className={linksStyle} href="">Galería</a>
-                            <a className={linksStyle} href="">Trabaja con Nosotros</a>
-                            <a className={linksStyle} href="">Política de Cumplimiento</a>
+                            <Link to="/" className={linksStyle}>Inicio</Link >
+                            <Link to="/nosotros" className={linksStyle}>Nosotros</Link>
+                            <Link to="" className={linksStyle}>Servicios</Link>
+                            <Link to="/contacto" className={linksStyle}>Contacto</Link>
+                            <Link to="" className={linksStyle}>Trabaja con Nosotros</Link>
+                            <Link to="/nosotros" className={linksStyle}>Política de Cumplimiento</Link>
                         </div>
                     </div>
                     <div className={blockStyle}>
@@ -50,10 +51,9 @@ export default function Footer() {
                         <h2>Gestión Vertical @2024 Todos los Derechos Reservados | Esta página web fue desarrollada por <a className="text-secondary" href="https://www.linkedin.com/in/michael-omar-de-la-cruz-ingaruca-2784951a9/">ZeyN</a></h2>
                     </div>
                     <div className="flex gap-3">
-                        <IconFacebook />
-                        <IconInstagram />
-                        <IconTiktok />
-                        <IconLinkedin />
+                        {socials.map((social, index) => (
+                            <a key={index} href={social.link}><social.Icon/></a>
+                        ))}
                     </div>
                 </div>
             </div>

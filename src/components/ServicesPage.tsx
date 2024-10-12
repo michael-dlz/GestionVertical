@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import { Autoplay } from "swiper/modules";
 import { IconLink } from "../Icons/Icons";
+import { phone } from "../data/ContactInfo";
 
 interface WhyText {
     text: string
@@ -71,7 +72,9 @@ export default function ServicesPage({
                                 ))}
                             </div>
                         </div>
-                        <button className="border border-secondary text-secondary px-7 py-4 hover:bg-secondary hover:text-white text-left rounded-lg text-l hover:shadow-2xl">Contáctanos para más información</button>
+                        <a href={`https://wa.me/${phone}?text=Hola,%20Me%20interesaría%20poder%20cotizar%20el%20${encodeURIComponent(title)}`} className="border border-secondary text-secondary px-7 py-4 hover:bg-secondary hover:text-white text-left rounded-lg text-l hover:shadow-2xl">
+                            Cotizar por WhatsApp
+                        </a>
                     </div>
                     <div className="bg-white shadow-2xl h-auto p-20 text-l rounded-3xl grid items-center sticky top-20">
                         <div>
@@ -132,10 +135,3 @@ export default function ServicesPage({
         </>
     );
 }
-
-
-// https://img.freepik.com/foto-gratis/vista-aerea-compleja-ciudad_23-2148975282.jpg?t=st=1728674718~exp=1728678318~hmac=a4396c567be450d60dd394add3eb10a21606d7762c082d54800629954dd8d2f4&w=1380
-
-// https://img.freepik.com/foto-gratis/vista-aerea-compleja-paisaje-urbano_23-2148975287.jpg?t=st=1728674727~exp=1728678327~hmac=1f87d82f25c73b6f14ab33348a6fdad0a59a1bf2d18d769ef8f3f2d6f31e0d3f&w=1380
-
-// https://img.freepik.com/fotos-premium/vista-aerea-compleja-paisaje-urbano_23-2148975289.jpg?w=1380

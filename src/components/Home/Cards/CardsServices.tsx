@@ -26,7 +26,7 @@ export function CardsServices({ cardservice }: ServiceProps) {
                         <h1 className="font-medium">{condition}</h1>
                     </div>
                     <div className="p-10 w-full">
-                        <Link to={url} className="bg-secondary w-full text-white px-7 py-4 rounded-lg text-l">
+                        <Link to={url} className="bg-secondary w-full text-white px-7 py-4 rounded-lg text-l hover:shadow-2xl">
                             Me Interesa
                         </Link>
                     </div>

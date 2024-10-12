@@ -48,7 +48,7 @@ export default function About() {
 
       <div className="bg-lightGray text-center py-40">
         <div className="w-[1570px] mx-auto">
-          <h2 className="font-bold text-primary text-3xl mb-10">Política de <span className="text-secondary underline">Cumplimiento</span></h2>
+          <h2 className="font-bold text-primary text-3xl mb-20">Política de <span className="text-secondary underline">Cumplimiento</span></h2>
           <ul className="list-disc text-left">
             <li><b>Cumplimiento legal:</b> Compromiso de cumplir con todas las leyes y regulacionesrelevantes que afectan a la administración de edificios, incluyendo leyes de propiedad,seguridad, salud ocupacional, protección ambiental, etc.</li>
             <li><b>Ética empresarial:</b> Fomento de una cultura empresarial ética, que promueva lahonestidad, la integridad y el comportamiento responsable en todas las operaciones yrelaciones comerciales.</li>
