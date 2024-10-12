@@ -12,8 +12,8 @@ export default {
         lightGray: "#ECF0F1",
         spanColor: "#F1C40F"
       },
-      widths: {
-        'widthPerson': "1570px"
+      width: {
+        'widthPerson': "1280px"
       },
       fontFamily: {
         "titilium": ["Titillium Web", "sans-serif"]

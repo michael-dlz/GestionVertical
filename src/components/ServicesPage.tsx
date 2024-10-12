@@ -46,7 +46,7 @@ export default function ServicesPage({
     return (
         <>
             <div className="py-40 h-auto">
-                <div className="max-w-[1570px] mx-auto grid grid-cols-2 items-start gap-28 h-auto">
+                <div className="w-widthPerson mx-auto grid grid-cols-2 items-start gap-28 h-auto">
                     <div className="text-l">
                         <div>
                             <h2 className="text-primary font-bold text-3xl">¿Por qué Elegir el {title}?</h2>
@@ -100,8 +100,8 @@ export default function ServicesPage({
                     </div>
                 </div>
             </div>
-            <div className="h-full">
-                <div className="max-w-[1570px] w-full mx-auto h-full">
+            <div className="h-full pb-40">
+                <div className="w-widthPerson mx-auto h-full">
                     <Swiper
                         slidesPerView={2.5}
                         spaceBetween={30}
@@ -114,7 +114,7 @@ export default function ServicesPage({
                             clickable: true,
                         }}
                         modules={[Autoplay]}
-                        className="mySwiper3 w-full grid mb-40"
+                        className="mySwiper3 w-full grid"
                     >
                         <SwiperSlide className="bg-primary text-white p-10 flex flex-col justify-center rounded-2xl overflow-hidden shadow-2xl">
                             <h2 className="font-bold text-lg pb-10">NOS ADECUAMOS A TU NECESIDAD</h2>

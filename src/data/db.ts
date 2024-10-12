@@ -61,6 +61,12 @@ export const dbbenefits: TypeBenefits[] = [
         title: "VALOR AGREGADO",
         description: "Un edificio bien administrado aumenta su valor, atrayendo compradores e inquilinos interesados.",
     },
+    {
+        id: 6,
+        image: "https://img.freepik.com/foto-gratis/retrato-guardia-seguridad-masculino-estacion-radio-pantallas-camara_23-2150368714.jpg?t=st=1728695548~exp=1728699148~hmac=2e4809482c14cb3fe824195f3618fb91091179d64ef49716f7ad2f35cdd55f13&w=1380",
+        title: "SEGURIDAD GARANTIZADA",
+        description: "Implementamos tecnologías avanzadas y procesos efectivos que protegen a los residentes y sus bienes, brindando tranquilidad las 24 horas del día.",
+    },
 ]
 
 export const dbreviews: TypeReviews[] = [

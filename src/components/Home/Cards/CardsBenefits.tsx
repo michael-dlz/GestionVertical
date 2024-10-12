@@ -10,7 +10,7 @@ export function CardsBenefits({ cardbenefits }: BenefitsProps) {
 
     return (
         <>
-            <div className="bg-white  text-center rounded-2xl flex-1">
+            <div className="bg-white  text-center  rounded-2xl flex-1">
                 <div className="overflow-hidden h-72 rounded-xl hover:shadow-2xl">
                     <img className="object-cover w-full h-full" src={image} alt="" />
                 </div>

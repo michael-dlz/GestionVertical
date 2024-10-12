@@ -10,9 +10,9 @@ export default function Contact() {
                 titleBanner="Contactános"
                 imageBanner="https://img.freepik.com/fotos-premium/mujer-negocios-hispana-sonriente-hablando-su-telefono-movil_116547-134410.jpg?w=1380"
             />
-            <div className="">
-                <div className="max-w-[1570px] h-full mx-auto text-l grid items-center grid-cols-2">
-                    <div className="py-20 my-40 text-white bg-primary px-20 rounded-s-3xl">
+            <div className="py-40">
+                <div className="w-widthPerson h-full mx-auto text-l grid items-center grid-cols-2">
+                    <div className="py-20 text-white bg-primary px-20 rounded-s-3xl">
                         <h2 className="font-bold text-white text-3xl mb-10">Contacto</h2>
                         <div className="">
                             <p className="my-3 flex items-center gap-3"> <IconMap size={25} /> Dirección: {adress}</p>

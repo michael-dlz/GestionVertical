@@ -7,10 +7,10 @@ export function Services() {
 
     return (
         <>
-            <div className="bg-primary h-auto pt-36 pb-1">
-                <div className="max-w-[1570px] m-auto">
+            <div className="bg-primary h-auto py-40">
+                <div className="w-widthPerson m-auto">
                     <h1 className="font-bold text-4xl text-white text-center">Nuestros <span className="text-secondary underline">Servicios</span></h1>
-                    <div className="w-full flex gap-5 mb-40 mt-24">
+                    <div className="w-full flex gap-5 mt-20">
                         {data.map((cardservice) => (
                             <CardsServices 
                                 key={cardservice.id}

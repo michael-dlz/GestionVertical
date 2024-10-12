@@ -7,10 +7,10 @@ export function Benefits() {
 
     return (
         <>
-            <div className="h-auto pt-36 pb-1">
-                <div className="max-w-[1570px] m-auto">
+            <div className="h-auto py-40">
+                <div className="w-widthPerson m-auto">
                     <h1 className="font-bold text-4xl text-primary text-center">Nuestros <span className="text-secondary underline">Beneficios</span></h1>
-                    <div className="w-full flex gap-5 mt-28 mb-40">
+                    <div className="w-full grid grid-rows-2 grid-cols-3 gap-5 mt-20">
                         {data2.map((cardbenefits) => (
                             <CardsBenefits
                                 key={cardbenefits.id}

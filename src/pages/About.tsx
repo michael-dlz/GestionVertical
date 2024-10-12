@@ -7,9 +7,9 @@ export default function About() {
         titleBanner="Acerca de Nosotros"
         imageBanner="https://img.freepik.com/foto-gratis/equipo-trabajando-juntos-proyecto_23-2149325409.jpg?t=st=1728666926~exp=1728670526~hmac=cc75ac9e5dce4ec18529ba4a5c46f846166f1bf7cbda007339c826f4cb21242d&w=1380"
       />
-      <div className="pt-40">
-        <div className="">
-          <div className="flex gap-28 items-center pb-40 max-w-[1570px] mx-auto">
+      <div className="">
+        <div className="py-40">
+          <div className="flex gap-28 items-center w-widthPerson mx-auto">
             <div className="flex-1">
               <h2 className="font-bold text-primary text-3xl mb-10">Quienes Somos</h2>
               <p className="text-l">Somos un equipo de profesionales especializados en la administración de edificios residenciales, comprometidos con la gestión eficiente de las Juntas de Propietarios y con el cumplimiento de las normativas legales vigentes. Con años de experiencia en el sector, nos dedicamos a proporcionar soluciones personalizadas para cada comunidad, adaptándonos a las particularidades de edificios grandes o pequeños. Nuestro enfoque está en crear un entorno armónico y funcional, donde los residentes puedan disfrutar de una convivencia organizada, segura y libre de preocupaciones.</p>
@@ -20,8 +20,8 @@ export default function About() {
           </div>
         </div>
 
-        <div className="bg-lightGray p-40">
-          <div className="flex gap-28 items-center max-w-[1570px] mx-auto">
+        <div className="bg-lightGray py-40">
+          <div className="flex gap-28 items-center w-widthPerson mx-auto">
             <div className="flex-1 overflow-hidden rounded-3xl shadow-2xl h-96">
               <img src="https://img.freepik.com/fotos-premium/socios-poniendo-sus-punos-juntos-encima-mesa-cosas-trabajo_603656-2186.jpg?w=1380" alt="" />
             </div>
@@ -33,8 +33,8 @@ export default function About() {
         </div>
 
 
-        <div className="pt-40">
-          <div className="flex gap-28 items-center pb-40 max-w-[1570px] mx-auto">
+        <div className="py-40">
+          <div className="flex gap-28 items-center w-widthPerson mx-auto">
             <div className="flex-1">
               <h2 className="font-bold text-primary text-3xl mb-10">Nuestra <span className="text-secondary underline">Visión</span></h2>
               <p className="text-l">Aspiramos a ser la empresa líder y referente en el sector de administración de edificios residenciales, destacándonos por nuestra innovación, adaptabilidad y compromiso con la excelencia. Nuestra visión es transformar la manera en que se gestionan las comunidades, ofreciendo soluciones inteligentes y sostenibles que se anticipen a las necesidades futuras de los propietarios y residentes. Queremos ser reconocidos por mejorar continuamente la experiencia de vida en cada edificio bajo nuestra administración, creando relaciones de confianza duraderas con nuestros clientes.</p>
@@ -47,8 +47,8 @@ export default function About() {
       </div>
 
       <div className="bg-lightGray text-center py-40">
-        <div className="w-[1570px] mx-auto">
-          <h2 className="font-bold text-primary text-3xl mb-20">Política de <span className="text-secondary underline">Cumplimiento</span></h2>
+        <div className="w-widthPerson mx-auto">
+          <h2 className="font-bold text-primary text-3xl pb-20">Política de <span className="text-secondary underline">Cumplimiento</span></h2>
           <ul className="list-disc text-left">
             <li><b>Cumplimiento legal:</b> Compromiso de cumplir con todas las leyes y regulacionesrelevantes que afectan a la administración de edificios, incluyendo leyes de propiedad,seguridad, salud ocupacional, protección ambiental, etc.</li>
             <li><b>Ética empresarial:</b> Fomento de una cultura empresarial ética, que promueva lahonestidad, la integridad y el comportamiento responsable en todas las operaciones yrelaciones comerciales.</li>
