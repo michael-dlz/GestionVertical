@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import { Autoplay } from "swiper/modules";
-import { IconLink } from "../Icons/Icons";
+import { IconLink, IconQuote } from "../Icons/Icons";
 import { phone } from "../data/ContactInfo";
 
 interface WhyText {
@@ -78,7 +78,7 @@ export default function ServicesPage({
                     </div>
                     <div className="bg-white shadow-2xl h-auto p-20 text-l rounded-3xl grid items-center sticky top-20">
                         <div>
-                            <h2 className="text-primary font-bold text-lg">ADQUIERE UNA COTIZACIÓN FORMAL</h2>
+                            <h2 className="text-primary font-bold text-lg flex items-center gap-3"><IconQuote stroke="#000" size={30}/>ADQUIERE UNA COTIZACIÓN FORMAL</h2>
                             <div className="flex gap-1 text-xs py-6">
                                 {categories.map((cate, index) => (
                                     <span key={index} className="bg-spanColor w-auto px-6 py-1 rounded-lg">
