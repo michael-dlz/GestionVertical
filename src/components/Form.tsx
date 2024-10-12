@@ -50,7 +50,7 @@ export default function Form() {
                     </div>
                 </div>
                 <div className="mt-6 w-full">
-                    <button className="w-full bg-secondary text-white px-7 py-5 rounded-lg text-l">Cotizar Ahora</button>
+                    <button className="w-full bg-secondary text-white px-7 py-5 rounded-lg text-l hover:shadow-2xl">Cotizar Ahora</button>
                 </div>
             </form>
         </>
