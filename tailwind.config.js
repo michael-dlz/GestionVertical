@@ -7,10 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#2C3E50",
+        primary: "#0E1C1E",
         secondary: "#16A085",
-        lightGray: "#ECF0F1",
-        spanColor: "#F1C40F"
+        lightGray: "#C9E3E2",
+        spanColor: "#38A8A6",
+        textBlackp: "#333333",
+        inputColor: "#ECF0F1",
       },
       width: {
         'widthPerson': "1280px"

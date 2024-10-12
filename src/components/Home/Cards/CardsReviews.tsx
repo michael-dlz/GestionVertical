@@ -18,11 +18,11 @@ export function CardsReviews({ cardreviews }: ReviewsProps) {
                     </div>
                     <div className="">
                         <h2 className="font-bold text-m">{name}</h2>
-                        <p className="font-medium text-sm">{position}</p>
+                        <p className="text-textBlackp font-medium text-sm">{position}</p>
                     </div>
                 </div>
                 <div className="py-10">
-                    <p className="font-light text-lg italic">"{comment}"</p>
+                    <p className="text-textBlackp font-light text-lg italic">"{comment}"</p>
                 </div>
             </div>
         </>

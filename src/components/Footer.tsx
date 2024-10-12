@@ -40,7 +40,7 @@ export default function Footer() {
                         <div className="flex flex-col gap-2">
                             <p className="font-medium text-sm">Obtén nuestras últimas novedades directamente a tu correo.</p>
                             <div className="flex my-5 rounded-lg overflow-hidden">
-                                <input className="w-full h-full py-5 px-3 bg-lightGray" type="text" placeholder="Correo Electrónico" />
+                                <input className="w-full h-full py-5 px-3 bg-inputColor" type="text" placeholder="Correo Electrónico" />
                                 <button className=" py-5 px-3 bg-secondary">Enviar</button>
                             </div>
                         </div>

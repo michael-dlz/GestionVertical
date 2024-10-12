@@ -16,7 +16,7 @@ export function CardsBenefits({ cardbenefits }: BenefitsProps) {
                 </div>
                 <div className="py-6 text-left">
                     <h2 className="text-m font-bold text-primary">{title}</h2>
-                    <p className="text-sm py-3">{description}</p>
+                    <p className="text-sm text-textBlackp py-3">{description}</p>
                 </div>
             </div>
         </>

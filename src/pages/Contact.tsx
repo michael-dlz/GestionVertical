@@ -15,7 +15,7 @@ export default function Contact() {
                 <div className="w-widthPerson h-full mx-auto text-l grid items-center grid-cols-2">
                     <div className="py-20 text-white bg-primary px-20 rounded-s-3xl">
                         <h2 className="font-bold text-white text-3xl mb-10">Contacto</h2>
-                        <div className="">
+                        <div className="text-l">
                             <p className="my-3 flex items-center gap-3"> <IconMap size={25} /> Dirección: {adress}</p>
                             <p className="my-3 flex items-center gap-3"> <IconWhatsApp size={25} /> Teléfono: {phone}</p>
                             <p className="my-3 flex items-center gap-3"> <IconEmail size={25} /> Correo Electrónico: {email}</p>

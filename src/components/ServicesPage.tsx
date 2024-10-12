@@ -50,13 +50,13 @@ export default function ServicesPage({
                     <div className="text-l">
                         <div>
                             <h2 className="text-primary font-bold text-3xl">¿Por qué Elegir el {title}?</h2>
-                            <p className="py-10">{whyTitle}</p>
+                            <p className="text-textBlackp py-10">{whyTitle}</p>
                         </div>
                         <div>
                             <h2 className="text-primary font-bold text-3xl">¿Qué Incluye nuestro {title}?</h2>
                             <div className="py-10">
                                 {whyTexts.map((why, index) => (
-                                    <p key={index} className="flex items-center gap-3 mb-4">
+                                    <p key={index} className="flex items-center gap-3 mb-4 text-textBlackp">
                                         <why.Icon size={30} stroke="#000" />
                                         {why.text}</p>
                                 ))}
@@ -66,7 +66,7 @@ export default function ServicesPage({
                             <h2 className="text-primary font-bold text-3xl">Beneficios de Elegir nuestro {title}</h2>
                             <div className="py-10">
                                 {benefitsTexts.map((benefits, index) => (
-                                    <p key={index} className="flex items-center gap-3 mb-4">
+                                    <p key={index} className="flex items-center gap-3 mb-4 text-textBlackp">
                                         <benefits.Icon size={30} stroke="#000" />
                                         {benefits.text}</p>
                                 ))}
@@ -81,7 +81,7 @@ export default function ServicesPage({
                             <h2 className="text-primary font-bold text-lg flex items-center gap-3"><IconQuote stroke="#000" size={30}/>ADQUIERE UNA COTIZACIÓN FORMAL</h2>
                             <div className="flex gap-1 text-xs py-6">
                                 {categories.map((cate, index) => (
-                                    <span key={index} className="bg-spanColor w-auto px-6 py-1 rounded-lg">
+                                    <span key={index} className="bg-spanColor text-white w-auto px-6 py-1 rounded-lg">
                                         {cate}
                                     </span>
                                 ))}
@@ -90,7 +90,7 @@ export default function ServicesPage({
                         </div>
                         <div>
                             <h2 className="text-primary font-bold text-lg py-6">PRECIO</h2>
-                            <div className="pb-10">
+                            <div className="pb-10 text-textBlackp">
                                 <p>{priceService}</p>
                                 <p>{conditionService}</p>
                             </div>
