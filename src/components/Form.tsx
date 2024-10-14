@@ -18,7 +18,7 @@ export default function Form() {
             <div className="w-[36rem] h-auto bg-white text-s p-10 rounded-xl shadow-2xl text-primary text-center flex flex-col items-center">
                 <IconCheck
                     size={80}
-                    stroke={"#00ADB5"}
+                    stroke={"#16A085"}
                 />
                 <h2 className="text-2xl font-semibold py-5">Enviado Exitosamente</h2>
                 <p className="mb-10">¡Muchas gracias, te responderemos lo más pronto posible!</p>
