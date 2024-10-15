@@ -9,16 +9,12 @@ html {
 * {
     font-family: "Titillium Web", "sans-serif";
     transition: all 0.2s ease;
+    border: 1px solid black;
 }
 
 input:focus {
     outline: none;
     border: none;
-}
-
-.mySwiper {
-    width: 600px;
-    height: 420px;
 }
 
 .mySwiper .swiper-slide {
