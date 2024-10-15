@@ -1,5 +1,5 @@
 import { email, phone, adress } from "../data/ContactInfo"
-import { socials } from "../data/ContactInfo"
+import { socials, logo } from "../data/ContactInfo"
 import { Link } from "react-router-dom"
 import { IconSend } from "../Icons/Icons"
 
@@ -15,7 +15,7 @@ export default function Footer() {
                     <div className={blockStyle}>
                         <h2 className="font-bold text-m">ACERCA DE NOSOTROS</h2>
                         <p className="font-medium text-sm">Ofrecemos administración eficiente y personalizada para edificios residenciales, gestionando Juntas de Propietarios y garantizando cumplimiento y satisfacción. ¡Confía en nosotros para una gestión sin complicaciones!</p>
-                        <h3 className="font-bold text-5xl">LOGO</h3>
+                        <img src={logo} alt="" />
                     </div>
                     <div className={blockStyle}>
                         <h2 className="font-bold text-m">CONTACTO</h2>
@@ -53,7 +53,7 @@ export default function Footer() {
                     </div>
                     <div className="flex gap-3">
                         {socials.map((social, index) => (
-                            <a key={index} href={social.link}><social.Icon/></a>
+                            <a key={index} href={social.link}><social.Icon /></a>
                         ))}
                     </div>
                 </div>
