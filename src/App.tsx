@@ -6,7 +6,7 @@ import Layout from "./Layout";
 import PreferenteService from "./pages/PreferenteService";
 import PreferenteIndeciService from "./pages/PreferenteIndeciService";
 import Presencial from "./pages/Presencial";
-import Contacto from "./pages/Contact";
+import Contacto from "./components/Home/Contact";
 import ScrollToTop from "./hooks/ScrollToTop";
 
 const pageVariants = {

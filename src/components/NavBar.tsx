@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { IconHamburger, IconWhatsApp } from "../Icons/Icons";
+import { IconHamburger, IconQuote } from "../Icons/Icons";
 import { logo } from "../data/ContactInfo";
 
 export default function NavBar() {
@@ -117,8 +117,8 @@ export default function NavBar() {
                     </button>
                     {/* Botón de Contacto */}
                     <Link to="/contacto" className="bg-secondary text-white px-7 py-4 rounded-lg text-l flex items-center gap-2 hover:shadow-2xl hidden lg:flex">
-                        <IconWhatsApp size={20} />
-                        Contáctanos
+                        <IconQuote size={20} />
+                        Realiza tu cotización
                     </Link>
                 </div>
             </div>

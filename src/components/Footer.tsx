@@ -49,7 +49,7 @@ export default function Footer() {
                 </div>
                 <div className="flex gap-20 2xl:max-w-7xl max-w-6xl max-lg:mx-5 mx-auto text-white font-medium text-sm pt-8 my-8 border-slate-600 border-t-2 items-center justify-between">
                     <div className="">
-                        <h2>Gestión Vertical @2024 Todos los Derechos Reservados | Esta página web fue desarrollada por <a className="text-secondary" href="https://www.linkedin.com/in/michael-omar-de-la-cruz-ingaruca-2784951a9/">ZeyN</a></h2>
+                        <h2>Gestión Vertical @2024 Todos los Derechos Reservados | Esta página web fue desarrollada por <a className="text-spanColor font-semibold" href="https://www.linkedin.com/in/michael-omar-de-la-cruz-ingaruca-2784951a9/">ZeyN</a></h2>
                     </div>
                     <div className="flex gap-3">
                         {socials.map((social, index) => (
