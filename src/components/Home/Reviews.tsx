@@ -14,19 +14,28 @@ export function Reviews() {
 
     return (
         <>
-            <div className="bg-lightGray h-auto py-40 ">
-                <div className="w-widthPerson m-auto">
+            <div className="bg-lightGray h-auto py-40">
+                <div className="max-w-7xl mx-auto max-lg:mx-10">
                     <h1 className="font-bold text-4xl text-primary text-center">Usuarios <span className="text-secondary underline">Satisfechos</span></h1>
                     <Swiper
-                        slidesPerView={2.7}
+                        slidesPerView={1}
                         spaceBetween={30}
                         grabCursor={true}
                         autoplay={{
                             delay: 2500,
                             disableOnInteraction: true,
                         }}
-                        pagination={{
-                            clickable: true,
+                        breakpoints={{
+                            // Para pantallas pequeñas (móviles)
+                            768: {
+                                slidesPerView: 1.3,
+                                spaceBetween: 10,
+                            },
+                            // Para tablets en orientación horizontal o laptops pequeñas
+                            1024: {
+                                slidesPerView: 2.7,
+                                spaceBetween: 25,
+                            },
                         }}
                         modules={[Autoplay]}
                         className="MySwiper2 w-full flex gap-5 mt-20">

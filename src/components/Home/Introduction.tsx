@@ -16,28 +16,30 @@ const fourthImage = "https://img.freepik.com/fotos-premium/edificio-cesped-verde
 export default function Introduction() {
     return (
         <>
-            <div className="w-widthPerson py-40 h-auto m-auto flex items-center gap-36">
-                <div className="w-1/2 flex flex-col items-start justify-center gap-10 text-wrap">
-                    <h2 className="font-bold text-4xl text-primary">la <span className="text-secondary underline">administración perfecta</span> para tus propiedades</h2>
-                    <p className="text-textBlackp text-l">Somos expertos en administración de edificios residenciales, brindando soluciones personalizadas para la gestión de Juntas de Propietarios. Ya sea en grandes complejos o edificios pequeños, garantizamos eficiencia, cumplimiento de normativas y la satisfacción de los residentes. ¡Deja tu edificio en nuestras manos y disfruta de una administración sin preocupaciones!</p>
-                    <Link to="/contacto" className="bg-secondary  text-white px-7 py-4 rounded-lg text-l hover:shadow-2xl">Contactános</Link>
-                </div>
-                <div className="w-1/2 h-full">
-                    <Swiper
-                        effect={"cards"}
-                        grabCursor={true}
-                        autoplay={{
-                            delay: 1500,
-                            disableOnInteraction: false,
-                        }}
-                        modules={[Autoplay, EffectCards]}
-                        className="mySwiper"
-                    >
-                        <SwiperSlide><img src={firstImage} alt="" /></SwiperSlide>
-                        <SwiperSlide><img src={secondImage} alt="" /></SwiperSlide>
-                        <SwiperSlide><img src={thirdImage} alt="" /></SwiperSlide>
-                        <SwiperSlide><img src={fourthImage} alt="" /></SwiperSlide>
-                    </Swiper>
+            <div className=" py-40 h-auto m-auto items-center">
+                <div className="box-border grid grid-cols-2 max-lg:grid-cols-1 max-w-7xl mx-auto max-lg:mx-10 gap-28">
+                    <div className="w-full flex flex-col items-start justify-center gap-10 text-wrap">
+                        <h2 className="font-bold text-4xl text-primary">la <span className="text-secondary underline">administración perfecta</span> para tus propiedades</h2>
+                        <p className="text-textBlackp text-l">Somos expertos en administración de edificios residenciales, brindando soluciones personalizadas para la gestión de Juntas de Propietarios. Ya sea en grandes complejos o edificios pequeños, garantizamos eficiencia, cumplimiento de normativas y la satisfacción de los residentes. ¡Deja tu edificio en nuestras manos y disfruta de una administración sin preocupaciones!</p>
+                        <Link to="/contacto" className="bg-secondary  text-white px-7 py-4 rounded-lg text-l hover:shadow-2xl">Contactános</Link>
+                    </div>
+                    <div className="h-full">
+                        <Swiper
+                            effect={"cards"}
+                            grabCursor={true}
+                            autoplay={{
+                                delay: 1500,
+                                disableOnInteraction: false,
+                            }}
+                            modules={[Autoplay, EffectCards]}
+                            className="mySwiper w-full"
+                        >
+                            <SwiperSlide><img src={firstImage} alt="" /></SwiperSlide>
+                            <SwiperSlide><img src={secondImage} alt="" /></SwiperSlide>
+                            <SwiperSlide><img src={thirdImage} alt="" /></SwiperSlide>
+                            <SwiperSlide><img src={fourthImage} alt="" /></SwiperSlide>
+                        </Swiper>
+                    </div>
                 </div>
             </div>
         </>

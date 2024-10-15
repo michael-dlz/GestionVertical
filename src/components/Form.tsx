@@ -29,7 +29,7 @@ export default function Form() {
 
     return (
         <>
-            <form onSubmit={handleSubmit} className="w-[36rem] h-full bg-white text-s p-10 rounded-xl shadow-2xl">
+            <form onSubmit={handleSubmit} className="max-w-[36rem] w-full h-full bg-white text-s p-10 rounded-xl shadow-2xl">
                 <div className="">
                     <label className="text-xs font-bold" htmlFor="name">NOMBRE Y APELLIDO</label>
                     <div className="">
