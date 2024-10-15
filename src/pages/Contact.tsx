@@ -12,7 +12,7 @@ export default function Contact() {
                 imageBanner="https://img.freepik.com/fotos-premium/mujer-negocios-hispana-sonriente-hablando-su-telefono-movil_116547-134410.jpg?w=1380"
             />
             <div className="py-40">
-                <div className="w-widthPerson h-full mx-auto text-l grid items-center grid-cols-2">
+                <div className="2xl:max-w-7xl max-w-6xl h-full mx-auto text-l grid items-center grid-cols-2">
                     <div className="py-20 text-white bg-primary px-20 rounded-s-3xl">
                         <h2 className="font-bold text-white text-3xl mb-10">Contacto</h2>
                         <div className="text-l">

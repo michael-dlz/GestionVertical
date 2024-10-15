@@ -34,7 +34,7 @@ export default function NavBar() {
     return (
         <>
             {/* Menú Lateral para Móviles */}
-            <div className={`max-w-7xl fixed top-0 left-0 h-full w-64 bg-primary z-30 text-white transform ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out z-20 lg:hidden`}>
+            <div className={`2xl:max-w-7xl max-w-6xl fixed top-0 left-0 h-full w-64 bg-primary z-30 text-white transform ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out z-20 lg:hidden`}>
                 <div className="flex justify-between items-center p-4">
                     <h2 className="font-bold text-2xl">LOGO</h2>
                     <button
@@ -83,7 +83,7 @@ export default function NavBar() {
 
             {/* Navbar Principal */}
             <div className={`mt-8 fixed w-full left-0 top-0 z-20 py-10 transition-all duration-300 ${isScrolled ? 'bg-white text-primary py-5 shadow-2xl' : 'bg-transparent text-white'}`}>
-                <div className="flex justify-between max-w-7xl mx-auto max-lg:mx-5 items-center">
+                <div className="flex justify-between 2xl:max-w-7xl max-w-6xl mx-auto max-lg:mx-5 items-center">
                     <div className="flex gap-16 items-center font-semibold">
                         <h2 className="font-bold text-2xl duration-0">LOGO</h2>
                         {/* Menú de Escritorio */}
