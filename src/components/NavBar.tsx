@@ -82,7 +82,7 @@ export default function NavBar() {
             )}
 
             {/* Navbar Principal */}
-            <div className={`mt-8 fixed w-full overflow-y-hidden left-0 top-0 z-20 py-10 transition-all duration-300 ${isScrolled ? 'bg-white text-primary py-5 shadow-2xl' : 'bg-transparent text-white'}`}>
+            <div className={`mt-8 fixed w-full left-0 top-0 z-20 py-10 transition-all duration-300 ${isScrolled ? 'bg-white text-primary py-5 shadow-2xl' : 'bg-transparent text-white'}`}>
                 <div className="flex justify-between max-w-7xl mx-auto max-lg:mx-5 items-center">
                     <div className="flex gap-16 items-center font-semibold">
                         <h2 className="font-bold text-2xl duration-0">LOGO</h2>
