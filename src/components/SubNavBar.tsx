@@ -1,4 +1,5 @@
 import { email, phone, socials} from "../data/ContactInfo"
+import { IconEmail, IconWhatsApp } from "../Icons/Icons"
 
 export default function SubNavBar() {
 
@@ -11,9 +12,9 @@ export default function SubNavBar() {
                             <a key={index} href={social.link}><social.Icon stroke="#000" /></a>
                         ))}
                     </div>
-                    <div className="flex gap-4">
-                        <a href={`mailto:${email}`}>{email}</a>
-                        <a href={`tel:${phone}`}>{phone}</a>
+                    <div className="flex gap-4 font-medium text-xs">
+                        <a className="flex gap-1 items-center" href={`mailto:${email}`}><IconEmail stroke="#000" />{email}</a>
+                        <a className="flex gap-1 items-center" href={`tel:${phone}`}><IconWhatsApp stroke="#000"/>{phone}</a>
                     </div>
                 </div>
             </nav >

@@ -122,6 +122,21 @@ export function IconDollar({ stroke = "#FFFFFF", size = 16 }: IconProps) {
     )
 }
 
+export function IconMoney({ stroke = "#FFFFFF", size = 16 }: IconProps) {
+    return (
+        <>
+            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-currency-dollar" width={size} height={size} viewBox="0 0 24 24" stroke-width="1" stroke={stroke} fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2" />
+                <path d="M12 3v3m0 12v3" />
+            </svg>
+        </>
+    )
+}
+
+
+
+
 export function IconTime({ stroke = "#FFFFFF", size = 16 }: IconProps) {
     return (
         <>
@@ -202,6 +217,73 @@ export function IconMap({ stroke = "#FFFFFF", size = 16 }: IconProps) {
     )
 }
 
+
+
+
+export function IconUS({ stroke = "#FFFFFF", size = 16 }: IconProps) {
+    return (
+        <>
+            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-users" width={size} height={size} viewBox="0 0 24 24" stroke-width="1" stroke={stroke} fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+            </svg>
+
+        </>
+    )
+}
+
+export function IconServices({ stroke = "#FFFFFF", size = 16 }: IconProps) {
+    return (
+        <>
+            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-packages" width={size} height={size} viewBox="0 0 24 24" stroke-width="1" stroke={stroke} fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M7 16.5l-5 -3l5 -3l5 3v5.5l-5 3z" />
+                <path d="M2 13.5v5.5l5 3" />
+                <path d="M7 16.545l5 -3.03" />
+                <path d="M17 16.5l-5 -3l5 -3l5 3v5.5l-5 3z" />
+                <path d="M12 19l5 3" />
+                <path d="M17 16.5l5 -3" />
+                <path d="M12 13.5v-5.5l-5 -3l5 -3l5 3v5.5" />
+                <path d="M7 5.03v5.455" />
+                <path d="M12 8l5 -3" />
+            </svg>
+
+        </>
+    )
+}
+
+export function IconCV({ stroke = "#FFFFFF", size = 16 }: IconProps) {
+    return (
+        <>
+            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-file-cv" width={size} height={size} viewBox="0 0 24 24" stroke-width="1" stroke={stroke} fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                <path d="M11 12.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0" />
+                <path d="M13 11l1.5 6l1.5 -6" />
+            </svg>
+
+        </>
+    )
+}
+
+export function IconWork({ stroke = "#FFFFFF", size = 16 }: IconProps) {
+    return (
+        <>
+            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-briefcase" width={size} height={size} viewBox="0 0 24 24" stroke-width="1" stroke={stroke} fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
+                <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />
+                <path d="M12 12l0 .01" />
+                <path d="M3 13a20 20 0 0 0 18 0" />
+            </svg>
+        </>
+    )
+}
+
 export function IconEmail({ stroke = "#FFFFFF", size = 16 }: IconProps) {
     return (
         <>
@@ -247,7 +329,7 @@ export function IconQuote({ stroke = "#FFFFFF", size = 16 }: IconProps) {
 export function IconCheck({ stroke = "#FFFFFF", size = 16 }: IconProps) {
     return (
         <>
-            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-circle-check" width={size} height={size} viewBox="0 0 24 24" stroke-width="1.5" stroke={stroke} fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-circle-check" width={size} height={size} viewBox="0 0 24 24" stroke-width="1" stroke={stroke} fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
                 <path d="M9 12l2 2l4 -4" />
@@ -260,7 +342,7 @@ export function IconCheck({ stroke = "#FFFFFF", size = 16 }: IconProps) {
 export function IconSend({ stroke = "#FFFFFF", size = 16 }: IconProps) {
     return (
         <>
-            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-send-2" width={size} height={size} viewBox="0 0 24 24" stroke-width="1.5" stroke={stroke} fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-send-2" width={size} height={size} viewBox="0 0 24 24" stroke-width="1" stroke={stroke} fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M4.698 4.034l16.302 7.966l-16.302 7.966a.503 .503 0 0 1 -.546 -.124a.555 .555 0 0 1 -.12 -.568l2.468 -7.274l-2.468 -7.274a.555 .555 0 0 1 .12 -.568a.503 .503 0 0 1 .546 -.124z" />
                 <path d="M6.5 12h14.5" />

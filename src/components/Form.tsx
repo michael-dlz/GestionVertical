@@ -1,8 +1,9 @@
 import { useForm, ValidationError } from "@formspree/react"
-import { IconCheck } from "../Icons/Icons"
+import { IconCheck, IconQuote } from "../Icons/Icons"
 import { useState } from "react"
 import { dbDistricts } from "../data/Distritos"
 import { Link } from "react-router-dom"
+import "../index.css"
 
 export default function Form() {
 
@@ -18,7 +19,7 @@ export default function Form() {
             <div className="w-[36rem] h-auto bg-white text-s p-10 rounded-xl shadow-2xl text-primary text-center flex flex-col items-center">
                 <IconCheck
                     size={80}
-                    stroke={"#16A085"}
+                    stroke={"#2382C0"}
                 />
                 <h2 className="text-2xl font-semibold py-5">Enviado Exitosamente</h2>
                 <p className="mb-10">¡Muchas gracias, te responderemos lo más pronto posible!</p>
@@ -29,7 +30,8 @@ export default function Form() {
 
     return (
         <>
-            <form onSubmit={handleSubmit} className="max-w-[36rem] w-full h-full bg-white text-s p-10 rounded-xl shadow-2xl">
+            <form onSubmit={handleSubmit} className="w-full h-full bg-white text-s p-10 rounded-xl shadow-2xl">
+                <h1 className="mb-7 text-xl font-bold text-primary text-center">Realiza una Cotización</h1>
                 <div className="">
                     <label className="text-xs font-bold" htmlFor="name">NOMBRE Y APELLIDO</label>
                     <div className="">
@@ -98,7 +100,8 @@ export default function Form() {
                     </div>
                 </div>
                 <div className="mt-6 w-full">
-                    <button type="submit" disabled={state.submitting} className="w-full bg-secondary text-white px-7 py-5 rounded-lg text-l hover:shadow-2xl cursor-pointer">Cotizar Ahora</button>
+                    <button type="submit" disabled={state.submitting} className="w-full bg-secondary text-white px-7 py-5 rounded-lg text-l hover:shadow-2xl cursor-pointer flex justify-center items-center gap-2">
+                    <IconQuote size={20} />Cotiza Ahora</button>
                 </div>
             </form>
         </>

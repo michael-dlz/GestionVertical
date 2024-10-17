@@ -11,7 +11,25 @@ html {
     transition: all 0.2s ease;
 }
 
+
+select {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
 input:focus {
+    background-color: #e6f5ff;
+    outline: none;
+    border: none;
+}
+
+input:focus-visible {
+    outline: none;
+    border: none;
+}
+
+inpur::selection {
     outline: none;
     border: none;
 }

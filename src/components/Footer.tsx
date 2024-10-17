@@ -1,5 +1,4 @@
-import { email, phone, adress } from "../data/ContactInfo"
-import { socials, logo } from "../data/ContactInfo"
+import { email, phone, adress, logoLight, socials } from "../data/ContactInfo"
 import { Link } from "react-router-dom"
 import { IconSend } from "../Icons/Icons"
 
@@ -15,7 +14,7 @@ export default function Footer() {
                     <div className={blockStyle}>
                         <h2 className="font-bold text-m">ACERCA DE NOSOTROS</h2>
                         <p className="font-medium text-sm">Ofrecemos administración eficiente y personalizada para edificios residenciales, gestionando Juntas de Propietarios y garantizando cumplimiento y satisfacción. ¡Confía en nosotros para una gestión sin complicaciones!</p>
-                        <img src={logo} alt="" />
+                        <img src={logoLight} alt="" />
                     </div>
                     <div className={blockStyle}>
                         <h2 className="font-bold text-m">CONTACTO</h2>
@@ -31,8 +30,8 @@ export default function Footer() {
                             <Link to="/" className={linksStyle}>Inicio</Link >
                             <Link to="/nosotros" className={linksStyle}>Nosotros</Link>
                             <Link to="" className={linksStyle}>Servicios</Link>
-                            <Link to="/contacto" className={linksStyle}>Contacto</Link>
-                            <Link to="" className={linksStyle}>Trabaja con Nosotros</Link>
+                            <Link to="/#contacto" className={linksStyle}>Contacto</Link>
+                            <Link to="/trabaja-con-nosotros" className={linksStyle}>Trabaja con Nosotros</Link>
                             <Link to="/nosotros" className={linksStyle}>Política de Cumplimiento</Link>
                         </div>
                     </div>

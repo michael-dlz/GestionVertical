@@ -5,9 +5,9 @@ import { IconMap, IconCalendar, IconEmail, IconWhatsApp } from "../../Icons/Icon
 export default function Contact() {
     return (
         <>
-            <div className="py-40">
+            <div className="py-40" id="contacto">
                 <div className="2xl:max-w-7xl max-w-6xl h-full mx-auto text-l">
-                    <h1 className="font-bold text-4xl text-primary text-center">Nuestros <span className="text-secondary underline">Beneficios</span></h1>
+                    <h1 className="font-bold text-4xl text-primary text-center"><span className="text-secondary underline">Cotiza</span> con Nosotros</h1>
                     <div className="grid items-center grid-cols-2 mt-20">
                         <div className="py-20 text-white bg-primary px-20 rounded-s-3xl">
                             <h2 className="font-bold text-white text-3xl mb-10">Contacto</h2>
