@@ -112,7 +112,7 @@ export default function NavBar() {
                         <IconHamburger />
                     </button>
                     {/* Botón de Contacto */}
-                    <a href="/#contacto" className="bg-secondary text-white px-7 py-4 rounded-lg text-l flex items-center gap-2 hidden hover:shadow-2xl lg:flex">
+                    <a href="/#contacto" className="bg-secondary text-white px-7 py-4 rounded-lg text-md flex items-center gap-2 hidden hover:shadow-2xl lg:flex">
                         <IconQuote size={20} />
                         Realiza tu Cotización
                     </a>

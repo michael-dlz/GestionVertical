@@ -12,7 +12,7 @@ export default function About() {
           <div className="flex gap-28 items-center 2xl:max-w-7xl max-w-5xl mx-auto">
             <div className="flex-1">
               <h2 className="font-bold text-primary text-3xl mb-10">Quienes Somos</h2>
-              <p className="text-l text-textBlackp">Somos un equipo de profesionales especializados en la administración de edificios residenciales, comprometidos con la gestión eficiente de las Juntas de Propietarios y con el cumplimiento de las normativas legales vigentes. Con años de experiencia en el sector, nos dedicamos a proporcionar soluciones personalizadas para cada comunidad, adaptándonos a las particularidades de edificios grandes o pequeños. Nuestro enfoque está en crear un entorno armónico y funcional, donde los residentes puedan disfrutar de una convivencia organizada, segura y libre de preocupaciones.</p>
+              <p className="text-mdtext-textBlackp">Somos un equipo de profesionales especializados en la administración de edificios residenciales, comprometidos con la gestión eficiente de las Juntas de Propietarios y con el cumplimiento de las normativas legales vigentes. Con años de experiencia en el sector, nos dedicamos a proporcionar soluciones personalizadas para cada comunidad, adaptándonos a las particularidades de edificios grandes o pequeños. Nuestro enfoque está en crear un entorno armónico y funcional, donde los residentes puedan disfrutar de una convivencia organizada, segura y libre de preocupaciones.</p>
             </div>
             <div className="flex-1 overflow-hidden rounded-3xl shadow-2xl h-96">
               <img className="w-full h-full object-cover" src="https://img.freepik.com/foto-gratis/equipo-trabajando-juntos-proyecto_23-2149325415.jpg?t=st=1728667408~exp=1728671008~hmac=7670ea243aabc6b8f9f72661d6f17ec28fea7927eeb1432094d08cfbfc4361e8&w=1380" alt="" />
@@ -27,7 +27,7 @@ export default function About() {
             </div>
             <div className="flex-1">
               <h2 className="font-bold text-primary text-3xl mb-10">Nuestra <span className="text-secondary underline">Misión</span></h2>
-              <p className="text-l text-textBlackp">Nuestra misión es ofrecer un servicio integral en la administración de edificios residenciales, enfocado en satisfacer las necesidades particulares de cada comunidad. Nos esforzamos por garantizar una gestión eficiente, promoviendo la armonía y el bienestar de los residentes a través de un manejo transparente y responsable. Al asegurar el cumplimiento de todas las normativas y regulaciones vigentes, trabajamos para mejorar la calidad de vida de las personas y fomentar un entorno seguro y organizado en cada propiedad que gestionamos.</p>
+              <p className="text-mdtext-textBlackp">Nuestra misión es ofrecer un servicio integral en la administración de edificios residenciales, enfocado en satisfacer las necesidades particulares de cada comunidad. Nos esforzamos por garantizar una gestión eficiente, promoviendo la armonía y el bienestar de los residentes a través de un manejo transparente y responsable. Al asegurar el cumplimiento de todas las normativas y regulaciones vigentes, trabajamos para mejorar la calidad de vida de las personas y fomentar un entorno seguro y organizado en cada propiedad que gestionamos.</p>
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@ export default function About() {
           <div className="flex gap-28 items-center 2xl:max-w-7xl max-w-5xl mx-auto">
             <div className="flex-1">
               <h2 className="font-bold text-primary text-3xl mb-10">Nuestra <span className="text-secondary underline">Visión</span></h2>
-              <p className="text-l text-textBlackp">Aspiramos a ser la empresa líder y referente en el sector de administración de edificios residenciales, destacándonos por nuestra innovación, adaptabilidad y compromiso con la excelencia. Nuestra visión es transformar la manera en que se gestionan las comunidades, ofreciendo soluciones inteligentes y sostenibles que se anticipen a las necesidades futuras de los propietarios y residentes. Queremos ser reconocidos por mejorar continuamente la experiencia de vida en cada edificio bajo nuestra administración, creando relaciones de confianza duraderas con nuestros clientes.</p>
+              <p className="text-mdtext-textBlackp">Aspiramos a ser la empresa líder y referente en el sector de administración de edificios residenciales, destacándonos por nuestra innovación, adaptabilidad y compromiso con la excelencia. Nuestra visión es transformar la manera en que se gestionan las comunidades, ofreciendo soluciones inteligentes y sostenibles que se anticipen a las necesidades futuras de los propietarios y residentes. Queremos ser reconocidos por mejorar continuamente la experiencia de vida en cada edificio bajo nuestra administración, creando relaciones de confianza duraderas con nuestros clientes.</p>
             </div>
             <div className="flex-1 overflow-hidden rounded-3xl shadow-2xl h-96">
               <img className="w-full h-full object-cover" src="https://img.freepik.com/foto-gratis/objetivos-exito-estrategia-negocio_1421-33.jpg?t=st=1728668602~exp=1728672202~hmac=4e6bd40c1ed42b6310b7a9576283a8d019f5686df83d30026cd4be347df31c27&w=1380" alt="" />

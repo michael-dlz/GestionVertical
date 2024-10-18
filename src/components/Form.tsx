@@ -23,7 +23,7 @@ export default function Form() {
                 />
                 <h2 className="text-2xl font-semibold py-5">Enviado Exitosamente</h2>
                 <p className="mb-10">¡Muchas gracias, te responderemos lo más pronto posible!</p>
-                <Link className="w-full bg-secondary text-white px-7 py-5 rounded-lg text-l hover:shadow-2xl" to="/">Volver a Inicio</Link>
+                <Link className="w-full bg-secondary text-white px-7 py-5 rounded-lg text-base hover:shadow-2xl" to="/">Volver a Inicio</Link>
             </div>
         )
     }
@@ -100,7 +100,7 @@ export default function Form() {
                     </div>
                 </div>
                 <div className="mt-6 w-full">
-                    <button type="submit" disabled={state.submitting} className="w-full bg-secondary text-white px-7 py-5 rounded-lg text-l hover:shadow-2xl cursor-pointer flex justify-center items-center gap-2">
+                    <button type="submit" disabled={state.submitting} className="w-full bg-secondary text-white px-7 py-5 rounded-lg text-mdhover:shadow-2xl cursor-pointer flex justify-center items-center gap-2">
                     <IconQuote size={20} />Cotiza Ahora</button>
                 </div>
             </form>
