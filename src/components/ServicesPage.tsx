@@ -49,7 +49,7 @@ export default function ServicesPage({
         <>
             <div className="py-40 h-auto">
                 <div className="2xl:max-w-7xl max-w-5xl mx-auto grid grid-cols-2 items-start gap-28 h-auto max-lg:mx-5 max-lg:grid-cols-1">
-                    <div className="text-l">
+                    <div className="text-md">
                         <div>
                             <h2 className="text-primary font-bold text-3xl">¿Por qué Elegir el {title}?</h2>
                             <p className="text-textBlackp py-10">{whyTitle}</p>
@@ -91,7 +91,7 @@ export default function ServicesPage({
                             </div>
                         </div>
                     </div>
-                    <div className="bg-white shadow-2xl h-auto p-20 text-mdrounded-3xl grid items-center sticky top-40 max-lg:p-10">
+                    <div className="bg-white shadow-2xl h-auto p-16 text-mdrounded-3xl grid items-center sticky top-40 max-lg:p-10">
                         <div>
                             <h2 className="text-primary font-bold text-lg flex items-center gap-2"><IconCalendar stroke="#000" size={25} />RESERVA UNA CITA</h2>
                             <div className="flex gap-1 text-xs py-6">
@@ -145,7 +145,7 @@ export default function ServicesPage({
                     >
                         <SwiperSlide className="bg-primary text-white p-10 flex flex-col justify-center rounded-2xl overflow-hidden shadow-2xl">
                             <h2 className="font-bold text-lg pb-10">NOS ADECUAMOS A TU NECESIDAD</h2>
-                            <p className="text-l">{needTitle}</p>
+                            <p className="text-sm">{needTitle}</p>
                         </SwiperSlide>
                         <SwiperSlide className="rounded-2xl overflow-hidden">
                             <img className="w-full h-full object-cover" src={oneImg} alt="" />

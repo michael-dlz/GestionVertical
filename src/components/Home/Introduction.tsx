@@ -20,7 +20,7 @@ export default function Introduction() {
                 <div className="box-border grid grid-cols-2 max-lg:grid-cols-1 2xl:max-w-7xl max-w-5xl mx-auto max-lg:mx-5 gap-28">
                     <div className="w-full flex flex-col items-start justify-center gap-10 text-wrap">
                         <h2 className="font-bold text-4xl text-primary">la <span className="text-secondary underline">administración perfecta</span> para tus propiedades</h2>
-                        <p className="text-textBlackp text-l">Somos expertos en administración de edificios residenciales, brindando soluciones personalizadas para la gestión de Juntas de Propietarios. Ya sea en grandes complejos o edificios pequeños, garantizamos eficiencia, cumplimiento de normativas y la satisfacción de los residentes. ¡Deja tu edificio en nuestras manos y disfruta de una administración sin preocupaciones!</p>
+                        <p className="text-textBlackp text-md">Somos expertos en administración de edificios residenciales, brindando soluciones personalizadas para la gestión de Juntas de Propietarios. Ya sea en grandes complejos o edificios pequeños, garantizamos eficiencia, cumplimiento de normativas y la satisfacción de los residentes. ¡Deja tu edificio en nuestras manos y disfruta de una administración sin preocupaciones!</p>
                         <Link to="/contacto" className="bg-secondary text-white px-7 py-4 rounded-lg text-mdhover:shadow-2xl">Contactános</Link>
                     </div>
                     <div className="w-full h-full max-lg:overflow-x-hidden">
