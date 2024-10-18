@@ -31,7 +31,7 @@ export default function Form() {
     return (
         <>
             <form onSubmit={handleSubmit} className="w-full h-full bg-white text-s p-10 rounded-xl shadow-2xl">
-                <h1 className="mb-7 text-xl font-bold text-primary text-center">Realiza una Cotización</h1>
+                <h1 className="mb-7 text-xl font-bold text-primary text-center">¡Revoluciona la administración de tu propiedad HOY!</h1>
                 <div className="">
                     <label className="text-xs font-bold" htmlFor="name">NOMBRE Y APELLIDO</label>
                     <div className="">
