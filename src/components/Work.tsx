@@ -1,4 +1,4 @@
-import { IconCV, IconMap } from "../Icons/Icons";
+import { IconCV, IconLink, IconMap } from "../Icons/Icons";
 import { adress } from "../data/ContactInfo";
 
 interface WorkProps {
@@ -10,9 +10,22 @@ interface WorkProps {
 }
 
 export default function Work({ titleWork, descriptionWork, categories, requirements, benefits }: WorkProps) {
+
+    const formattedTitleWork = titleWork.replace(/ /g, '-');
+    const linkToCopy = `https://gestion-vertical.vercel.app/trabaja-con-nosotros#${formattedTitleWork}`;
+
+    const handleCopyLink = async () => {
+        try {
+            await navigator.clipboard.writeText(linkToCopy);
+            alert('Enlace copiado al portapapeles'); // Puedes personalizar esta alerta
+        } catch (err) {
+            console.error('Error al copiar el enlace: ', err);
+        }
+    };
+
     return (
         <>
-            <div className="p-10 border rounded-2xl">
+            <div className="p-10 border rounded-2xl" id={titleWork}>
                 <h1 className="text-base font-semibold">{titleWork}</h1>
                 <div className="my-5">
                     <p className="mb-5 flex items-center gap-1 text-sm"><IconMap stroke="#000" size={15} />{adress}</p>
@@ -23,7 +36,16 @@ export default function Work({ titleWork, descriptionWork, categories, requireme
                         ))}
                     </p>
                 </div>
-                <div className="">
+                <div className="flex pb-5 border-b gap-2">
+                    <a href={`https://wa.me/+51942901570?text=Hola,%20Estoy%20Interesado%20en%20el%20puesto%20de%20${encodeURIComponent(titleWork)}`} className="bg-secondary w-auto text-white py-4 px-8 rounded-lg text-sm hover:shadow-2xl flex justify-center items-center gap-1"><IconCV stroke="#fff" size={20} />Postular</a>
+                    <button
+                        onClick={handleCopyLink}
+                        className="bg-lightSecondary border border-secondary w-auto text-white py-4 px-4 rounded-lg text-sm hover:shadow-2xl flex justify-center items-center gap-1"
+                    >
+                        <IconLink stroke="#2382C0" size={20} />
+                    </button>
+                </div>
+                <div className="pt-5">
                     <h3 className="text-base">Requisitos:</h3>
                     <ul className="my-5 list-disc text-left text-sm text-textBlackp">
                         {requirements.map((req, index) => (
@@ -39,7 +61,6 @@ export default function Work({ titleWork, descriptionWork, categories, requireme
                         ))}
                     </ul>
                 </div>
-                <a href={`https://wa.me/+51942901570?text=Hola,%20Estoy%20Interesado%20en%20el%20puesto%20de%20${encodeURIComponent(titleWork)}`} className="bg-secondary w-full text-white py-6 rounded-lg text-l mt-10 hover:shadow-2xl flex justify-center items-center gap-2"><IconCV stroke="#fff" size={25} />Postular</a>
             </div>
         </>
     )
