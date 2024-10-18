@@ -48,13 +48,14 @@ export default function NavBar() {
                         </svg>
                     </button>
                 </div>
-                <ul className="flex flex-col p-4 space-y-4">
+                <ul className="flex flex-col py-8 px-4 space-y-4 text-sm">
                     <li>
-                        <Link to="/nosotros" className="hover:text-secondary" onClick={toggleMenu}>NOSOTROS</Link>
+                        <Link to="/nosotros" className="hover:text-secondary flex items-center gap-2" onClick={toggleMenu}><IconUS stroke={isScrolled ? "#000" : "#fff"} />NOSOTROS</Link>
                     </li>
                     <li className="relative">
                         <button onClick={toggleServicesMenu} className="flex justify-between items-center w-full hover:text-secondary">
-                            SERVICIOS
+                            <p className="flex items-center gap-2"><IconServices stroke={isScrolled ? "#000" : "#fff"} />
+                            SERVICIOS</p>
                             <svg className={`h-4 w-4 transform transition-transform ${isServicesOpen ? 'rotate-180' : 'rotate-0'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                             </svg>
@@ -69,7 +70,7 @@ export default function NavBar() {
                         )}
                     </li>
                     <li>
-                        <Link to="/trabaja-con-nosotros" className="hover:text-secondary" onClick={toggleMenu}>TRABAJA CON NOSOTROS</Link>
+                        <Link to="/trabaja-con-nosotros" className="hover:text-secondary flex items-center gap-2" onClick={toggleMenu}><IconWork stroke={isScrolled ? "#000" : "#fff"} />TRABAJA CON NOSOTROS</Link>
                     </li>
                 </ul>
             </div>
@@ -105,7 +106,7 @@ export default function NavBar() {
                     </div>
                     {/* Botón de Hamburguesa para Móviles */}
                     <button
-                        className="lg:hidden flex items-center px-3 py-2 border rounded border-primary hover:text-primary hover:border-primary"
+                        className={`lg:hidden flex items-center px-3 py-2 border rounded  hover:text-primary hover:border-primary ${isScrolled ? 'border-primary' : 'border-white'}`}
                         onClick={toggleMenu}
                         aria-label="Abrir menú"
                     >

@@ -48,7 +48,7 @@ export default function ServicesPage({
     return (
         <>
             <div className="py-40 h-auto">
-                <div className="2xl:max-w-7xl max-w-5xl mx-auto grid grid-cols-2 items-start gap-28 h-auto max-lg:mx-5">
+                <div className="2xl:max-w-7xl max-w-5xl mx-auto grid grid-cols-2 items-start gap-28 h-auto max-lg:mx-5 max-lg:grid-cols-1">
                     <div className="text-l">
                         <div>
                             <h2 className="text-primary font-bold text-3xl">¿Por qué Elegir el {title}?</h2>
@@ -91,7 +91,7 @@ export default function ServicesPage({
                             </div>
                         </div>
                     </div>
-                    <div className="bg-white shadow-2xl h-auto p-20 text-mdrounded-3xl grid items-center sticky top-40">
+                    <div className="bg-white shadow-2xl h-auto p-20 text-mdrounded-3xl grid items-center sticky top-40 max-lg:p-10">
                         <div>
                             <h2 className="text-primary font-bold text-lg flex items-center gap-2"><IconCalendar stroke="#000" size={25} />RESERVA UNA CITA</h2>
                             <div className="flex gap-1 text-xs py-6">
@@ -109,16 +109,16 @@ export default function ServicesPage({
                                 <p>{priceService}</p>
                                 <p>{conditionService}</p>
                             </div>
-                            <a className="text-secondary font-semibold flex items-center gap-2 underline" target="_blank" href="https://www.dropbox.com/scl/fi/dejik074572mup02yksbx/Gu-a-de-Gastos-Comunes.docx?rlkey=djmubnrvtzjzd55nvbeh4ay91&st=j5chillu&dl=0"><IconLink stroke="#2382C0" size={25} /> Guía de Gastos Comunes</a>
+                            <a className="text-secondary font-semibold flex items-center gap-2 underline mb-10" target="_blank" href="https://www.dropbox.com/scl/fi/dejik074572mup02yksbx/Gu-a-de-Gastos-Comunes.docx?rlkey=djmubnrvtzjzd55nvbeh4ay91&st=j5chillu&dl=0"><IconLink stroke="#2382C0" size={25} /> Guía de Gastos Comunes</a>
                         </div>
                         <button className="bg-secondary w-full text-white px-14 py-6 rounded-lg text-mdmt-10 hover:shadow-2xl flex justify-center items-center gap-2"><IconCalendar size={25} />Reserva Ahora</button>
                     </div>
                 </div>
             </div>
             <div className="h-full pb-40">
-                <div className="2xl:max-w-7xl max-w-5xl mx-auto h-full">
+                <div className="2xl:max-w-7xl max-w-5xl mx-auto h-full max-lg:mx-5">
                     <Swiper
-                        slidesPerView={2.5}
+                        slidesPerView={1}
                         spaceBetween={30}
                         grabCursor={true}
                         autoplay={{
@@ -127,6 +127,18 @@ export default function ServicesPage({
                         }}
                         pagination={{
                             clickable: true,
+                        }}
+                        breakpoints={{
+                            // Para pantallas pequeñas (móviles)
+                            768: {
+                                slidesPerView: 1.3,
+                                spaceBetween: 10,
+                            },
+                            // Para tablets en orientación horizontal o laptops pequeñas
+                            1024: {
+                                slidesPerView: 2.7,
+                                spaceBetween: 25,
+                            },
                         }}
                         modules={[Autoplay]}
                         className="mySwiper3 w-full grid"
