@@ -100,7 +100,7 @@ export default function Form() {
                     </div>
                 </div>
                 <div className="mt-6 w-full">
-                    <button type="submit" disabled={state.submitting} className="w-full bg-secondary text-white px-7 py-5 rounded-lg text-mdhover:shadow-2xl cursor-pointer flex justify-center items-center gap-2">
+                    <button type="submit" disabled={state.submitting} className="w-full bg-secondary text-white px-7 py-5 rounded-lg text-mdhover:shadow-2xl cursor-pointer flex justify-center items-center gap-2 hover:shadow-2xl">
                     <IconQuote size={20} />Cotiza Ahora</button>
                 </div>
             </form>
