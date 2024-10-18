@@ -10,7 +10,7 @@ export default function Footer() {
     return (
         <>
             <div className="bg-primary pt-28 pb-4">
-                <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 gap-20 2xl:max-w-7xl max-w-6xl max-lg:mx-5 mx-auto text-white pb-20">
+                <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 gap-20 2xl:max-w-7xl max-w-5xl max-lg:mx-5 mx-auto text-white pb-20">
                     <div className={blockStyle}>
                         <h2 className="font-bold text-m">ACERCA DE NOSOTROS</h2>
                         <p className="font-medium text-sm">Ofrecemos administración eficiente y personalizada para edificios residenciales, gestionando Juntas de Propietarios y garantizando cumplimiento y satisfacción. ¡Confía en nosotros para una gestión sin complicaciones!</p>
@@ -46,7 +46,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="flex gap-20 2xl:max-w-7xl max-w-6xl max-lg:mx-5 mx-auto text-white font-medium text-sm pt-8 my-8 border-slate-600 border-t-2 items-center justify-between">
+                <div className="flex gap-20 2xl:max-w-7xl max-w-5xl max-lg:mx-5 mx-auto text-white font-medium text-sm pt-8 my-8 border-slate-600 border-t-2 items-center justify-between">
                     <div className="">
                         <h2>Gestión Vertical @2024 Todos los Derechos Reservados | Esta página web fue desarrollada por <a className="text-spanColor font-semibold" href="https://www.linkedin.com/in/michael-omar-de-la-cruz-ingaruca-2784951a9/">ZeyN</a></h2>
                     </div>

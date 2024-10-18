@@ -46,7 +46,7 @@ export default function Form() {
                         <ValidationError prefix="Email" field="Correo Electrónico" errors={state.errors} />
                     </div>
                 </div>
-                <div className="mt-3 flex justify-between gap-5">
+                <div className="mt-3 grid grid-cols-2 justify-between gap-5 max-lg:grid-cols-1">
                     <div className="w-full">
                         <label className="text-xs font-bold" htmlFor="phone">TELÉFONO</label>
                         <div className="">
@@ -83,7 +83,7 @@ export default function Form() {
                         <ValidationError prefix="Currentadmin" field="Empresa Administradora Actual" errors={state.errors} />
                     </div>
                 </div>
-                <div className="mt-3 flex justify-between gap-5">
+                <div className="mt-3 grid grid-cols-2 max-lg:grid-cols-1 justify-between gap-5">
                     <div className="w-full">
                         <label className="text-xs font-bold" htmlFor="antique">ANTIGUEDAD</label>
                         <div className="">

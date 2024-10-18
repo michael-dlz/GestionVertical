@@ -15,7 +15,7 @@ export function Reviews() {
     return (
         <>
             <div className="bg-lightGray h-auto py-40">
-                <div className="2xl:max-w-7xl max-w-6xl mx-auto max-lg:mx-5">
+                <div className="2xl:max-w-7xl max-w-5xl mx-auto max-lg:mx-5">
                     <h1 className="font-bold text-4xl text-primary text-center">Usuarios <span className="text-secondary underline">Satisfechos</span></h1>
                     <Swiper
                         slidesPerView={1}

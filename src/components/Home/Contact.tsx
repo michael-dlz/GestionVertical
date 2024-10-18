@@ -6,10 +6,10 @@ export default function Contact() {
     return (
         <>
             <div className="py-40" id="contacto">
-                <div className="2xl:max-w-7xl max-w-6xl h-full mx-auto text-l">
+                <div className="2xl:max-w-7xl max-w-5xl h-full mx-auto text-l max-lg:mx-5">
                     <h1 className="font-bold text-4xl text-primary text-center"><span className="text-secondary underline">Cotiza</span> con Nosotros</h1>
-                    <div className="grid items-center grid-cols-2 mt-20">
-                        <div className="py-20 text-white bg-primary px-20 rounded-s-3xl">
+                    <div className="grid items-center grid-cols-2 mt-20 max-lg:grid-cols-1">
+                        <div className="py-20 text-white bg-primary px-20 rounded-s-3xl max-lg:rounded-r-3xl">
                             <h2 className="font-bold text-white text-3xl mb-10">Contacto</h2>
                             <div className="text-l">
                                 <p className="my-3 flex items-center gap-3"> <IconMap size={25} /> Dirección: {adress}</p>

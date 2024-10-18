@@ -59,7 +59,7 @@ export default function WorkUs() {
                 imageBanner="https://img.freepik.com/free-photo/co-working-people-working-together_23-2149328285.jpg"
             />
             <div className="py-40 h-auto">
-                <div className="2xl:max-w-7xl max-w-6xl mx-auto h-auto max-lg:mx-5">
+                <div className="2xl:max-w-7xl max-w-5xl mx-auto h-auto max-lg:mx-5">
                     <div className="grid grid-cols-[1fr_2fr] items-start gap-5 h-auto">
                         <div className="bg-white shadow-2xl p-10 rounded-2xl grid items-center h-auto sticky top-40 hover:shadow-lg">
                             <h2 className="text-primary font-bold text-base text-center mb-5">Filtra tu Búsqueda</h2>
