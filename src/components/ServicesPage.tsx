@@ -82,10 +82,10 @@ export default function ServicesPage({
                         <div className="">
                             <h2>También puedes:</h2>
                             <div className="flex gap-3 items-center mt-6">
-                                <a href={`https://wa.me/${phone}?text=Hola,%20Me%20interesaría%20poder%20cotizar%20el%20${encodeURIComponent(title)}`} className="border border-secondary text-secondary px-7 py-4 hover:bg-secondary hover:text-white text-left rounded-lg text-mdhover:shadow-2xl">
+                                <a href={`https://wa.me/${phone}?text=Hola,%20Me%20interesaría%20poder%20cotizar%20el%20${encodeURIComponent(title)}`} className="border border-secondary text-secondary px-7 py-4 hover:bg-secondary hover:text-white text-left rounded-lg text-md hover:shadow-2xl max-lg:px-4">
                                     Cotizar por WhatsApp
                                 </a>
-                                <a href="/#contacto" className="border border-secondary text-secondary px-7 py-4 hover:bg-secondary hover:text-white text-left rounded-lg text-mdhover:shadow-2xl">
+                                <a href="/#contacto" className="border border-secondary text-secondary px-7 py-4 hover:bg-secondary hover:text-white text-left rounded-lg text-md hover:shadow-2xl max-lg:px-4">
                                     Cotizar por Correo
                                 </a>
                             </div>
@@ -118,7 +118,7 @@ export default function ServicesPage({
             <div className="h-full pb-40">
                 <div className="2xl:max-w-7xl max-w-5xl mx-auto h-full max-lg:mx-5">
                     <Swiper
-                        slidesPerView={1}
+                        slidesPerView={1.3}
                         spaceBetween={30}
                         grabCursor={true}
                         autoplay={{
@@ -141,7 +141,7 @@ export default function ServicesPage({
                             },
                         }}
                         modules={[Autoplay]}
-                        className="mySwiper3 w-full grid"
+                        className="mySwiper3 w-full  grid"
                     >
                         <SwiperSlide className="bg-primary text-white p-10 flex flex-col justify-center rounded-2xl overflow-hidden shadow-2xl">
                             <h2 className="font-bold text-lg pb-10">NOS ADECUAMOS A TU NECESIDAD</h2>
