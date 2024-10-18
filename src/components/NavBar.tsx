@@ -105,11 +105,11 @@ export default function NavBar() {
                     </div>
                     {/* Botón de Hamburguesa para Móviles */}
                     <button
-                        className="lg:hidden flex items-center px-3 py-2 border rounded text-white border-white hover:text-primary hover:border-primary"
+                        className="lg:hidden flex items-center px-3 py-2 border rounded border-primary hover:text-primary hover:border-primary"
                         onClick={toggleMenu}
                         aria-label="Abrir menú"
                     >
-                        <IconHamburger />
+                        <IconHamburger stroke="#000" />
                     </button>
                     {/* Botón de Contacto */}
                     <a href="/#contacto" className="bg-secondary text-white px-7 py-4 rounded-lg text-md flex items-center gap-2 hidden hover:shadow-2xl lg:flex">
