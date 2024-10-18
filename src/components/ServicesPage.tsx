@@ -1,8 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
+import { useState } from "react";
 import { Autoplay } from "swiper/modules";
 import { IconCalendar, IconLink, IconMoney } from "../Icons/Icons";
 import { phone } from "../data/ContactInfo";
+import { motion } from "framer-motion"
 
 import "../index.css"
 
@@ -45,6 +47,28 @@ export default function ServicesPage({
     benefitsTexts,
     categories
 }: ServicesProps) {
+
+
+    const [step, setStep] = useState<number>(1); // Estado para controlar el paso
+    const [formData, setFormData] = useState({
+        nombreCompleto: '',
+        antiguedad: '',
+        cantidadDepartamentos: '',
+        correo: '',
+        telefono: ''
+    });
+
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+
+    const nextStep = () => setStep(prev => prev + 1);
+    const prevStep = () => setStep(prev => prev - 1);
+
     return (
         <>
             <div className="py-40 h-auto">
@@ -81,13 +105,100 @@ export default function ServicesPage({
                         </div>
                         <div className="">
                             <h2>También puedes:</h2>
-                            <div className="flex gap-3 items-center mt-6">
-                                <a href={`https://wa.me/${phone}?text=Hola,%20Me%20interesaría%20poder%20cotizar%20el%20${encodeURIComponent(title)}`} className="border border-secondary text-secondary px-7 py-4 hover:bg-secondary hover:text-white text-left rounded-lg text-md hover:shadow-2xl max-lg:px-4">
-                                    Cotizar por WhatsApp
-                                </a>
-                                <a href="/#contacto" className="border border-secondary text-secondary px-7 py-4 hover:bg-secondary hover:text-white text-left rounded-lg text-md hover:shadow-2xl max-lg:px-4">
-                                    Cotizar por Correo
-                                </a>
+                            <div className="">
+                                <div className="flex gap-3 items-center mt-6">
+                                    <a href={`https://wa.me/${phone}?text=Hola,%20Me%20interesaría%20poder%20cotizar%20el%20${encodeURIComponent(title)}`} className="border border-secondary text-secondary px-7 py-4 hover:bg-secondary hover:text-white text-left rounded-lg text-md hover:shadow-2xl max-lg:px-4">
+                                        Cotizar por WhatsApp
+                                    </a>
+                                    <button onClick={nextStep} className="border border-secondary text-secondary px-7 py-4 hover:bg-secondary hover:text-white text-left rounded-lg text-md hover:shadow-2xl max-lg:px-4">
+                                        Cotizar por Correo
+                                    </button>
+                                </div>
+                                {step > 1 && (
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 50 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.5 }}
+                                        className="mt-6 py-8"
+                                    >
+                                        {step === 2 && (
+                                            <div>
+                                                <label className="" htmlFor="nombreCompleto">Nombre Completo</label>
+                                                <input
+                                                    type="text"
+                                                    id="nombreCompleto"
+                                                    name="nombreCompleto"
+                                                    value={formData.nombreCompleto}
+                                                    onChange={handleInputChange}
+                                                    className="py-4 text-xs my-2 px-3 rounded-lg bg-inputColor w-full"
+                                                    placeholder="Ingrese su nombre completo"
+                                                />
+                                                <button onClick={nextStep} className="bg-secondary text-white px-5 py-3 rounded-lg text-md cursor-pointer hover:shadow-2xl">Siguiente</button>
+                                            </div>
+                                        )}
+
+                                        {step === 3 && (
+                                            <div>
+                                                <label  htmlFor="antiguedad">Antigüedad del/los edificios</label>
+                                                <input
+                                                    type="text"
+                                                    id="antiguedad"
+                                                    name="antiguedad"
+                                                    value={formData.antiguedad}
+                                                    onChange={handleInputChange}
+                                                    className="py-4 text-xs my-2 px-3 rounded-lg bg-inputColor w-full"
+                                                    placeholder="Ingrese la antigüedad de los edificios"
+                                                />
+                                                <button onClick={prevStep} className="bg-lightSecondary text-secondary border border-secondary px-5 py-3 rounded-lg text-md cursor-pointer hover:shadow-2xl">Anterior</button>
+                                                <button onClick={nextStep} className="ml-2 bg-secondary text-white px-5 py-3 rounded-lg text-md cursor-pointer hover:shadow-2xl">Siguiente</button>
+                                            </div>
+                                        )}
+
+                                        {step === 4 && (
+                                            <div>
+                                                <label  htmlFor="cantidadDepartamentos">Cantidad de Departamentos</label>
+                                                <input
+                                                    type="number"
+                                                    id="cantidadDepartamentos"
+                                                    name="cantidadDepartamentos"
+                                                    value={formData.cantidadDepartamentos}
+                                                    onChange={handleInputChange}
+                                                    className="py-4 text-xs my-2 px-3 rounded-lg bg-inputColor w-full"
+                                                    placeholder="Ingrese la cantidad de departamentos"
+                                                />
+                                                <button onClick={prevStep} className="bg-lightSecondary text-secondary border border-secondary px-5 py-3 rounded-lg text-md cursor-pointer hover:shadow-2xl">Anterior</button>
+                                                <button onClick={nextStep} className="ml-2 bg-secondary text-white px-5 py-3 rounded-lg text-md cursor-pointer hover:shadow-2xl">Siguiente</button>
+                                            </div>
+                                        )}
+
+                                        {step === 5 && (
+                                            <div>
+                                                <label htmlFor="correo">Correo Electrónico</label>
+                                                <input
+                                                    type="email"
+                                                    id="correo"
+                                                    name="correo"
+                                                    value={formData.correo}
+                                                    onChange={handleInputChange}
+                                                    className="py-4 text-xs my-2 px-3 rounded-lg bg-inputColor w-full"
+                                                    placeholder="Ingrese su correo electrónico"
+                                                />
+                                                <label className="text-xs mt-6 font-bold" htmlFor="telefono" >Teléfono de Contacto</label>
+                                                <input
+                                                    type="tel"
+                                                    id="telefono"
+                                                    name="telefono"
+                                                    value={formData.telefono}
+                                                    onChange={handleInputChange}
+                                                    className="py-4 text-xs my-2 px-3 rounded-lg bg-inputColor w-full"
+                                                    placeholder="Ingrese su teléfono"
+                                                />
+                                                <button onClick={prevStep} className="bg-lightSecondary text-secondary border border-secondary px-5 py-3 rounded-lg text-md cursor-pointer hover:shadow-2xl">Anterior</button>
+                                                <button onClick={nextStep} className="ml-2 bg-secondary text-white px-5 py-3 rounded-lg text-md cursor-pointer hover:shadow-2xl">Siguiente</button>
+                                            </div>
+                                        )}
+                                    </motion.div>
+                                )}
                             </div>
                         </div>
                     </div>
@@ -111,7 +222,8 @@ export default function ServicesPage({
                             </div>
                             <a className="text-secondary font-semibold flex items-center gap-2 underline mb-10" target="_blank" href="https://www.dropbox.com/scl/fi/dejik074572mup02yksbx/Gu-a-de-Gastos-Comunes.docx?rlkey=djmubnrvtzjzd55nvbeh4ay91&st=j5chillu&dl=0"><IconLink stroke="#2382C0" size={25} /> Guía de Gastos Comunes</a>
                         </div>
-                        <button className="bg-secondary w-full text-white px-14 py-6 rounded-lg text-mdmt-10 hover:shadow-2xl flex justify-center items-center gap-2"><IconCalendar size={25} />Reserva Ahora</button>
+                        <a href={`https://wa.me/${phone}?text=Hola,%20quisiera%20solicitar%20una%20cita%20para%20conversar%20sobre%20el%20tema%20de%20${encodeURIComponent(title)}.%20Por%20favor,%20indíquenme%20disponibilidad.`}
+                            className="bg-secondary w-full text-white px-14 py-6 rounded-lg text-mdmt-10 hover:shadow-2xl flex justify-center items-center gap-2"><IconCalendar size={25} />Reserva Ahora</a>
                     </div>
                 </div>
             </div>

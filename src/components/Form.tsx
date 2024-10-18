@@ -8,6 +8,14 @@ import "../index.css"
 export default function Form() {
 
     const [selectedDistrict, setSelectedDistrict] = useState<string>("");
+    const [selectedAntiguedad, setSelectedAntiguedad] = useState("")
+
+    const handleAntiguedadChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        setSelectedAntiguedad(event.target.value);
+    };
+
+    // Generar años desde "Estreno" hasta 30 años o más.
+    const antiguedades: string[] = ['Estreno', ...Array.from({ length: 29 }, (_, i) => `${i + 1} Años`), '30 a más Años'];
 
     const handleDistrictChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         setSelectedDistrict(event.target.value);
@@ -87,8 +95,22 @@ export default function Form() {
                     <div className="w-full">
                         <label className="text-xs font-bold" htmlFor="antique">ANTIGUEDAD</label>
                         <div className="">
-                            <input required id="antique" name="Antiguedad" className="py-4 text-xs my-2 px-3 rounded-lg bg-inputColor w-full" type="number" min={1} placeholder="5 años" />
+                            <select
+                                required
+                                id="antique"
+                                name="Antiguedad"
+                                value={selectedAntiguedad}
+                                onChange={handleAntiguedadChange}
+                                className="py-4 text-xs my-2 px-3 rounded-lg bg-inputColor w-full">
+                                <option value="" disabled>Seleccione la antigüedad</option>
+                                {antiguedades.map((antiguedad, index) => (
+                                    <option key={index} value={antiguedad}>{antiguedad}</option>
+                                ))}
+                            </select>
                             <ValidationError prefix="Antique" field="Antiguedad" errors={state.errors} />
+                            {/*
+                            <input required id="antique" name="Antiguedad" className="py-4 text-xs my-2 px-3 rounded-lg bg-inputColor w-full" type="number" min={1} placeholder="5 años" />
+                            <ValidationError prefix="Antique" field="Antiguedad" errors={state.errors} /> */}
                         </div>
                     </div>
                     <div className="w-full">
@@ -100,8 +122,8 @@ export default function Form() {
                     </div>
                 </div>
                 <div className="mt-6 w-full">
-                    <button type="submit" disabled={state.submitting} className="w-full bg-secondary text-white px-7 py-5 rounded-lg text-mdhover:shadow-2xl cursor-pointer flex justify-center items-center gap-2 hover:shadow-2xl">
-                    <IconQuote size={20} />Cotiza Ahora</button>
+                    <button type="submit" disabled={state.submitting} className="w-full bg-secondary text-white px-7 py-5 rounded-lg text-md cursor-pointer flex justify-center items-center gap-2 hover:shadow-2xl">
+                        <IconQuote size={20} />Cotiza Ahora</button>
                 </div>
             </form>
         </>
