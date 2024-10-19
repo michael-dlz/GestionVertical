@@ -115,64 +115,89 @@ export default function ServicesPage({
                                     </button>
                                 </div>
                                 {step > 1 && (
-                                    <motion.div
-                                        initial={{ opacity: 0, y: 50 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.5 }}
-                                        className="mt-6 py-8"
-                                    >
+                                    <div className="mt-6 py-8">
                                         {step === 2 && (
-                                            <div>
+                                            <motion.div
+                                                key="step2"
+                                                initial={{ opacity: 0, y: 50 }}
+                                                animate={{ opacity: 1, y: 0 }}
+                                                exit={{ opacity: 0, y: -50 }}
+                                                transition={{ duration: 0.5 }}
+                                            >
                                                 <label className="" htmlFor="nombreCompleto">Nombre Completo</label>
-                                                <input
-                                                    type="text"
-                                                    id="nombreCompleto"
-                                                    name="nombreCompleto"
-                                                    value={formData.nombreCompleto}
-                                                    onChange={handleInputChange}
-                                                    className="py-4 text-xs my-2 px-3 rounded-lg bg-inputColor w-full"
-                                                    placeholder="Ingrese su nombre completo"
-                                                />
+                                                <div className="my-4">
+                                                    <input
+                                                        type="text"
+                                                        id="nombreCompleto"
+                                                        name="nombreCompleto"
+                                                        value={formData.nombreCompleto}
+                                                        onChange={handleInputChange}
+                                                        className="py-4 text-xs px-3 rounded-lg bg-inputColor w-full"
+                                                        placeholder="Ingrese su nombre completo"
+                                                    />
+                                                </div>
                                                 <button onClick={nextStep} className="bg-secondary text-white px-5 py-3 rounded-lg text-md cursor-pointer hover:shadow-2xl">Siguiente</button>
-                                            </div>
+                                            </motion.div>
                                         )}
 
                                         {step === 3 && (
-                                            <div>
-                                                <label  htmlFor="antiguedad">Antigüedad del/los edificios</label>
-                                                <input
-                                                    type="text"
-                                                    id="antiguedad"
-                                                    name="antiguedad"
-                                                    value={formData.antiguedad}
-                                                    onChange={handleInputChange}
-                                                    className="py-4 text-xs my-2 px-3 rounded-lg bg-inputColor w-full"
-                                                    placeholder="Ingrese la antigüedad de los edificios"
-                                                />
+                                            <motion.div
+                                                key="step3"
+                                                initial={{ opacity: 0, y: 50 }}
+                                                animate={{ opacity: 1, y: 0 }}
+                                                exit={{ opacity: 0, y: -50 }}
+                                                transition={{ duration: 0.5 }}
+                                            >
+                                                <label htmlFor="antiguedad">Antigüedad del/los edificios</label>
+                                                <div className="my-4">
+                                                    <input
+                                                        type="text"
+                                                        id="antiguedad"
+                                                        name="antiguedad"
+                                                        value={formData.antiguedad}
+                                                        onChange={handleInputChange}
+                                                        className="py-4 text-xs px-3 rounded-lg bg-inputColor w-full"
+                                                        placeholder="Ingrese la antigüedad de los edificios"
+                                                    />
+                                                </div>
                                                 <button onClick={prevStep} className="bg-lightSecondary text-secondary border border-secondary px-5 py-3 rounded-lg text-md cursor-pointer hover:shadow-2xl">Anterior</button>
                                                 <button onClick={nextStep} className="ml-2 bg-secondary text-white px-5 py-3 rounded-lg text-md cursor-pointer hover:shadow-2xl">Siguiente</button>
-                                            </div>
+                                            </motion.div>
                                         )}
 
                                         {step === 4 && (
-                                            <div>
-                                                <label  htmlFor="cantidadDepartamentos">Cantidad de Departamentos</label>
-                                                <input
-                                                    type="number"
-                                                    id="cantidadDepartamentos"
-                                                    name="cantidadDepartamentos"
-                                                    value={formData.cantidadDepartamentos}
-                                                    onChange={handleInputChange}
-                                                    className="py-4 text-xs my-2 px-3 rounded-lg bg-inputColor w-full"
-                                                    placeholder="Ingrese la cantidad de departamentos"
-                                                />
+                                            <motion.div
+                                                key="step4"
+                                                initial={{ opacity: 0, y: 50 }}
+                                                animate={{ opacity: 1, y: 0 }}
+                                                exit={{ opacity: 0, y: -50 }}
+                                                transition={{ duration: 0.5 }}
+                                            >
+                                                <label htmlFor="cantidadDepartamentos">Cantidad de Departamentos</label>
+                                                <div className="my-4">
+                                                    <input
+                                                        type="number"
+                                                        id="cantidadDepartamentos"
+                                                        name="cantidadDepartamentos"
+                                                        value={formData.cantidadDepartamentos}
+                                                        onChange={handleInputChange}
+                                                        className="py-4 text-xs px-3 rounded-lg bg-inputColor w-full"
+                                                        placeholder="Ingrese la cantidad de departamentos"
+                                                    />
+                                                </div>
                                                 <button onClick={prevStep} className="bg-lightSecondary text-secondary border border-secondary px-5 py-3 rounded-lg text-md cursor-pointer hover:shadow-2xl">Anterior</button>
                                                 <button onClick={nextStep} className="ml-2 bg-secondary text-white px-5 py-3 rounded-lg text-md cursor-pointer hover:shadow-2xl">Siguiente</button>
-                                            </div>
+                                            </motion.div>
                                         )}
 
                                         {step === 5 && (
-                                            <div>
+                                            <motion.div
+                                                key="step5"
+                                                initial={{ opacity: 0, y: 50 }}
+                                                animate={{ opacity: 1, y: 0 }}
+                                                exit={{ opacity: 0, y: -50 }}
+                                                transition={{ duration: 0.5 }}
+                                            >
                                                 <label htmlFor="correo">Correo Electrónico</label>
                                                 <input
                                                     type="email"
@@ -183,21 +208,21 @@ export default function ServicesPage({
                                                     className="py-4 text-xs my-2 px-3 rounded-lg bg-inputColor w-full"
                                                     placeholder="Ingrese su correo electrónico"
                                                 />
-                                                <label className="text-xs mt-6 font-bold" htmlFor="telefono" >Teléfono de Contacto</label>
+                                                <label htmlFor="telefono" >Teléfono de Contacto</label>
                                                 <input
                                                     type="tel"
                                                     id="telefono"
                                                     name="telefono"
                                                     value={formData.telefono}
                                                     onChange={handleInputChange}
-                                                    className="py-4 text-xs my-2 px-3 rounded-lg bg-inputColor w-full"
+                                                    className="py-4 text-xs mb-4 px-3 rounded-lg bg-inputColor w-full"
                                                     placeholder="Ingrese su teléfono"
                                                 />
                                                 <button onClick={prevStep} className="bg-lightSecondary text-secondary border border-secondary px-5 py-3 rounded-lg text-md cursor-pointer hover:shadow-2xl">Anterior</button>
-                                                <button onClick={nextStep} className="ml-2 bg-secondary text-white px-5 py-3 rounded-lg text-md cursor-pointer hover:shadow-2xl">Siguiente</button>
-                                            </div>
+                                                <button onClick={() => alert("Formulario Enviado")} className="ml-2 bg-secondary text-white px-5 py-3 rounded-lg text-md cursor-pointer hover:shadow-2xl">Enviar</button>
+                                            </motion.div>
                                         )}
-                                    </motion.div>
+                                    </div>
                                 )}
                             </div>
                         </div>
