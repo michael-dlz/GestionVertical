@@ -11,7 +11,7 @@ export function Services() {
 
     return (
         <>
-        <div className="bg-gradient-to-b from-primary to-primaryGradient h-auto py-40">
+        <div className="bg-primary h-auto py-40">
                 <div className="2xl:max-w-7xl max-w-5xl mx-auto max-lg:mx-5">
                     <div className="pb-20 flex flex-col items-start justify-center gap-8 text-wrap">
                         <div className="flex gap-1 text-xs">
