@@ -24,7 +24,7 @@ interface IncluideServices {
     Icon: React.ComponentType<{ size?: number; stroke?: string }>;
 }
 
-const incluideServices : IncluideServices[] = [
+const incluideServices: IncluideServices[] = [
     { title: "Prepuestos de Mantenimiento", text: "Planificamos y ejecutamos tareas de mantenimiento para que todo funcione a la perfección.", Icon: IconQuoteMaintenance },
     { title: "Prepuestos de Implementación", text: "Identificamos y priorizamos las mejoras que tu edificio necesita.", Icon: IconQuoteImplementation },
     { title: "Sistemas de Recaudación y Pago de Obligaciones", text: "Establecemos los procesos de recaudación y pago de obligaciones.", Icon: IconPayment },
@@ -257,8 +257,26 @@ export default function ServicesPage({
                                 )}
                             </div>
                         </div>
+                        <div className="bg-gradient-to-br from-secondary to-indigo-600 text-white p-16 max-lg:p-10 shadow-2xl mt-16 w-full">
+                            <h2 className="text-3xl font-bold mb-4 text-left">¡Oferta Exclusiva para Tu Residencia!</h2>
+                            <p className="text-md mb-6 text-left">
+                                Contrata <span className="font-semibold">Seguridad Electrónica</span> para tu edificio y recibe un <span className="font-bold text-spanColor">descuento especial</span> en la administración.
+                            </p>
+
+                            <div className="mb-6">
+                                <p className="w-full bg-white text-secondary px-14 py-6 rounded-lg text-md flex justify-center items-center gap-2">Hasta 30% de descuento por tiempo limitado</p>
+                            </div>
+
+                            <button className="w-full bg-spanColor text-black px-14 py-6 rounded-lg text-md hover:shadow-2xl flex justify-center items-center gap-2">
+                                ¡Obtén tu descuento ahora!
+                            </button>
+
+                            <p className="text-sm text-left mt-6">*Promoción válida hasta el 31 de octubre, 2024</p>
+                        </div>
+
+
                     </div>
-                    <div className="bg-white shadow-2xl h-auto p-16 text-mdrounded-3xl grid items-center sticky top-52 max-lg:p-10">
+                    <div className="bg-white shadow-2xl h-auto p-16 text-md grid items-center sticky top-52 max-lg:p-10">
                         <div>
                             <h2 className="text-primary font-bold text-lg flex items-center gap-2"><IconCalendar stroke="#000" size={25} />RESERVA UNA CITA</h2>
                             <div className="flex gap-1 text-xs py-6">
