@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { IconHamburger, IconQuote, IconServices, IconUS, IconWork } from "../Icons/Icons";
+import { IconBlog, IconHamburger, IconQuote, IconServices, IconUS, IconWork } from "../Icons/Icons";
 import { logoDark, logoLight } from "../data/ContactInfo";
 
 export default function NavBar() {
@@ -81,12 +81,12 @@ export default function NavBar() {
             )}
 
             {/* Navbar Principal */}
-            <div className={`mt-8 fixed w-full left-0 top-0 z-20 py-8 transition-all duration-300 max-lg:mt-16 ${isScrolled ? 'bg-white text-primary shadow-2xl max-lg:shadow-lg' : 'bg-transparent text-white'}`}>
+            <div className={`mt-8 fixed w-full left-0 top-0 z-20 py-8 transition-all duration-300 ${isScrolled ? 'bg-white text-primary shadow-2xl max-lg:shadow-lg' : 'bg-transparent text-white'}`}>
                 <div className="flex justify-between 2xl:max-w-7xl max-w-5xl mx-auto max-lg:mx-5 items-center">
                     <div className="flex gap-16 items-center font-semibold">
                         <Link to="/"><img src={isScrolled ? logoDark : logoLight} alt="" /></Link>
                         {/* Menú de Escritorio */}
-                        <ul className="hidden lg:flex gap-12 text-sm">
+                        <ul className="hidden lg:flex gap-10 text-sm">
                             <li><Link to="/nosotros" className={`flex items-center gap-2 transition-colors duration-300 ${isScrolled ? 'text-primary' : 'text-white'}`}><IconUS stroke={isScrolled ? "#000" : "#fff"} />NOSOTROS</Link></li>
                             <li className="relative">
                                 <button onClick={toggleServicesMenu} className={`flex items-center gap-2 ${isScrolled ? 'text-primary' : 'text-white'}`}><IconServices stroke={isScrolled ? "#000" : "#fff"} />
@@ -102,6 +102,7 @@ export default function NavBar() {
                                 )}
                             </li>
                             <li><Link to="/trabaja-con-nosotros" className={`flex items-center gap-2 transition-colors duration-300 ${isScrolled ? 'text-primary' : 'text-white'}`}><IconWork stroke={isScrolled ? "#000" : "#fff"} />TRABAJA CON NOSOTROS</Link></li>
+                            <li><Link to="/blog" className={`flex items-center gap-2 transition-colors duration-300 ${isScrolled ? 'text-primary' : 'text-white'}`}><IconBlog stroke={isScrolled ? "#000" : "#fff"}/>BLOG</Link></li>
                         </ul>
                     </div>
                     {/* Botón de Hamburguesa para Móviles */}

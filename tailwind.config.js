@@ -9,6 +9,7 @@ export default {
       colors: {
         primary: "#071d2c",
         lightSecondary: "#f0f9ff",
+        primaryGradient: "#0e3f5f",
         secondary: "#2382C0",
         lightGray: "#ECF0F1",
         spanColor: "#F1C40F",

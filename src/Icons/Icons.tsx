@@ -371,9 +371,9 @@ export function IconQuoteMaintenance({ stroke = "#FFFFFF", size = 16 }: IconProp
     return (
         <>
 
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke={stroke}  stroke-linecap="round" stroke-linejoin="round" width={size} height={size} stroke-width="1">
-            <path d="M19.875 6.27a2.225 2.225 0 0 1 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z"></path>
-            <path d="M15.5 9.422c.312 .18 .503 .515 .5 .876v3.277c0 .364 -.197 .7 -.515 .877l-3 1.922a1 1 0 0 1 -.97 0l-3 -1.922a1 1 0 0 1 -.515 -.876v-3.278c0 -.364 .197 -.7 .514 -.877l3 -1.79c.311 -.174 .69 -.174 1 0l3 1.79h-.014z"></path>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke={stroke} stroke-linecap="round" stroke-linejoin="round" width={size} height={size} stroke-width="1">
+                <path d="M19.875 6.27a2.225 2.225 0 0 1 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z"></path>
+                <path d="M15.5 9.422c.312 .18 .503 .515 .5 .876v3.277c0 .364 -.197 .7 -.515 .877l-3 1.922a1 1 0 0 1 -.97 0l-3 -1.922a1 1 0 0 1 -.515 -.876v-3.278c0 -.364 .197 -.7 .514 -.877l3 -1.79c.311 -.174 .69 -.174 1 0l3 1.79h-.014z"></path>
             </svg>
 
         </>
@@ -387,7 +387,7 @@ export function IconQuoteImplementation({ stroke = "#FFFFFF", size = 16 }: IconP
     return (
         <>
 
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke={stroke}  stroke-linecap="round" stroke-linejoin="round" width={size} height={size} stroke-width="1"> <path d="M14 3v4a1 1 0 0 0 1 1h4"></path> <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path> <path d="M14 11h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5"></path> <path d="M12 17v1m0 -8v1"></path> </svg> 
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke={stroke} stroke-linecap="round" stroke-linejoin="round" width={size} height={size} stroke-width="1"> <path d="M14 3v4a1 1 0 0 0 1 1h4"></path> <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path> <path d="M14 11h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5"></path> <path d="M12 17v1m0 -8v1"></path> </svg>
 
         </>
     )
@@ -397,13 +397,13 @@ export function IconPayment({ stroke = "#FFFFFF", size = 16 }: IconProps) {
     return (
         <>
 
-            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke={stroke} stroke-linecap="round" stroke-linejoin="round" width={size} height={size} stroke-width="1">
-            <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
-            <path d="M12 21h-5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v3.5"></path>
-            <path d="M9 9h1"></path>
-            <path d="M9 13h6"></path>
-            <path d="M9 17h3"></path>
-            <path d="M19 22.5a4.75 4.75 0 0 1 3.5 -3.5a4.75 4.75 0 0 1 -3.5 -3.5a4.75 4.75 0 0 1 -3.5 3.5a4.75 4.75 0 0 1 3.5 3.5"></path>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke={stroke} stroke-linecap="round" stroke-linejoin="round" width={size} height={size} stroke-width="1">
+                <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
+                <path d="M12 21h-5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v3.5"></path>
+                <path d="M9 9h1"></path>
+                <path d="M9 13h6"></path>
+                <path d="M9 17h3"></path>
+                <path d="M19 22.5a4.75 4.75 0 0 1 3.5 -3.5a4.75 4.75 0 0 1 -3.5 -3.5a4.75 4.75 0 0 1 -3.5 3.5a4.75 4.75 0 0 1 3.5 3.5"></path>
             </svg>
 
         </>
@@ -414,12 +414,12 @@ export function IconReport({ stroke = "#FFFFFF", size = 16 }: IconProps) {
     return (
         <>
 
-            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke={stroke}  stroke-linecap="round" stroke-linejoin="round" width={size} height={size} stroke-width="1">
-            <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"></path>
-            <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path>
-            <path d="M9 17v-5"></path>
-            <path d="M12 17v-1"></path>
-            <path d="M15 17v-3"></path>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke={stroke} stroke-linecap="round" stroke-linejoin="round" width={size} height={size} stroke-width="1">
+                <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"></path>
+                <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path>
+                <path d="M9 17v-5"></path>
+                <path d="M12 17v-1"></path>
+                <path d="M15 17v-3"></path>
             </svg>
 
         </>
@@ -430,10 +430,10 @@ export function IconManagement({ stroke = "#FFFFFF", size = 16 }: IconProps) {
     return (
         <>
 
-            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke={stroke}  stroke-linecap="round" stroke-linejoin="round" width={size} height={size} stroke-width="1">
-            <path d="M3 21v-13l9 -4l9 4v13"></path>
-            <path d="M13 13h4v8h-10v-6h6"></path>
-            <path d="M13 21v-9a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v3"></path>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke={stroke} stroke-linecap="round" stroke-linejoin="round" width={size} height={size} stroke-width="1">
+                <path d="M3 21v-13l9 -4l9 4v13"></path>
+                <path d="M13 13h4v8h-10v-6h6"></path>
+                <path d="M13 21v-9a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v3"></path>
             </svg>
 
         </>
@@ -444,10 +444,10 @@ export function IconAttention({ stroke = "#FFFFFF", size = 16 }: IconProps) {
     return (
         <>
 
-            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke={stroke}  stroke-linecap="round" stroke-linejoin="round" width={size} height={size} stroke-width="1">
-            <path d="M19 22.5a4.75 4.75 0 0 1 3.5 -3.5a4.75 4.75 0 0 1 -3.5 -3.5a4.75 4.75 0 0 1 -3.5 3.5a4.75 4.75 0 0 1 3.5 3.5"></path>
-            <path d="M11.5 19h-6.5a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v5"></path>
-            <path d="M3 7l9 6l9 -6"></path>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke={stroke} stroke-linecap="round" stroke-linejoin="round" width={size} height={size} stroke-width="1">
+                <path d="M19 22.5a4.75 4.75 0 0 1 3.5 -3.5a4.75 4.75 0 0 1 -3.5 -3.5a4.75 4.75 0 0 1 -3.5 3.5a4.75 4.75 0 0 1 3.5 3.5"></path>
+                <path d="M11.5 19h-6.5a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v5"></path>
+                <path d="M3 7l9 6l9 -6"></path>
             </svg>
 
         </>
@@ -542,3 +542,13 @@ export function IconMonitoring({ stroke = "#FFFFFF", size = 16 }: IconProps) {
         </>
     )
 }
+
+export function IconBlog({ stroke = "#FFFFFF", size = 16 }: IconProps) {
+    return (
+        <>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={stroke} stroke-width="1" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-article"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M7 8h10" /><path d="M7 12h10" /><path d="M7 16h10" /></svg>
+        </>
+    )
+}
+
