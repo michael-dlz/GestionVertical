@@ -35,6 +35,15 @@ inpur::selection {
     border: none;
 }
 
+.carousel-services::after{
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: 99;
+    position: absolute;
+    background: black;
+}
+
 .mySwiper .swiper-slide {
     border-radius: 18px;
 }

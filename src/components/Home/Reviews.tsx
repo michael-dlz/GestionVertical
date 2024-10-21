@@ -18,7 +18,7 @@ export function Reviews() {
                 <div className="2xl:max-w-7xl max-w-5xl mx-auto max-lg:mx-5">
                     <h1 className="font-bold text-4xl text-primary text-center">Usuarios <span className="text-secondary underline">Satisfechos</span></h1>
                     <Swiper
-                        slidesPerView={1}
+                        slidesPerView={1.2}
                         spaceBetween={30}
                         grabCursor={true}
                         autoplay={{

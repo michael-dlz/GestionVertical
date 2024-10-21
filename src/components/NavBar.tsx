@@ -81,7 +81,7 @@ export default function NavBar() {
             )}
 
             {/* Navbar Principal */}
-            <div className={`mt-8 fixed w-full left-0 top-0 z-20 py-10 transition-all duration-300 ${isScrolled ? 'bg-white text-primary py-5 shadow-2xl' : 'bg-transparent text-white'}`}>
+            <div className={`mt-8 fixed w-full left-0 top-0 z-20 py-8 transition-all duration-300 max-lg:mt-16 ${isScrolled ? 'bg-white text-primary shadow-2xl max-lg:shadow-lg' : 'bg-transparent text-white'}`}>
                 <div className="flex justify-between 2xl:max-w-7xl max-w-5xl mx-auto max-lg:mx-5 items-center">
                     <div className="flex gap-16 items-center font-semibold">
                         <Link to="/"><img src={isScrolled ? logoDark : logoLight} alt="" /></Link>

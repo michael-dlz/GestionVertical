@@ -364,3 +364,181 @@ export function IconHamburger({ stroke = "#FFFFFF", size = 16 }: IconProps) {
         </>
     )
 }
+
+
+
+export function IconQuoteMaintenance({ stroke = "#FFFFFF", size = 16 }: IconProps) {
+    return (
+        <>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke={stroke}  stroke-linecap="round" stroke-linejoin="round" width={size} height={size} stroke-width="1">
+            <path d="M19.875 6.27a2.225 2.225 0 0 1 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z"></path>
+            <path d="M15.5 9.422c.312 .18 .503 .515 .5 .876v3.277c0 .364 -.197 .7 -.515 .877l-3 1.922a1 1 0 0 1 -.97 0l-3 -1.922a1 1 0 0 1 -.515 -.876v-3.278c0 -.364 .197 -.7 .514 -.877l3 -1.79c.311 -.174 .69 -.174 1 0l3 1.79h-.014z"></path>
+            </svg>
+
+        </>
+    )
+}
+
+/* ----------- */
+
+
+export function IconQuoteImplementation({ stroke = "#FFFFFF", size = 16 }: IconProps) {
+    return (
+        <>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke={stroke}  stroke-linecap="round" stroke-linejoin="round" width={size} height={size} stroke-width="1"> <path d="M14 3v4a1 1 0 0 0 1 1h4"></path> <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path> <path d="M14 11h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5"></path> <path d="M12 17v1m0 -8v1"></path> </svg> 
+
+        </>
+    )
+}
+
+export function IconPayment({ stroke = "#FFFFFF", size = 16 }: IconProps) {
+    return (
+        <>
+
+            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke={stroke} stroke-linecap="round" stroke-linejoin="round" width={size} height={size} stroke-width="1">
+            <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
+            <path d="M12 21h-5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v3.5"></path>
+            <path d="M9 9h1"></path>
+            <path d="M9 13h6"></path>
+            <path d="M9 17h3"></path>
+            <path d="M19 22.5a4.75 4.75 0 0 1 3.5 -3.5a4.75 4.75 0 0 1 -3.5 -3.5a4.75 4.75 0 0 1 -3.5 3.5a4.75 4.75 0 0 1 3.5 3.5"></path>
+            </svg>
+
+        </>
+    )
+}
+
+export function IconReport({ stroke = "#FFFFFF", size = 16 }: IconProps) {
+    return (
+        <>
+
+            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke={stroke}  stroke-linecap="round" stroke-linejoin="round" width={size} height={size} stroke-width="1">
+            <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"></path>
+            <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path>
+            <path d="M9 17v-5"></path>
+            <path d="M12 17v-1"></path>
+            <path d="M15 17v-3"></path>
+            </svg>
+
+        </>
+    )
+}
+
+export function IconManagement({ stroke = "#FFFFFF", size = 16 }: IconProps) {
+    return (
+        <>
+
+            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke={stroke}  stroke-linecap="round" stroke-linejoin="round" width={size} height={size} stroke-width="1">
+            <path d="M3 21v-13l9 -4l9 4v13"></path>
+            <path d="M13 13h4v8h-10v-6h6"></path>
+            <path d="M13 21v-9a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v3"></path>
+            </svg>
+
+        </>
+    )
+}
+
+export function IconAttention({ stroke = "#FFFFFF", size = 16 }: IconProps) {
+    return (
+        <>
+
+            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke={stroke}  stroke-linecap="round" stroke-linejoin="round" width={size} height={size} stroke-width="1">
+            <path d="M19 22.5a4.75 4.75 0 0 1 3.5 -3.5a4.75 4.75 0 0 1 -3.5 -3.5a4.75 4.75 0 0 1 -3.5 3.5a4.75 4.75 0 0 1 3.5 3.5"></path>
+            <path d="M11.5 19h-6.5a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v5"></path>
+            <path d="M3 7l9 6l9 -6"></path>
+            </svg>
+
+        </>
+    )
+}
+
+
+/* */
+
+export function IconLegal({ stroke = "#FFFFFF", size = 16 }: IconProps) {
+    return (
+        <>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" stroke-width="1" stroke={stroke} fill="none" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-license"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 21h-9a3 3 0 0 1 -3 -3v-1h10v2a2 2 0 0 0 4 0v-14a2 2 0 1 1 2 2h-2m2 -4h-11a3 3 0 0 0 -3 3v11" /><path d="M9 7l4 0" /><path d="M9 11l4 0" /></svg>
+
+        </>
+    )
+}
+
+export function IconEthics({ stroke = "#FFFFFF", size = 16 }: IconProps) {
+    return (
+        <>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" stroke-width="1" stroke={stroke} fill="none" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-social"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 5m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M5 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M19 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M12 14m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M12 7l0 4" /><path d="M6.7 17.8l2.8 -2" /><path d="M17.3 17.8l-2.8 -2" /></svg>
+
+        </>
+    )
+}
+
+export function IconPrevention({ stroke = "#FFFFFF", size = 16 }: IconProps) {
+    return (
+        <>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" stroke-width="1" stroke={stroke} fill="none" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-ban"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M5.7 5.7l12.6 12.6" /></svg>
+
+        </>
+    )
+}
+
+export function IconCorruption({ stroke = "#FFFFFF", size = 16 }: IconProps) {
+    return (
+        <>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" stroke-width="1" stroke={stroke} fill="none" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-weight"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M6.835 9h10.33a1 1 0 0 1 .984 .821l1.637 9a1 1 0 0 1 -.984 1.179h-13.604a1 1 0 0 1 -.984 -1.179l1.637 -9a1 1 0 0 1 .984 -.821z" /></svg>
+
+        </>
+    )
+}
+
+export function IconProtect({ stroke = "#FFFFFF", size = 16 }: IconProps) {
+    return (
+        <>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" stroke-width="1" stroke={stroke} fill="none" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-shield-check"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M11.46 20.846a12 12 0 0 1 -7.96 -14.846a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 -.09 7.06" /><path d="M15 19l2 2l4 -4" /></svg>
+
+        </>
+    )
+}
+
+export function IconFinance({ stroke = "#FFFFFF", size = 16 }: IconProps) {
+    return (
+        <>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" stroke-width="1" stroke={stroke} fill="none" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-coins"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 14c0 1.657 2.686 3 6 3s6 -1.343 6 -3s-2.686 -3 -6 -3s-6 1.343 -6 3z" /><path d="M9 14v4c0 1.656 2.686 3 6 3s6 -1.344 6 -3v-4" /><path d="M3 6c0 1.072 1.144 2.062 3 2.598s4.144 .536 6 0c1.856 -.536 3 -1.526 3 -2.598c0 -1.072 -1.144 -2.062 -3 -2.598s-4.144 -.536 -6 0c-1.856 .536 -3 1.526 -3 2.598z" /><path d="M3 6v10c0 .888 .772 1.45 2 2" /><path d="M3 11c0 .888 .772 1.45 2 2" /></svg>
+
+        </>
+    )
+}
+
+export function IconCapacitate({ stroke = "#FFFFFF", size = 16 }: IconProps) {
+    return (
+        <>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" stroke-width="1" stroke={stroke} fill="none" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-brand-databricks"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 17l9 5l9 -5v-3l-9 5l-9 -5v-3l9 5l9 -5v-3l-9 5l-9 -5l9 -5l5.418 3.01" /></svg>
+
+        </>
+    )
+}
+
+export function IconMonitoring({ stroke = "#FFFFFF", size = 16 }: IconProps) {
+    return (
+        <>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" stroke-width="1" stroke={stroke} fill="none" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-heart-rate-monitor"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 4m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z" /><path d="M7 20h10" /><path d="M9 16v4" /><path d="M15 16v4" /><path d="M7 10h2l2 3l2 -6l1 3h3" /></svg>
+
+        </>
+    )
+}

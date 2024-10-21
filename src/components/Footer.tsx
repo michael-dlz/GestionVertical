@@ -12,8 +12,8 @@ export default function Footer() {
             <div className="bg-primary pt-28 pb-4">
                 <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 gap-20 2xl:max-w-7xl max-w-5xl max-lg:mx-5 mx-auto text-white pb-20">
                     <div className={blockStyle}>
-                        <h2 className="font-bold text-m">ACERCA DE NOSOTROS</h2>
-                        <p className="font-medium text-sm">Ofrecemos administración eficiente y personalizada para edificios residenciales, gestionando Juntas de Propietarios y garantizando cumplimiento y satisfacción. ¡Confía en nosotros para una gestión sin complicaciones!</p>
+                        <h1 className="font-bold text-m">ACERCA DE NOSOTROS</h1>
+                        <p className="font-medium text-sm">Ofrecemos administración eficiente y transparente para edificios y condominios, asegurando una gestión formal y correcta con las Juntas de Propietarios y otros participantes de la operación. Garantizamos cumplimiento y satisfacción. ¡Confía en nosotros para una gestión integral!</p>
                         <img src={logoLight} alt="" />
                     </div>
                     <div className={blockStyle}>

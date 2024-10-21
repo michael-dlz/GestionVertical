@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import { useState } from "react";
 import { Autoplay } from "swiper/modules";
-import { IconCalendar, IconLink, IconMoney } from "../Icons/Icons";
+import { IconCalendar, IconLink, IconMoney, IconQuoteMaintenance, IconQuoteImplementation, IconPayment, IconReport, IconManagement, IconAttention } from "../Icons/Icons";
 import { phone } from "../data/ContactInfo";
 import { motion } from "framer-motion"
 
@@ -17,6 +17,21 @@ interface BenefitsText {
     text: string;
     Icon: React.ComponentType<{ size?: number; stroke?: string }>;
 }
+
+interface IncluideServices {
+    title: string
+    text: string;
+    Icon: React.ComponentType<{ size?: number; stroke?: string }>;
+}
+
+const incluideServices : IncluideServices[] = [
+    { title: "Prepuestos de Mantenimiento", text: "Planificamos y ejecutamos tareas de mantenimiento para que todo funcione a la perfección.", Icon: IconQuoteMaintenance },
+    { title: "Prepuestos de Implementación", text: "Identificamos y priorizamos las mejoras que tu edificio necesita.", Icon: IconQuoteImplementation },
+    { title: "Sistemas de Recaudación y Pago de Obligaciones", text: "Establecemos los procesos de recaudación y pago de obligaciones.", Icon: IconPayment },
+    { title: "Informes Administrativos Transparentes y Concisos", text: "Administramos tus fondos de manera eficiente y te brindamos informes detallados incluyen: Informe de Observaciones, Informe Financiero, Cronograma de Mantenimiento.", Icon: IconReport },
+    { title: "Gestión de Instalaciones", text: "Identificamos todas las instalaciones mediante un Inventario, para elaborar un Plan de Mantenimiento Preventivo respectivo.", Icon: IconManagement },
+    { title: "Atención a Residentes", text: "Estamos siempre disponibles para atender tus consultas y solicitudes a través de múltiples canales de atención.", Icon: IconAttention },
+];
 
 interface ServicesProps {
     title: string;
@@ -74,12 +89,28 @@ export default function ServicesPage({
             <div className="py-40 h-auto">
                 <div className="2xl:max-w-7xl max-w-5xl mx-auto grid grid-cols-2 items-start gap-28 h-auto max-lg:mx-5 max-lg:grid-cols-1">
                     <div className="text-md">
-                        <div>
+                        <div className="">
                             <h2 className="text-primary font-bold text-3xl">¿Por qué Elegir el {title}?</h2>
                             <p className="text-textBlackp py-10">{whyTitle}</p>
                         </div>
+                        <div className="">
+                            <h2 className="text-primary font-bold text-3xl">¿Qué incluyen nuestros Servicios?</h2>
+                            <div className="py-10">
+                                {incluideServices.map((serv, index) => (
+                                    <div key={index} className="flex items-start gap-4 py-4 text-textBlackp">
+                                        <div className="p-3 shadow-lg bg-lightSecondary rounded-xl border border-secondary">
+                                            <serv.Icon size={30} stroke="#2382C0" />
+                                        </div>
+                                        <div className="">
+                                            <h2 className="font-semibold">{serv.title}</h2>
+                                            <p className="text-sm my-1">{serv.text}</p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                         <div>
-                            <h2 className="text-primary font-bold text-3xl">¿Qué Incluye nuestro {title}?</h2>
+                            <h2 className="text-primary font-bold text-3xl">Características de nuestro {title}</h2>
                             <div className="py-10">
                                 {whyTexts.map((why, index) => (
                                     <p key={index} className="flex items-center gap-4 mb-4 text-textBlackp">
@@ -227,7 +258,7 @@ export default function ServicesPage({
                             </div>
                         </div>
                     </div>
-                    <div className="bg-white shadow-2xl h-auto p-16 text-mdrounded-3xl grid items-center sticky top-40 max-lg:p-10">
+                    <div className="bg-white shadow-2xl h-auto p-16 text-mdrounded-3xl grid items-center sticky top-52 max-lg:p-10">
                         <div>
                             <h2 className="text-primary font-bold text-lg flex items-center gap-2"><IconCalendar stroke="#000" size={25} />RESERVA UNA CITA</h2>
                             <div className="flex gap-1 text-xs py-6">
