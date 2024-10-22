@@ -72,7 +72,7 @@ export default function NavBar() {
                     <li>
                         <Link to="/trabaja-con-nosotros" className="hover:text-secondary flex items-center gap-2" onClick={toggleMenu}><IconWork stroke="#fff" />TRABAJA CON NOSOTROS</Link>
                     </li>
-                    <li><Link to="/blog"className="hover:text-secondary flex items-center gap-2" onClick={toggleMenu}><IconBlog stroke="#fff"/>BLOG</Link></li>
+                    <li><Link to="/blog" className="hover:text-secondary flex items-center gap-2" onClick={toggleMenu}><IconBlog stroke="#fff" />BLOG</Link></li>
                 </ul>
             </div>
 
@@ -82,28 +82,28 @@ export default function NavBar() {
             )}
 
             {/* Navbar Principal */}
-            <div className={`mt-9 fixed w-full left-0 top-0 z-20 py-4 transition-all duration-300 ${isScrolled ? 'bg-white text-primary shadow-xl max-lg:shadow-lg' : 'bg-transparent text-white'}`}>
+            <div className={`sticky w-full left-0 top-0 z-50 py-4 transition-all duration-300 bg-white ${isScrolled ? 'shadow-2xl' : "shadow-none"}`}>
                 <div className="flex justify-between 2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5 items-center">
-                    <div className="flex gap-16 items-center font-semibold">
-                        <Link to="/"><img src={isScrolled ? logoDark : logoLight} alt="" /></Link>
+                    <div className="flex gap-16 items-center font-bold">
+                        <Link to="/"><img src={logoDark} alt="" /></Link>
                         {/* Menú de Escritorio */}
-                        <ul className="hidden lg:flex gap-10 text-[0.65rem] tracking-widest ">
-                            <li><Link to="/nosotros" className={`flex items-center gap-2 transition-colors duration-300 ${isScrolled ? 'text-black' : 'text-white'}`}>NOSOTROS</Link></li>
+                        <ul className=" lg:flex gap-10 text-xs tracking-wide inline-flex">
+                            <li><Link to="/nosotros" className={`flex items-center gap-2 transition-colors duration-300 ${isScrolled ? 'text-black' : 'text-primary'}`}>NOSOTROS</Link></li>
                             <li className="relative">
-                                <button onClick={toggleServicesMenu} className={`flex items-center gap-2 ${isScrolled ? 'text-primary' : 'text-white'}`}>
+                                <button onClick={toggleServicesMenu} className={`flex items-center gap-2 ${isScrolled ? 'text-primary' : 'text-primary'}`}>
                                     SERVICIOS <IconArroDown size={13} />
                                 </button>
                                 {/* Submenú */}
                                 {isServicesOpen && (
-                                    <ul className={`absolute left-0 mt-4 w-56 rounded-sm shadow-lg ${isScrolled ? 'bg-white text-primary' : 'bg-primary text-white'}`}>
+                                    <ul className={`absolute left-0 mt-4 z-50 w-56 rounded-sm shadow-lg ${isScrolled ? 'bg-white text-primary' : 'bg-white text-primary'}`}>
                                         <li><Link to="/servicio-preferente" className="block px-4 py-4 hover:bg-secondary hover:text-white">SERVICIO PREFERENTE</Link></li>
                                         <li><Link to="/servicio-preferente-indeci" className="block px-4 py-4 hover:bg-secondary hover:text-white">SERVICIO PREFRENTE INDECI</Link></li>
                                         <li><Link to="/servicio-presencial" className="block px-4 py-4 hover:bg-secondary hover:text-white">SERVICIO PRESENCIAL</Link></li>
                                     </ul>
                                 )}
                             </li>
-                            <li><Link to="/trabaja-con-nosotros" className={`flex items-center gap-2 transition-colors duration-300 ${isScrolled ? 'text-primary' : 'text-white'}`}>TRABAJA CON NOSOTROS</Link></li>
-                            <li><Link to="/blog" className={`flex items-center gap-2 transition-colors duration-300 ${isScrolled ? 'text-primary' : 'text-white'}`}>BLOG</Link></li>
+                            <li><Link to="/trabaja-con-nosotros" className={`flex items-center gap-2 transition-colors duration-300 ${isScrolled ? 'text-primary' : 'text-primary'}`}>TRABAJA CON NOSOTROS</Link></li>
+                            <li><Link to="/blog" className={`flex items-center gap-2 transition-colors duration-300 ${isScrolled ? 'text-primary' : 'text-primary'}`}>BLOG</Link></li>
                         </ul>
                     </div>
                     {/* Botón de Hamburguesa para Móviles */}
@@ -124,3 +124,48 @@ export default function NavBar() {
         </>
     );
 }
+
+
+{/* 
+    
+<div className={`mt-9 fixed w-full left-0 top-0 z-20 py-4 transition-all duration-300 ${isScrolled ? 'bg-white text-primary shadow-xl max-lg:shadow-lg' : 'bg-transparent text-white'}`}>
+    <div className="flex justify-between 2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5 items-center">
+        <div className="flex gap-16 items-center font-semibold">
+            <Link to="/"><img src={isScrolled ? logoDark : logoLight} alt="" /></Link>
+
+            <ul className="hidden lg:flex gap-10 text-xs tracking-widest ">
+                <li><Link to="/nosotros" className={`flex items-center gap-2 transition-colors duration-300 ${isScrolled ? 'text-black' : 'text-white'}`}>NOSOTROS</Link></li>
+                <li className="relative">
+                    <button onClick={toggleServicesMenu} className={`flex items-center gap-2 ${isScrolled ? 'text-primary' : 'text-white'}`}>
+                        SERVICIOS <IconArroDown size={13} />
+                    </button>
+
+                    {isServicesOpen && (
+                        <ul className={`absolute left-0 mt-4 w-56 rounded-sm shadow-lg ${isScrolled ? 'bg-white text-primary' : 'bg-primary text-white'}`}>
+                            <li><Link to="/servicio-preferente" className="block px-4 py-4 hover:bg-secondary hover:text-white">SERVICIO PREFERENTE</Link></li>
+                            <li><Link to="/servicio-preferente-indeci" className="block px-4 py-4 hover:bg-secondary hover:text-white">SERVICIO PREFRENTE INDECI</Link></li>
+                            <li><Link to="/servicio-presencial" className="block px-4 py-4 hover:bg-secondary hover:text-white">SERVICIO PRESENCIAL</Link></li>
+                        </ul>
+                    )}
+                </li>
+                <li><Link to="/trabaja-con-nosotros" className={`flex items-center gap-2 transition-colors duration-300 ${isScrolled ? 'text-primary' : 'text-white'}`}>TRABAJA CON NOSOTROS</Link></li>
+                <li><Link to="/blog" className={`flex items-center gap-2 transition-colors duration-300 ${isScrolled ? 'text-primary' : 'text-white'}`}>BLOG</Link></li>
+            </ul>
+        </div>
+
+        <button
+            className={`lg:hidden flex items-center px-3 py-2 border rounded  hover:text-primary hover:border-primary ${isScrolled ? 'border-primary' : 'border-white'}`}
+            onClick={toggleMenu}
+            aria-label="Abrir menú"
+        >
+            <IconHamburger stroke="#000" />
+        </button>
+
+        <a href="/#contacto" className="bg-secondary text-white px-7 py-4 rounded-sm text-sm max-2xl:text-xs flex items-center gap-2 hidden hover:shadow-2xl lg:flex">
+            <IconQuote size={20} />
+            Realiza tu Cotización
+        </a>
+    </div>
+</div>
+
+    */}
