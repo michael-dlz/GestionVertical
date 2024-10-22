@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { formatTitleForUrl } from "../pages/Blog";
 import ListBlogs from "./ListBlogs";
 import { IconFacebook2, IconInstagram2, IconLinkedin2, IconWhatsApp2 } from "../Icons/Icons";
+import SharedSocials from "./SharedSocials";
 
 
 export default function BlogDetail() {
@@ -23,8 +24,8 @@ export default function BlogDetail() {
         titleBanner="Blog de Noticias"
         imageBanner="https://img.freepik.com/foto-gratis/equipo-trabajando-juntos-proyecto_23-2149325409.jpg?t=st=1728666926~exp=1728670526~hmac=cc75ac9e5dce4ec18529ba4a5c46f846166f1bf7cbda007339c826f4cb21242d&w=1380"
       />
-      <div className="flex items-start 2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5 mt-48 gap-16 max-lg:flex-col">
-        <div className="w-3/5 max-lg:w-full">
+      <div className="flex items-start 2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5 mt-48 gap-10 max-lg:flex-col">
+        <div className="w-4/5 max-lg:w-full">
           <div className="">
             <h1 className="font-bold text-2xl max-2xl:text-xl text-primary">{blog.firstTitle}</h1>
             <div className="flex gap-1 text-xs py-6">
@@ -98,45 +99,19 @@ export default function BlogDetail() {
             </div>
             <div className="">
               <h2 id="Conclusión" className="font-bold text-2xl max-2xl:text-xl pt-5 text-primary">Conclusión:</h2>
-              <p className="py-5 font-light text-md max-2xl:text-sm">{blog.conclution}</p>
+              <p className="py-5 font-light text-sm max-2xl:text-xs">{blog.conclution}</p>
             </div>
-            <div className="flex gap-8 items-center border-t-4 py-8">
-              <p className="font-semibold text-lg">Compartir con:</p>
-              <div className="flex gap-4 items-center">
-                <a
-                  href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://gestion-vertical.vercel.app/blog/${formatTitleForUrl(blog.firstTitle)}`)}&quote=${encodeURIComponent(blog.firstTitle)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <IconFacebook2 size={20} />
-                </a>
-
-                <a
-                  href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`https://gestion-vertical.vercel.app/blog/${formatTitleForUrl(blog.firstTitle)}`)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <IconLinkedin2 size={20} />
-                </a>
-
-                <a
-                  href={`https://api.whatsapp.com/send?text=${encodeURIComponent(`${blog.firstTitle} - ${`https://gestion-vertical.vercel.app/blog/${formatTitleForUrl(blog.firstTitle)}`}`)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <IconWhatsApp2 size={25}/>
-                </a>
-              </div>
-            </div>
+            <SharedSocials dbblogs={dbblogs[0]} />
           </div>
         </div>
-        <div className="sticky w-2/5 top-40">
+        <div className="sticky w-2/5 top-40 max-lg:w-full">
           <Form padding={"p-0"} />
+          <SharedSocials dbblogs={dbblogs[0]} />
         </div>
       </div>
       <div className="2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5 pt-10 pb-40 gap-16">
         <h2 className={`$"" pb-10`}>Enterate de las últimas noticias:</h2>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-3 gap-5 max-lg:grid-cols-1">
 
           <ListBlogs />
 

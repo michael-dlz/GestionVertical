@@ -41,7 +41,7 @@ export default function Contact() {
                                 </ul>
                             </div>
                         </div>
-                        <Form padding={"p-10"} />
+                        <Form padding={"p-0"} />
                     </div>
                 </div>
             </div>
