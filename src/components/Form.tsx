@@ -39,7 +39,7 @@ export default function Form() {
     return (
         <>
             <form onSubmit={handleSubmit} className="w-full h-full bg-white text-s p-10 rounded-xl shadow-2xl">
-                <h1 className="mb-7 text-xl font-bold text-secondary text-center max-2xl:text-base">¡Mejora tu gestión HOY!</h1>
+                <h1 className="mb-7 text-xl font-bold text-secondary text-center max-2xl:text-base">¡No esperes más! Mejora tu gestión hoy mismo.</h1>
                 <div className="">
                     <label className="text-xs font-semibold" htmlFor="name">Nombre y Apellido</label>
                     <div className="">

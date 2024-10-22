@@ -32,11 +32,13 @@ export default function About() {
           <div className="grid grid-cols-2 gap-28 items-center 2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5 max-lg:grid-cols-1">
             <div className="">
               <h1 className="font-bold text-primary text-3xl max-2xl:text-2xl mb-10">Quienes Somos</h1>
-              <p className="text-base max-2xl:text-xs text-textBlackp">Con más de 11 años de experiencia en la gestión inmobiliaria, nos especializamos en el desarrollo de procesos transparentes y eficientes para la administración de edificios residenciales y condominios. La calidad y excelencia de nuestros servicios garantizan a los propietarios una gestión integral y satisfactoria.
-              </p>
-              <p className="mt-8 text-base max-2xl:text-xs">
-                En Gestión Vertical, adoptamos <span className="text-secondary font-semibold">un enfoque diferente al de las administradoras tradicionales.</span> Nuestro firme compromiso con el cumplimiento de las normativas legales nos ha permitido ganar la confianza de clientes, entidades reguladoras y organismos de control.
-              </p>
+              <div className="ml-5 max-2xl:ml-0">
+                <p className="text-base max-2xl:text-xs text-textBlackp">Con más de 11 años de experiencia en la gestión inmobiliaria, nos especializamos en el desarrollo de procesos transparentes y eficientes para la administración de edificios residenciales y condominios. La calidad y excelencia de nuestros servicios garantizan a los propietarios una gestión integral y satisfactoria.
+                </p>
+                <p className="mt-8 text-base max-2xl:text-xs">
+                  En Gestión Vertical, adoptamos <span className="text-secondary font-semibold">un enfoque diferente al de las administradoras tradicionales.</span> Nuestro firme compromiso con el cumplimiento de las normativas legales nos ha permitido ganar la confianza de clientes, entidades reguladoras y organismos de control.
+                </p>
+              </div>
             </div>
             <div className="overflow-hidden rounded-3xl shadow-2xl h-80">
               <img className="w-full h-full object-cover" src="https://img.freepik.com/foto-gratis/equipo-trabajando-juntos-proyecto_23-2149325415.jpg?t=st=1728667408~exp=1728671008~hmac=7670ea243aabc6b8f9f72661d6f17ec28fea7927eeb1432094d08cfbfc4361e8&w=1380" alt="" />
@@ -51,7 +53,9 @@ export default function About() {
             </div>
             <div className="">
               <h1 className="font-bold text-primary text-3xl mb-10 max-2xl:text-2xl">Nuestra <span className="text-secondary underline">Misión</span></h1>
-              <p className="text-smtext-textBlackp max-2xl:text-xs">En Gestión Vertical, nos comprometemos a ofrecer un servicio integral en la administración de edificios y condominios, adaptado a las necesidades de cada comunidad. Promovemos el bienestar de los residentes con una gestión eficiente y transparente, cumpliendo normativas para garantizar un entorno seguro y organizado para cada propietario.</p>
+              <div className="ml-5 max-2xl:ml-0">
+                <p className="text-smtext-textBlackp max-2xl:text-xs">En Gestión Vertical, nos comprometemos a ofrecer un servicio integral en la administración de edificios y condominios, adaptado a las necesidades de cada comunidad. Promovemos el bienestar de los residentes con una gestión eficiente y transparente, cumpliendo normativas para garantizar un entorno seguro y organizado para cada propietario.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -61,7 +65,8 @@ export default function About() {
           <div className="grid grid-cols-2 gap-28 items-center 2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5 max-lg:grid-cols-1">
             <div className="">
               <h1 className="font-bold text-primary text-3xl mb-10 max-2xl:text-2xl">Nuestra <span className="text-secondary underline">Visión</span></h1>
-              <p className="text-smtext-textBlackp max-2xl:text-xs">Somos líderes en la administración de edificios residenciales y condominios en Perú, destacando por nuestra innovación y compromiso con la excelencia. Buscamos transformar la gestión de comunidades con soluciones integrales que anticipen las necesidades de propietarios y residentes, mejorando así la experiencia de vida en cada edificio bajo nuestra administración y creando relaciones de confianza duraderas con nuestros clientes.</p>
+              <div className="ml-5 max-2xl:ml-0">
+                <p className="text-smtext-textBlackp max-2xl:text-xs">Consolidarnos como unas de las empresas líderes en la administración de Juntas de Propietarios, destacando por nuestra innovación y compromiso con la excelencia. Buscamos transformar la gestión de comunidades con soluciones integrales que anticipen las necesidades de propietarios y residentes, mejorando así la experiencia de vida en cada edificio bajo nuestra administración y creando relaciones de confianza duraderas con nuestros clientes.</p></div>
             </div>
             <div className="overflow-hidden rounded-3xl shadow-2xl h-80">
               <img className="w-full h-full object-cover" src="https://img.freepik.com/foto-gratis/objetivos-exito-estrategia-negocio_1421-33.jpg?t=st=1728668602~exp=1728672202~hmac=4e6bd40c1ed42b6310b7a9576283a8d019f5686df83d30026cd4be347df31c27&w=1380" alt="" />
@@ -80,8 +85,8 @@ export default function About() {
                   <cump.Icon size={30} stroke="#2382C0" />
                 </div>
                 <div className="">
-                    <h2 className="font-semibold">{cump.title}</h2>
-                    <p className="text-sm my-1 max-2xl:text-xs">{cump.text}</p>
+                  <h2 className="font-semibold">{cump.title}</h2>
+                  <p className="text-sm my-1 max-2xl:text-xs">{cump.text}</p>
                 </div>
               </li>
             ))}
