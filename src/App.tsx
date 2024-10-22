@@ -9,7 +9,8 @@ import PreferenteIndeciService from "./pages/PreferenteIndeciService";
 import Presencial from "./pages/Presencial";
 import ScrollToTop from "./hooks/ScrollToTop";
 import WorkUs from "./pages/WorkUs";
-import Blog from "./pages/Blog";
+import BlogDetail from "./components/BlogDetail";
+import { dbblogs } from "./data/Blogs";
 
 const pageVariants = {
   initial: { opacity: 0 }, // Comienza completamente transparente
@@ -156,11 +157,10 @@ function AnimatedRoutes() {
                   <meta name="keywords" content="blog gestión de propiedades, artículos administración de inmuebles, noticias inmobiliarias" />
                   <meta name="robots" content="index, follow" />
                 </Helmet>
-                <Blog />
+                <BlogDetail dbblogs={dbblogs[0]}/>
               </motion.div>
             }
           />
-
 
         </Route>
       </Routes>

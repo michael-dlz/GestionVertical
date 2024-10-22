@@ -17,12 +17,12 @@ export function CardsReviews({ cardreviews }: ReviewsProps) {
                         <img className="w-full h-full object-cover" src={perfil} alt="" />
                     </div>
                     <div className="">
-                        <h2 className="font-bold text-m">{name}</h2>
+                        <h2 className="font-bold text-sm">{name}</h2>
                         <p className="text-textBlackp font-medium text-sm">{position}</p>
                     </div>
                 </div>
                 <div className="py-10">
-                    <p className="text-textBlackp font-light text-lg italic max-lg:text-base">"{comment}"</p>
+                    <p className="text-textBlackp font-light text-lg italic max-2xl:text-sm">"{comment}"</p>
                 </div>
             </div>
         </>

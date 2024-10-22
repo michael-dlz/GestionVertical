@@ -6,12 +6,12 @@ export default function Contact() {
     return (
         <>
             <div className="py-40" id="contacto">
-                <div className="2xl:max-w-7xl max-w-5xl max-lg:mx-5 h-full mx-auto text-md">
-                    <h1 className="font-bold text-4xl text-primary text-center"><span className="text-secondary underline">Cotiza</span> con Nosotros</h1>
+                <div className="2xl:max-w-[70rem] max-w-5xl max-lg:mx-5 h-full mx-auto text-sm">
+                    <h1 className="font-bold text-4xl max-2xl:text-3xl text-primary text-center"><span className="text-secondary underline">Cotiza</span> con Nosotros</h1>
                     <div className="grid items-center grid-cols-2 mt-20 max-lg:grid-cols-1">
                         <div className="p-20 text-white bg-primary rounded-s-3xl max-lg:rounded-r-3xl max-lg:p-10">
                             <h2 className="font-bold text-white text-3xl mb-10">Contacto</h2>
-                            <div className="text-sm">
+                            <div className="text-sm max-2xl:text-xs">
                                 <p className="my-3 flex items-center gap-3"> <IconMap size={30} /> Dirección: {adress}</p>
                                 <p className="my-3 flex items-center gap-3"> <IconWhatsApp size={25} /> Teléfono: {phone}</p>
                                 <p className="my-3 flex items-center gap-3"> <IconEmail size={25} /> Correo Electrónico: {email}</p>

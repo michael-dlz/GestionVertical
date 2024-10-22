@@ -35,7 +35,7 @@ export default function NavBar() {
     return (
         <>
             {/* Menú Lateral para Móviles */}
-            <div className={`2xl:max-w-7xl max-w-5xl fixed top-0 left-0 h-full w-64 bg-primary z-30 text-white transform ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out z-20 lg:hidden`}>
+            <div className={`2xl:max-w-[70rem] max-w-5xl fixed top-0 left-0 h-full w-64 bg-primary z-30 text-white transform ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out z-20 lg:hidden`}>
                 <div className="flex justify-between items-center p-4">
                     <Link to="/"><img src={logoLight} alt="" /></Link>
                     <button
@@ -81,12 +81,12 @@ export default function NavBar() {
             )}
 
             {/* Navbar Principal */}
-            <div className={`mt-8 fixed w-full left-0 top-0 z-20 py-8 transition-all duration-300 ${isScrolled ? 'bg-white text-primary shadow-2xl max-lg:shadow-lg' : 'bg-transparent text-white'}`}>
-                <div className="flex justify-between 2xl:max-w-7xl max-w-5xl mx-auto max-lg:mx-5 items-center">
+            <div className={`mt-8 fixed w-full left-0 top-0 z-20 py-8 transition-all duration-300 ${isScrolled ? 'bg-white text-primary shadow-xl max-lg:shadow-lg' : 'bg-transparent text-white'}`}>
+                <div className="flex justify-between 2xl:max-w-[70rem] max-w-5xl mx-auto max-lg:mx-5 items-center">
                     <div className="flex gap-16 items-center font-semibold">
                         <Link to="/"><img src={isScrolled ? logoDark : logoLight} alt="" /></Link>
                         {/* Menú de Escritorio */}
-                        <ul className="hidden lg:flex gap-10 text-sm">
+                        <ul className="hidden lg:flex gap-10 text-sm max-2xl:text-xs">
                             <li><Link to="/nosotros" className={`flex items-center gap-2 transition-colors duration-300 ${isScrolled ? 'text-primary' : 'text-white'}`}><IconUS stroke={isScrolled ? "#000" : "#fff"} />NOSOTROS</Link></li>
                             <li className="relative">
                                 <button onClick={toggleServicesMenu} className={`flex items-center gap-2 ${isScrolled ? 'text-primary' : 'text-white'}`}><IconServices stroke={isScrolled ? "#000" : "#fff"} />
@@ -114,7 +114,7 @@ export default function NavBar() {
                         <IconHamburger stroke="#000" />
                     </button>
                     {/* Botón de Contacto */}
-                    <a href="/#contacto" className="bg-secondary text-white px-7 py-4 rounded-lg text-md flex items-center gap-2 hidden hover:shadow-2xl lg:flex">
+                    <a href="/#contacto" className="bg-secondary text-white px-7 py-4 rounded-lg text-sm max-2xl:text-xs flex items-center gap-2 hidden hover:shadow-2xl lg:flex">
                         <IconQuote size={20} />
                         Realiza tu Cotización
                     </a>

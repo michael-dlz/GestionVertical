@@ -9,12 +9,15 @@ export default {
       colors: {
         primary: "#071d2c",
         lightSecondary: "#f0f9ff",
-        primaryGradient: "#0e3f5f",
+        primaryGradient: "#0b324d",
         secondary: "#2382C0",
         lightGray: "#ECF0F1",
         spanColor: "#F1C40F",
         textBlackp: "#333333",
         inputColor: "#ECF0F1",
+      },
+      width: {
+        widthRespon: "70rem",
       },
       fontFamily: {
         "titilium": ["Titillium Web", "sans-serif"]
