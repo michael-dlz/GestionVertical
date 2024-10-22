@@ -1,13 +1,13 @@
 import SubsHeader from "../components/SubsHeader"
 import ServicesPage from "../components/ServicesPage"
-import { IconCheckList, IconDollar, IconLoveAdmin, IconMessage, IconNormative, IconPropietary, IconSatisfied, IconTime } from "../Icons/Icons";
+import { IconCapacitate, IconEthics, IconPropietary, IconSatisfied, IconTime } from "../Icons/Icons";
 
 export default function Presencial() {
 
     const whyTexts = [
         {title:"Atención Presencial Continua", text: "Personal disponible en el lugar durante todo el horario laboral para resolver cualquier consulta o incidencia.", Icon: IconPropietary },
-        {title:"Manejo de Áreas de Esparcimiento",  text: "Coordinación de actividades y eventos comunitarios para promover la interacción entre residentes.", Icon: IconMessage },
-        {title:"Gestión Integral",  text: "Administración de todas las áreas del edificio, incluyendo mantenimiento, seguridad y atención a emergencias.", Icon: IconCheckList },
+        {title:"Manejo de Áreas de Esparcimiento",  text: "Coordinación de actividades y eventos comunitarios para promover la interacción entre residentes.", Icon: IconEthics },
+        {title:"Gestión Integral",  text: "Administración de todas las áreas del edificio, incluyendo mantenimiento, seguridad y atención a emergencias.", Icon: IconCapacitate },
     ];
 
     const categories = [

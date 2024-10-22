@@ -1,12 +1,12 @@
 import SubsHeader from "../components/SubsHeader"
 import ServicesPage from "../components/ServicesPage"
-import { IconCheckList, IconDollar, IconLoveAdmin, IconMessage, IconNormative, IconPropietary, IconSatisfied, IconTime } from "../Icons/Icons";
+import { IconCheckList, IconEthics, IconLegal, IconLoveAdmin, IconSatisfied} from "../Icons/Icons";
 
 export default function PreferenteIndeciService() {
 
     const whyTexts = [
-        {title:"Cumplimiento Normativo", text: "Verificación y cumplimiento de las regulaciones establecidas por INDECI para la seguridad de las instalaciones.", Icon: IconPropietary },
-        {title:"Gestión de Áreas Comunes",  text: "Mantenimiento y limpieza de espacios de esparcimiento, asegurando que estén siempre en condiciones óptimas para el uso.", Icon: IconMessage },
+        {title:"Cumplimiento Normativo", text: "Verificación y cumplimiento de las regulaciones establecidas por INDECI para la seguridad de las instalaciones.", Icon: IconLegal },
+        {title:"Gestión de Áreas Comunes",  text: "Mantenimiento y limpieza de espacios de esparcimiento, asegurando que estén siempre en condiciones óptimas para el uso.", Icon: IconEthics },
         {title:"Atención Administrativa",  text: "Elaboración de informes periódicos sobre el estado de la comunidad y seguimiento de las cuotas y gastos.", Icon: IconCheckList },
     ];
 
@@ -16,7 +16,7 @@ export default function PreferenteIndeciService() {
     ]
 
     const benefitsTexts = [
-        { text: "Aumento de la seguridad y bienestar de los residentes al cumplir con la normativa vigente.", Icon: IconTime },
+        { text: "Aumento de la seguridad y bienestar de los residentes al cumplir con la normativa vigente.", Icon: IconLoveAdmin },
         { text: "Fomento de un sentido de comunidad a través de la gestión efectiva de las áreas comunes.", Icon: IconSatisfied },
     ];
 

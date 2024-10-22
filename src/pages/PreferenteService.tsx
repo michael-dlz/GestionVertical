@@ -1,11 +1,11 @@
 import ServicesPage from "../components/ServicesPage";
 import SubsHeader from "../components/SubsHeader";
-import { IconCheckList, IconDollar, IconLoveAdmin, IconMessage, IconNormative, IconPropietary, IconSatisfied, IconTime } from "../Icons/Icons";
+import { IconLoveAdmin, IconManagement, IconMessage, IconPropietary, IconSatisfied } from "../Icons/Icons";
 
 export default function PreferenteService() {
     const whyTexts = [
         {title:"Gestión Administrativa", text: "Administración de cuentas, cobros de cuotas, informes financieros y actas de reuniones.", Icon: IconPropietary },
-        {title:"Mantenimiento de Instalaciones", text: "Supervisión regular de las instalaciones para asegurar su correcto funcionamiento.", Icon: IconMessage },
+        {title:"Mantenimiento de Instalaciones", text: "Supervisión regular de las instalaciones para asegurar su correcto funcionamiento.", Icon: IconManagement },
         {title:"Atención al Personal", text: "Capacitación y supervisión del personal de mantenimiento y servicios.", Icon: IconMessage },
         {title:"Atención a Residentes", text: "Comunicación fluida y atención personalizada a las inquietudes y necesidades de los propietarios.", Icon: IconMessage },
     ];
@@ -16,8 +16,8 @@ export default function PreferenteService() {
     ]
 
     const benefitsTexts = [
-        { text: "Alto nivel de satisfacción entre los residentes gracias a la atención cercana y eficiente.", Icon: IconTime },
-        { text: "Reducción de costos operativos debido a la gestión centralizada de las necesidades del edificio.", Icon: IconSatisfied },
+        { text: "Alto nivel de satisfacción entre los residentes gracias a la atención cercana y eficiente.", Icon: IconSatisfied },
+        { text: "Reducción de costos operativos debido a la gestión centralizada de las necesidades del edificio.", Icon: IconLoveAdmin },
     ];
 
     return (
