@@ -5,11 +5,9 @@ import { IconCheckList, IconDollar, IconLoveAdmin, IconMessage, IconNormative, I
 export default function Presencial() {
 
     const whyTexts = [
-        { text: "Gestión de la Junta de Propietarios", Icon: IconPropietary },
-        { text: "Atención Personalizada", Icon: IconMessage },
-        { text: "Informes Periódicos", Icon: IconCheckList },
-        { text: "Cumplimiento Normativo", Icon: IconNormative },
-        { text: "Tarifas Competitivas", Icon: IconDollar },
+        {title:"Atención Presencial Continua", text: "Personal disponible en el lugar durante todo el horario laboral para resolver cualquier consulta o incidencia.", Icon: IconPropietary },
+        {title:"Manejo de Áreas de Esparcimiento",  text: "Coordinación de actividades y eventos comunitarios para promover la interacción entre residentes.", Icon: IconMessage },
+        {title:"Gestión Integral",  text: "Administración de todas las áreas del edificio, incluyendo mantenimiento, seguridad y atención a emergencias.", Icon: IconCheckList },
     ];
 
     const categories = [
@@ -18,9 +16,8 @@ export default function Presencial() {
     ]
 
     const benefitsTexts = [
-        { text: "Ahorro de Tiempo", Icon: IconTime },
-        { text: "Mayor Satisfacción de Residentes", Icon: IconSatisfied },
-        { text: "Administración sin Preocupaciones", Icon: IconLoveAdmin },
+        { text: "Respuesta inmediata a las necesidades y preocupaciones de los residentes, lo que se traduce en un ambiente más seguro y agradable.", Icon: IconTime },
+        { text: "Creación de una comunidad activa y unida a través de la promoción de actividades y el uso de espacios comunes.", Icon: IconSatisfied },
     ];
 
     return (
@@ -32,7 +29,7 @@ export default function Presencial() {
 
             <ServicesPage
                 title="Servicio Presencial"
-                whyTitle="Optar por nuestro Servicio Presencial significa contar con el respaldo de un equipo especializado que estará presente en la gestión de la Junta de Propietarios. Este servicio es ideal para edificios con un gran número de propietarios o instalaciones complejas, ya que permite una atención más directa y personalizada. La presencia de nuestro equipo garantiza una mejor comunicación entre los propietarios y una gestión más eficiente de los problemas y decisiones que surgen en la comunidad. Al elegir este servicio, disfrutarás de una administración proactiva que se enfoca en mejorar la convivencia y resolver cualquier inconveniente de manera oportuna."
+                whyTitle="Este servicio está pensado para edificios con más de 80 departamentos, donde la atención presencial es crucial. Se garantiza una gestión a tiempo completo, asegurando la atención inmediata a las necesidades de los residentes."
                 descriptionTitle="Servicio ideal para edificios con muchos propietarios y/o muchas instalaciones donde parte de nuestro equipo estará presente en la gestión de la junta de propietarios."
                 needTitle="Somos un equipo de profesionales especializados en la administración de edificios residenciales, comprometidos con la gestión eficiente de las Juntas de Propietarios y con el cumplimiento de las normativas legales vigentes. Con años de experiencia en el sector, nos dedicamos a proporcionar soluciones personalizadas para cada comunidad, adaptándonos a las particularidades de edificios grandes o pequeños."
                 oneImg="https://img.freepik.com/foto-gratis/paisaje-urbano-tokio-dia_23-2149209889.jpg?t=st=1728686205~exp=1728689805~hmac=724b8c80526abd078a070b29fb3f9f3a41bcfe5dcf24faa97e8a040ada438c32&w=1380"

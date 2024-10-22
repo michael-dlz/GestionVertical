@@ -4,11 +4,10 @@ import { IconCheckList, IconDollar, IconLoveAdmin, IconMessage, IconNormative, I
 
 export default function PreferenteService() {
     const whyTexts = [
-        { text: "Gestión de la Junta de Propietarios", Icon: IconPropietary },
-        { text: "Atención Personalizada", Icon: IconMessage },
-        { text: "Informes Periódicos", Icon: IconCheckList },
-        { text: "Cumplimiento Normativo", Icon: IconNormative },
-        { text: "Tarifas Competitivas", Icon: IconDollar },
+        {title:"Gestión Administrativa", text: "Administración de cuentas, cobros de cuotas, informes financieros y actas de reuniones.", Icon: IconPropietary },
+        {title:"Mantenimiento de Instalaciones", text: "Supervisión regular de las instalaciones para asegurar su correcto funcionamiento.", Icon: IconMessage },
+        {title:"Atención al Personal", text: "Capacitación y supervisión del personal de mantenimiento y servicios.", Icon: IconMessage },
+        {title:"Atención a Residentes", text: "Comunicación fluida y atención personalizada a las inquietudes y necesidades de los propietarios.", Icon: IconMessage },
     ];
 
     const categories = [
@@ -17,9 +16,8 @@ export default function PreferenteService() {
     ]
 
     const benefitsTexts = [
-        { text: "Ahorro de Tiempo", Icon: IconTime },
-        { text: "Mayor Satisfacción de Residentes", Icon: IconSatisfied },
-        { text: "Administración sin Preocupaciones", Icon: IconLoveAdmin },
+        { text: "Alto nivel de satisfacción entre los residentes gracias a la atención cercana y eficiente.", Icon: IconTime },
+        { text: "Reducción de costos operativos debido a la gestión centralizada de las necesidades del edificio.", Icon: IconSatisfied },
     ];
 
     return (
@@ -30,7 +28,7 @@ export default function PreferenteService() {
             />
             <ServicesPage
                 title="Servicio Preferente"
-                whyTitle="El Servicio Prefrente es ideal para edificios residenciales con pocos departamentos que no cuentan con instalaciones INDECI. Este servicio ofrece una administración efectiva y accesible de la Junta de Propietarios, permitiendo a los residentes disfrutar de una gestión organizada sin preocupaciones. Al elegir esta opción, te beneficiarás de un enfoque personalizado que se adapta a las características específicas de tu comunidad. La flexibilidad en el precio, dependiendo del distrito o zona, asegura que recibirás un servicio de calidad que se ajusta a tu presupuesto. Nuestro compromiso es proporcionar un ambiente de convivencia saludable y satisfactorio para todos los residentes."
+                whyTitle="Este servicio está diseñado para edificios de baja densidad que albergan hasta 12 departamentos con bajo metraje de áreas comunes. La administración se enfoca siempre en un trato personalizado, y la cercanía entre residentes."
                 descriptionTitle="Servicio de administración de Junta de Propietarios para edificios residenciales con pocos departamentos que no cuenten con Instalaciones INDECI"
                 needTitle="Somos un equipo de profesionales especializados en la administración de edificios residenciales, comprometidos con la gestión eficiente de las Juntas de Propietarios y con el cumplimiento de las normativas legales vigentes. Con años de experiencia en el sector, nos dedicamos a proporcionar soluciones personalizadas para cada comunidad, adaptándonos a las particularidades de edificios grandes o pequeños."
                 oneImg="https://img.freepik.com/foto-gratis/vista-aerea-compleja-ciudad_23-2148975282.jpg"

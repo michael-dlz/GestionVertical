@@ -5,11 +5,9 @@ import { IconCheckList, IconDollar, IconLoveAdmin, IconMessage, IconNormative, I
 export default function PreferenteIndeciService() {
 
     const whyTexts = [
-        { text: "Gestión de la Junta de Propietarios", Icon: IconPropietary },
-        { text: "Atención Personalizada", Icon: IconMessage },
-        { text: "Informes Periódicos", Icon: IconCheckList },
-        { text: "Cumplimiento Normativo", Icon: IconNormative },
-        { text: "Tarifas Competitivas", Icon: IconDollar },
+        {title:"Cumplimiento Normativo", text: "Verificación y cumplimiento de las regulaciones establecidas por INDECI para la seguridad de las instalaciones.", Icon: IconPropietary },
+        {title:"Gestión de Áreas Comunes",  text: "Mantenimiento y limpieza de espacios de esparcimiento, asegurando que estén siempre en condiciones óptimas para el uso.", Icon: IconMessage },
+        {title:"Atención Administrativa",  text: "Elaboración de informes periódicos sobre el estado de la comunidad y seguimiento de las cuotas y gastos.", Icon: IconCheckList },
     ];
 
     const categories = [
@@ -18,9 +16,8 @@ export default function PreferenteIndeciService() {
     ]
 
     const benefitsTexts = [
-        { text: "Ahorro de Tiempo", Icon: IconTime },
-        { text: "Mayor Satisfacción de Residentes", Icon: IconSatisfied },
-        { text: "Administración sin Preocupaciones", Icon: IconLoveAdmin },
+        { text: "Aumento de la seguridad y bienestar de los residentes al cumplir con la normativa vigente.", Icon: IconTime },
+        { text: "Fomento de un sentido de comunidad a través de la gestión efectiva de las áreas comunes.", Icon: IconSatisfied },
     ];
 
     return (
@@ -32,7 +29,7 @@ export default function PreferenteIndeciService() {
 
             <ServicesPage
                 title="Servicio Preferente INDECI"
-                whyTitle="Nuestro Servicio Básico INDECI es la opción perfecta para edificios residenciales con pocos departamentos que cuentan con instalaciones INDECI. Al elegir este servicio, asegurarás una gestión eficaz de la Junta de Propietarios, cumpliendo con las normativas vigentes y optimizando el uso de los recursos del edificio. Este servicio está diseñado para promover una convivencia armoniosa entre los residentes, asegurando que todos estén informados y participen activamente en la toma de decisiones. Además, al contar con tarifas competitivas, obtendrás un excelente valor por tu inversión en la administración de tu propiedad."
+                whyTitle="Ideal para edificios de densidad media con hasta 80 departamentos, este servicio garantiza el cumplimiento de la normativa INDECI, asegurando la seguridad de los residentes y el mantenimiento adecuado de las áreas comunes de esparcimiento."
                 descriptionTitle="Servicio de administración de Junta de Propietarios para edificios residenciales con pocos departamentos que cuenten con instalaciones INDECI"
                 needTitle="Somos un equipo de profesionales especializados en la administración de edificios residenciales, comprometidos con la gestión eficiente de las Juntas de Propietarios y con el cumplimiento de las normativas legales vigentes. Con años de experiencia en el sector, nos dedicamos a proporcionar soluciones personalizadas para cada comunidad, adaptándonos a las particularidades de edificios grandes o pequeños."
                 oneImg="https://img.freepik.com/fotos-premium/edificio-cesped-verde-cielo-azul-algunas-nubes_605423-148964.jpg?semt=ais_hybrid-rr-similar"

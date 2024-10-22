@@ -18,7 +18,7 @@ export function Services() {
                             <span className="bg-ligthSpan text-spanColor w-auto px-6 py-1 rounded-sm font-semibold !font-sans">SERVICIOS</span>
                         </div>
                         <h2 className="font-bold text-white text-4xl max-2xl:text-3xl">¿Buscas una <span className="text-lightSecondary underline">Administración de Edificios Eficiente?</span></h2>
-                        <p className="text-sm text-white w-1/2 max-lg:w-full max-2xl:text-sm">En Gestión Vertical, nuestros servicios optimizan tus recursos y maximizan tu bienestar con un enfoque personalizado. Disfruta más de tu comunidad y preocúpate menos, nosotros nos encargamos de todo. </p>
+                        <p className="text-sm text-white w-2/3 max-lg:w-full max-2xl:text-sm">La gestión adecuada de las comunidades residenciales es fundamental para asegurar la convivencia armoniosa y el mantenimiento óptimo de las instalaciones. GESTIÓN VERTICAL ofrece un enfoque especializado para diferentes tipos de edificaciones, adaptándose a las necesidades específicas de cada una. A continuación, se detallan los servicios disponibles para las modalidades de administración residencial: Preferente, Indeci y Presencial.</p>
                     </div>
                     <div className="flex gap-20 items-center">
                         <Swiper

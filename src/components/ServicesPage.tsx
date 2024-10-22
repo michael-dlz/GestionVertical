@@ -9,6 +9,7 @@ import { motion } from "framer-motion"
 import "../index.css"
 
 interface WhyText {
+    title: string
     text: string
     Icon: React.ComponentType<{ size?: number, stroke?: string }>
 }
@@ -93,7 +94,7 @@ export default function ServicesPage({
                             <h2 className="text-primary font-bold text-3xl max-2xl:text-2xl">¿Por qué Elegir el {title}?</h2>
                             <p className="text-textBlackp py-10">{whyTitle}</p>
                         </div>
-                        <div className="">
+                        <div className="border-b-4">
                             <h2 className="text-primary font-bold text-3xl max-2xl:text-2xl">¿Qué incluyen nuestros Servicios?</h2>
                             <div className="py-10">
                                 {incluideServices.map((serv, index) => (
@@ -109,16 +110,19 @@ export default function ServicesPage({
                                 ))}
                             </div>
                         </div>
-                        <div>
+                        <div className="pt-10">
                             <h2 className="text-primary font-bold text-3xl max-2xl:text-2xl">Características de nuestro {title}</h2>
                             <div className="py-10">
                                 {whyTexts.map((why, index) => (
-                                    <p key={index} className="flex items-center gap-4 mb-4 text-textBlackp">
+                                    <div key={index} className="flex items-start gap-4 py-4 text-textBlackp">
                                         <div className="p-3 shadow-lg bg-lightSecondary rounded-xl border border-secondary">
                                             <why.Icon size={30} stroke="#246AF3" />
                                         </div>
-                                        {why.text}
-                                    </p>
+                                        <div className="">
+                                            <h2 className="font-semibold">{why.title}</h2>
+                                            <p className="text-sm max-2xl:text-xs my-1">{why.text}</p>
+                                        </div>
+                                    </div>
                                 ))}
                             </div>
                         </div>
@@ -257,7 +261,7 @@ export default function ServicesPage({
                                 )}
                             </div>
                         </div>
-                        <div className="bg-gradient-to-b from-secondary to-secondary text-white p-20 max-lg:p-10 shadow-2xl mt-20 w-full rounded-3xl">
+                        <div className="bg-gradient-to-b from-secondary to-secondary text-white p-20 max-lg:p-10 shadow-2xl mt-20 w-full rounded-2xl">
                             <h2 className="text-white mb-4 font-bold text-3xl max-2xl:text-2xl">¡Oferta Exclusiva para Tu Residencia!</h2>
                             <p className="text-sm max-2xl:text-xs mb-6 text-left">
                                 Contrata <span className="font-semibold">Seguridad Electrónica</span> para tu edificio y recibe un <span className="font-bold text-spanColor">descuento especial</span> en la administración.
