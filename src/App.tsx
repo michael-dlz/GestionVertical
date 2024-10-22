@@ -11,7 +11,6 @@ import ScrollToTop from "./hooks/ScrollToTop";
 import WorkUs from "./pages/WorkUs";
 import Blog from "./pages/Blog";
 import BlogDetail from "./components/BlogDetail";
-import { dbblogs } from "./data/Blogs";
 
 const pageVariants = {
   initial: { opacity: 0 }, // Comienza completamente transparente
@@ -173,12 +172,6 @@ function AnimatedRoutes() {
                 variants={pageVariants}
                 transition={{ duration: 0.1 }}
               >
-                <Helmet>
-                  <title>Blog de Gestión Vertical - Artículos y Noticias</title>
-                  <meta name="description" content="Descubre los últimos artículos, noticias y consejos sobre la gestión de propiedades y administración inmobiliaria en nuestro blog." />
-                  <meta name="keywords" content="blog gestión de propiedades, artículos administración de inmuebles, noticias inmobiliarias" />
-                  <meta name="robots" content="index, follow" />
-                </Helmet>
                 <BlogDetail />
               </motion.div>
             }

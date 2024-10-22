@@ -4,7 +4,7 @@ import { dbblogs } from "../data/Blogs";
 import { useParams } from "react-router-dom";
 import { formatTitleForUrl } from "../pages/Blog";
 import ListBlogs from "./ListBlogs";
-import { IconFacebook2, IconInstagram2, IconLinkedin2, IconWhatsApp2 } from "../Icons/Icons";
+import { Helmet } from "react-helmet";
 import SharedSocials from "./SharedSocials";
 
 
@@ -20,6 +20,13 @@ export default function BlogDetail() {
 
   return (
     <>
+
+      <Helmet>
+        <title>{blog.firstTitle}</title>
+        <meta name="description" content={blog.introduction} />
+        <meta name="keywords" content="blog gestión de propiedades, artículos administración de inmuebles, noticias inmobiliarias" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <SubsHeader
         titleBanner="Blog de Noticias"
         imageBanner="https://img.freepik.com/foto-gratis/equipo-trabajando-juntos-proyecto_23-2149325409.jpg?t=st=1728666926~exp=1728670526~hmac=cc75ac9e5dce4ec18529ba4a5c46f846166f1bf7cbda007339c826f4cb21242d&w=1380"

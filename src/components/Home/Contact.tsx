@@ -11,8 +11,8 @@ export default function Contact() {
                         <span className="bg-ligthSpan text-spanColor w-auto px-6 py-1 rounded-sm font-semibold !font-sans">CONTACTO</span>
                     </div>
                     <h1 className="font-bold text-4xl max-2xl:text-3xl text-primary text-center"><span className="text-secondary underline">Cotiza</span> con Nosotros</h1>
-                    <div className="grid items-center grid-cols-2 mt-20 max-lg:grid-cols-1">
-                        <div className="p-20 text-primary rounded-s-3xl max-lg:rounded-r-3xl max-lg:p-10">
+                    <div className="grid items-center grid-cols-2 mt-20 max-lg:grid-cols-1 gap-20">
+                        <div className="text-primary rounded-s-3xl max-lg:rounded-r-3xl max-lg:p-10">
                             <h2 className="font-bold text-primary text-3xl ">Contacto</h2>
                             <p className="text-xs py-5">Contáctenos para obtener respuestas a sus preguntas, recibir comentarios y programar citas.</p>
                             <div className="text-xs font-light">

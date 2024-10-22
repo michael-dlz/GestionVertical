@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom";
 import SubsHeader from "../components/SubsHeader";
-import { dbblogs } from "../data/Blogs";
 import ListBlogs from "../components/ListBlogs";
 
 
 export const formatTitleForUrl = (title: string) => {
     return title
-        .toLowerCase() // Convierte a minúsculas
-        .replace(/[^a-z0-9\s]/g, '') // Elimina caracteres especiales
-        .replace(/\s+/g, '-'); // Reemplaza espacios por guiones
+        .toLowerCase()
+        .replace(/\s+/g, '-') // Reemplaza espacios con guiones
+        .replace(/[^\w\-]+/g, '') // Elimina caracteres no alfanuméricos
+        .replace(/\-\-+/g, '-') // Reemplaza múltiples guiones por uno solo
+        .trim(); // Elimina guiones al principio y al final
 };
 
 export default function Blog() {

@@ -28,7 +28,6 @@ input:focus {
 input:focus-visible {
     outline: none;
     border: none;
-    background: #e0f2ff;
 }
 
 inpur::selection {
