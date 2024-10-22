@@ -5,7 +5,7 @@ import LogoLight from "../../public/logo-gestionvertical-white.svg"
 export const email = "comercial@gestionvertical.com";
 export const logoDark = LogoDark
 export const logoLight = LogoLight
-export const phone = "+51977788810";
+export const phone = "+51 977 788 810";
 export const adress = "Urb. Cerros de Camacho, Santiago de Surco, Lima, Perú";
 export const schedule = ["Lunes a Viernes: 9:00 AM - 6:00 PM", "Sábados: 9:00 AM - 2:00 PM"];
 export const socials = [

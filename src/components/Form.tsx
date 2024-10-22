@@ -5,7 +5,11 @@ import { dbDistricts } from "../data/Distritos"
 import { Link } from "react-router-dom"
 import "../index.css"
 
-export default function Form() {
+interface FormProps{
+    padding: string
+}
+
+export default function Form({padding} : FormProps) {
 
     const [selectedDistrict, setSelectedDistrict] = useState<string>("");
     const [selectedAntiguedad, setSelectedAntiguedad] = useState("")
@@ -24,10 +28,10 @@ export default function Form() {
     const [state, handleSubmit] = useForm("movqqvkv")
     if (state.succeeded) {
         return (
-            <div className="w-[36rem] h-auto bg-white text-s p-10 rounded-xl shadow-2xl text-primary text-center flex flex-col items-center">
+            <div className="w-[36rem] h-auto text-s p-10 rounded-xl text-primary text-center flex flex-col items-center">
                 <IconCheck
                     size={80}
-                    stroke={"#2382C0"}
+                    stroke={"#246AF3"}
                 />
                 <h2 className="text-2xl font-semibold py-5">Enviado Exitosamente</h2>
                 <p className="mb-10">¡Muchas gracias, te responderemos lo más pronto posible!</p>
@@ -38,8 +42,8 @@ export default function Form() {
 
     return (
         <>
-            <form onSubmit={handleSubmit} className="w-full h-full bg-white text-s p-10 rounded-xl shadow-2xl">
-                <h1 className="mb-7 text-xl font-bold text-secondary text-center max-2xl:text-base">¡No esperes más! Mejora tu gestión hoy mismo.</h1>
+            <form onSubmit={handleSubmit} className={`w-full h-full bg-white text-s ${padding} rounded-xl`}>
+                <h1 className="mb-7 text-lg font-bold text-secondary text-center max-2xl:text-base">¡No esperes más! Mejora tu gestión hoy mismo.</h1>
                 <div className="">
                     <label className="text-xs font-semibold" htmlFor="name">Nombre y Apellido</label>
                     <div className="">
@@ -122,7 +126,7 @@ export default function Form() {
                     </div>
                 </div>
                 <div className="mt-6 w-full">
-                    <button type="submit" disabled={state.submitting} className="w-full bg-secondary text-white px-7 py-5 rounded-lg text-sm max-2xl:text-xs cursor-pointer flex justify-center items-center gap-2 hover:shadow-2xl">
+                    <button type="submit" disabled={state.submitting} className="w-full bg-secondary text-white px-7 py-5 rounded-sm text-sm max-2xl:text-xs cursor-pointer flex justify-center items-center gap-2 hover:shadow-2xl">
                         <IconQuote size={20} />Cotiza Ahora</button>
                 </div>
             </form>

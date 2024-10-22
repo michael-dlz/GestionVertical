@@ -99,7 +99,7 @@ export default function ServicesPage({
                                 {incluideServices.map((serv, index) => (
                                     <div key={index} className="flex items-start gap-4 py-4 text-textBlackp">
                                         <div className="p-3 shadow-lg bg-lightSecondary rounded-xl border border-secondary">
-                                            <serv.Icon size={30} stroke="#2382C0" />
+                                            <serv.Icon size={30} stroke="#246AF3" />
                                         </div>
                                         <div className="">
                                             <h2 className="font-semibold">{serv.title}</h2>
@@ -115,7 +115,7 @@ export default function ServicesPage({
                                 {whyTexts.map((why, index) => (
                                     <p key={index} className="flex items-center gap-4 mb-4 text-textBlackp">
                                         <div className="p-3 shadow-lg bg-lightSecondary rounded-xl border border-secondary">
-                                            <why.Icon size={30} stroke="#2382C0" />
+                                            <why.Icon size={30} stroke="#246AF3" />
                                         </div>
                                         {why.text}
                                     </p>
@@ -128,7 +128,7 @@ export default function ServicesPage({
                                 {benefitsTexts.map((benefits, index) => (
                                     <p key={index} className="flex items-center gap-3 mb-4 text-textBlackp">
                                         <div className="p-3 shadow-lg bg-lightSecondary rounded-xl border border-secondary">
-                                            <benefits.Icon size={30} stroke="#2382C0" />
+                                            <benefits.Icon size={30} stroke="#246AF3" />
                                         </div>
                                         {benefits.text}</p>
                                 ))}
@@ -138,10 +138,10 @@ export default function ServicesPage({
                             <h2>También puedes:</h2>
                             <div className="">
                                 <div className="flex gap-3 items-center mt-6">
-                                    <a href={`https://wa.me/${phone}?text=Hola,%20Me%20interesaría%20poder%20cotizar%20el%20${encodeURIComponent(title)}`} className="border border-secondary text-secondary px-7 py-4 hover:bg-secondary hover:text-white text-left rounded-lg text-sm max-2xl:text-xs hover:shadow-2xl max-lg:px-4">
+                                    <a href={`https://wa.me/${phone}?text=Hola,%20Me%20interesaría%20poder%20cotizar%20el%20${encodeURIComponent(title)}`} className="border border-secondary text-secondary px-7 py-4 hover:bg-secondary hover:text-white text-left rounded-sm text-sm max-2xl:text-xs hover:shadow-2xl max-lg:px-4">
                                         Cotizar por WhatsApp
                                     </a>
-                                    <button onClick={nextStep} className="border border-secondary text-secondary px-7 py-4 hover:bg-secondary hover:text-white text-left rounded-lg text-sm max-2xl:text-xs hover:shadow-2xl max-lg:px-4">
+                                    <button onClick={nextStep} className="border border-secondary text-secondary px-7 py-4 hover:bg-secondary hover:text-white text-left rounded-sm text-sm max-2xl:text-xs hover:shadow-2xl max-lg:px-4">
                                         Cotizar por Correo
                                     </button>
                                 </div>
@@ -163,11 +163,11 @@ export default function ServicesPage({
                                                         name="nombreCompleto"
                                                         value={formData.nombreCompleto}
                                                         onChange={handleInputChange}
-                                                        className="py-4 text-xs px-3 rounded-lg bg-inputColor w-full"
+                                                        className="py-4 text-xs px-3 rounded-sm bg-inputColor w-full"
                                                         placeholder="Ingrese su nombre completo"
                                                     />
                                                 </div>
-                                                <button onClick={nextStep} className="bg-secondary text-white px-5 py-3 rounded-lg text-sm cursor-pointer hover:shadow-2xl">Siguiente</button>
+                                                <button onClick={nextStep} className="bg-secondary text-white px-5 py-3 rounded-sm text-sm cursor-pointer hover:shadow-2xl">Siguiente</button>
                                             </motion.div>
                                         )}
 
@@ -187,12 +187,12 @@ export default function ServicesPage({
                                                         name="antiguedad"
                                                         value={formData.antiguedad}
                                                         onChange={handleInputChange}
-                                                        className="py-4 text-xs px-3 rounded-lg bg-inputColor w-full"
+                                                        className="py-4 text-xs px-3 rounded-sm bg-inputColor w-full"
                                                         placeholder="Ingrese la antigüedad de los edificios"
                                                     />
                                                 </div>
-                                                <button onClick={prevStep} className="bg-lightSecondary text-secondary border border-secondary px-5 py-3 rounded-lg text-sm cursor-pointer hover:shadow-2xl">Anterior</button>
-                                                <button onClick={nextStep} className="ml-2 bg-secondary text-white px-5 py-3 rounded-lg text-sm cursor-pointer hover:shadow-2xl">Siguiente</button>
+                                                <button onClick={prevStep} className="bg-lightSecondary text-secondary border border-secondary px-5 py-3 rounded-sm text-sm cursor-pointer hover:shadow-2xl">Anterior</button>
+                                                <button onClick={nextStep} className="ml-2 bg-secondary text-white px-5 py-3 rounded-sm text-sm cursor-pointer hover:shadow-2xl">Siguiente</button>
                                             </motion.div>
                                         )}
 
@@ -212,12 +212,12 @@ export default function ServicesPage({
                                                         name="cantidadDepartamentos"
                                                         value={formData.cantidadDepartamentos}
                                                         onChange={handleInputChange}
-                                                        className="py-4 text-xs px-3 rounded-lg bg-inputColor w-full"
+                                                        className="py-4 text-xs px-3 rounded-sm bg-inputColor w-full"
                                                         placeholder="Ingrese la cantidad de departamentos"
                                                     />
                                                 </div>
-                                                <button onClick={prevStep} className="bg-lightSecondary text-secondary border border-secondary px-5 py-3 rounded-lg text-sm cursor-pointer hover:shadow-2xl">Anterior</button>
-                                                <button onClick={nextStep} className="ml-2 bg-secondary text-white px-5 py-3 rounded-lg text-sm cursor-pointer hover:shadow-2xl">Siguiente</button>
+                                                <button onClick={prevStep} className="bg-lightSecondary text-secondary border border-secondary px-5 py-3 rounded-sm text-sm cursor-pointer hover:shadow-2xl">Anterior</button>
+                                                <button onClick={nextStep} className="ml-2 bg-secondary text-white px-5 py-3 rounded-sm text-sm cursor-pointer hover:shadow-2xl">Siguiente</button>
                                             </motion.div>
                                         )}
 
@@ -236,7 +236,7 @@ export default function ServicesPage({
                                                     name="correo"
                                                     value={formData.correo}
                                                     onChange={handleInputChange}
-                                                    className="py-4 text-xs my-2 px-3 rounded-lg bg-inputColor w-full"
+                                                    className="py-4 text-xs my-2 px-3 rounded-sm bg-inputColor w-full"
                                                     placeholder="Ingrese su correo electrónico"
                                                 />
                                                 <label htmlFor="telefono" >Teléfono de Contacto</label>
@@ -246,11 +246,11 @@ export default function ServicesPage({
                                                     name="telefono"
                                                     value={formData.telefono}
                                                     onChange={handleInputChange}
-                                                    className="py-4 text-xs mb-4 px-3 rounded-lg bg-inputColor w-full"
+                                                    className="py-4 text-xs mb-4 px-3 rounded-sm bg-inputColor w-full"
                                                     placeholder="Ingrese su teléfono"
                                                 />
-                                                <button onClick={prevStep} className="bg-lightSecondary text-secondary border border-secondary px-5 py-3 rounded-lg text-sm cursor-pointer hover:shadow-2xl">Anterior</button>
-                                                <button onClick={() => alert("Formulario Enviado")} className="ml-2 bg-secondary text-white px-5 py-3 rounded-lg text-sm cursor-pointer hover:shadow-2xl">Enviar</button>
+                                                <button onClick={prevStep} className="bg-lightSecondary text-secondary border border-secondary px-5 py-3 rounded-sm text-sm cursor-pointer hover:shadow-2xl">Anterior</button>
+                                                <button onClick={() => alert("Formulario Enviado")} className="ml-2 bg-secondary text-white px-5 py-3 rounded-sm text-sm cursor-pointer hover:shadow-2xl">Enviar</button>
                                             </motion.div>
                                         )}
                                     </div>
@@ -264,10 +264,10 @@ export default function ServicesPage({
                             </p>
 
                             <div className="mb-6">
-                                <p className="w-full bg-white text-secondary px-6 py-6 rounded-lg text-sm max-2xl:text-xs flex justify-center items-center gap-2">Hasta 30% de descuento por tiempo limitado</p>
+                                <p className="w-full bg-white text-secondary px-6 py-6 rounded-sm text-sm max-2xl:text-xs flex justify-center items-center gap-2">Hasta 30% de descuento por tiempo limitado</p>
                             </div>
 
-                            <button className="w-full bg-spanColor text-black px-7 py-6 rounded-lg text-sm max-2xl:text-xs hover:shadow-2xl flex justify-center items-center gap-2">
+                            <button className="w-full bg-spanColor text-black px-7 py-6 rounded-sm text-sm max-2xl:text-xs hover:shadow-2xl flex justify-center items-center gap-2">
                                 ¡Obtén tu descuento ahora!
                             </button>
 
@@ -278,10 +278,10 @@ export default function ServicesPage({
                     </div>
                     <div className="bg-white shadow-2xl h-auto p-16 text-sm grid items-center sticky top-40 max-lg:p-10">
                         <div>
-                            <h2 className="text-primary font-bold text-lg max-2xl:text-sm flex items-center gap-2"><IconCalendar stroke="#000" size={25} />RESERVA UNA CITA</h2>
+                            <h2 className="text-primary font-bold text-lg max-2xl:text-sm flex items-center gap-2"><IconCalendar stroke="#000" size={25} />Reserva una Cita</h2>
                             <div className="flex gap-1 text-xs py-6">
                                 {categories.map((cate, index) => (
-                                    <span key={index} className="bg-lightSecondary text-secondary w-auto px-6 py-1 rounded-lg border border-secondary">
+                                    <span key={index} className="bg-lightSecondary text-secondary w-auto px-6 py-1 rounded-sm">
                                         {cate}
                                     </span>
                                 ))}
@@ -289,15 +289,15 @@ export default function ServicesPage({
                             <p className="text-base max-2xl:text-xs">{descriptionTitle}</p>
                         </div>
                         <div>
-                            <h2 className="text-primary font-bold text-lg max-2xl:text-sm py-6 flex items-center gap-2"><IconMoney stroke="#000" size={25} />PRECIO</h2>
+                            <h2 className="text-primary font-bold text-lg max-2xl:text-sm py-6 flex items-center gap-2"><IconMoney stroke="#000" size={25} />Precio</h2>
                             <div className="pb-10 text-textBlackp text-base max-2xl:text-xs">
                                 <p>{priceService}</p>
                                 <p>{conditionService}</p>
                             </div>
-                            <a className="text-secondary font-semibold flex items-center gap-2 underline mb-10 text-base max-2xl:text-xsl" target="_blank" href="https://www.dropbox.com/scl/fi/dejik074572mup02yksbx/Gu-a-de-Gastos-Comunes.docx?rlkey=djmubnrvtzjzd55nvbeh4ay91&st=j5chillu&dl=0"><IconLink stroke="#2382C0" size={25} /> Guía de Gastos Comunes</a>
+                            <a className="text-secondary font-semibold flex items-center gap-2 underline mb-10 text-base max-2xl:text-xsl" target="_blank" href="https://www.dropbox.com/scl/fi/dejik074572mup02yksbx/Gu-a-de-Gastos-Comunes.docx?rlkey=djmubnrvtzjzd55nvbeh4ay91&st=j5chillu&dl=0"><IconLink stroke="#246AF3" size={25} /> Guía de Gastos Comunes</a>
                         </div>
                         <a href={`https://wa.me/${phone}?text=Hola,%20quisiera%20solicitar%20una%20cita%20para%20conversar%20sobre%20el%20tema%20de%20${encodeURIComponent(title)}.%20Por%20favor,%20indíquenme%20disponibilidad.`}
-                            className="bg-secondary w-full text-white px-14 py-6 rounded-lg text-sm max-2xl:text-xs hover:shadow-2xl flex justify-center items-center gap-2"><IconCalendar size={25} />Reserva Ahora</a>
+                            className="bg-secondary w-full text-white px-14 py-6 rounded-sm text-sm max-2xl:text-xs hover:shadow-2xl flex justify-center items-center gap-2"><IconCalendar size={25} />Reserva Ahora</a>
                     </div>
                 </div>
             </div>
@@ -330,7 +330,7 @@ export default function ServicesPage({
                         className="mySwiper3 w-full  grid"
                     >
                         <SwiperSlide className="bg-primary text-white p-10 flex flex-col justify-center rounded-2xl overflow-hidden shadow-2xl">
-                            <h2 className="font-bold text-lg max-2xl:text-sm pb-6">NOS ADECUAMOS A TU NECESIDAD</h2>
+                            <h2 className="font-bold text-lg max-2xl:text-sm pb-6">Nos Adecuamos a tu Necesidad</h2>
                             <p className="text-sm max-2xl:text-xs">{needTitle}</p>
                         </SwiperSlide>
                         <SwiperSlide className="rounded-2xl overflow-hidden">

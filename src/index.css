@@ -7,7 +7,7 @@ html {
 }
 
 * {
-    font-family: "Titillium Web", "sans-serif";
+    font-family: "Plus Jakarta Sans", sans-serif;
     transition: all 0.2s ease;
 }
 
@@ -28,6 +28,7 @@ input:focus {
 input:focus-visible {
     outline: none;
     border: none;
+    background: #e0f2ff;
 }
 
 inpur::selection {

@@ -46,7 +46,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="bg-lightGray py-40">
+        <div className="bg-gradient-to-tr from-ligthSpan to-lightSecondary h-auto py-40">
           <div className="grid grid-cols-2 gap-28 items-center 2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5 max-lg:grid-cols-1">
             <div className="overflow-hidden rounded-3xl shadow-2xl h-80">
               <img className="w-full h-full object-cover" src="https://img.freepik.com/fotos-premium/socios-poniendo-sus-punos-juntos-encima-mesa-cosas-trabajo_603656-2186.jpg?w=1380" alt="" />
@@ -75,14 +75,14 @@ export default function About() {
         </div>
       </div>
 
-      <div className="bg-lightGray text-center py-40">
+      <div className="bg-gradient-to-tr from-ligthSpan to-lightSecondary h-auto text-center py-40">
         <div className="2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5">
           <h1 className="font-bold text-primary text-3xl pb-20">Políticas de <span className="text-secondary underline">Cumplimiento</span></h1>
           <ul className="list-disc text-left text-textBlackp max-lg:mx-5 max">
             {complianceLegal.map((cump, index) => (
               <li key={index} className="flex items-start gap-4 py-4 text-textBlackp">
                 <div className="p-3 shadow-lg bg-lightSecondary rounded-xl border border-secondary">
-                  <cump.Icon size={30} stroke="#2382C0" />
+                  <cump.Icon size={30} stroke="#246AF3" />
                 </div>
                 <div className="">
                   <h2 className="font-semibold">{cump.title}</h2>

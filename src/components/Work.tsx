@@ -32,17 +32,17 @@ export default function Work({ titleWork, descriptionWork, categories, requireme
                     <p className="text-sm max-2xl:text-xs ">{descriptionWork}</p>
                     <p className="my-5 text-xs flex items-center gap-1">
                         {categories.map((cate, index) => (
-                            <span key={index} className="bg-lightSecondary text-secondary w-auto px-6 py-1 rounded-lg border border-secondary">{cate}</span>
+                            <span key={index} className="bg-lightSecondary text-secondary w-auto px-6 py-1 rounded-sm border border-secondary">{cate}</span>
                         ))}
                     </p>
                 </div>
                 <div className="flex pb-5 border-b gap-2">
-                    <a href={`https://wa.me/+51942901570?text=Hola,%20Estoy%20Interesado%20en%20el%20puesto%20de%20${encodeURIComponent(titleWork)}`} className="bg-secondary w-auto text-white py-4 px-8 rounded-lg text-sm hover:shadow-2xl flex justify-center items-center max-2xl:text-xs  gap-1"><IconCV stroke="#fff" size={20} />Postular</a>
+                    <a href={`https://wa.me/+51942901570?text=Hola,%20Estoy%20Interesado%20en%20el%20puesto%20de%20${encodeURIComponent(titleWork)}`} className="bg-secondary w-auto text-white py-4 px-8 rounded-sm text-sm hover:shadow-2xl flex justify-center items-center max-2xl:text-xs  gap-1"><IconCV stroke="#fff" size={20} />Postular</a>
                     <button
                         onClick={handleCopyLink}
-                        className="bg-lightSecondary border border-secondary w-auto text-white py-4 px-4 rounded-lg text-sm hover:shadow-2xl flex justify-center items-center gap-1"
+                        className="bg-lightSecondary border border-secondary w-auto text-white py-4 px-4 rounded-sm text-sm hover:shadow-2xl flex justify-center items-center gap-1"
                     >
-                        <IconLink stroke="#2382C0" size={20} />
+                        <IconLink stroke="#246AF3" size={20} />
                     </button>
                 </div>
                 <div className="pt-5">

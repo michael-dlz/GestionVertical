@@ -30,6 +30,8 @@ export type TypeDistricts = {
 
 export type TypeBlog = {
     id: number;
+    category: { text: string }[];
+    date: string
     firstTitle: string;
     firstImage: string;
     introduction: string;
@@ -47,8 +49,10 @@ export type TypeBlog = {
     fifthDescription: string;
     fifthList: Array<{ text: string }>;
     sixthTitle: string;
+    sixthList: Array<{ text: string }>;
     sixthDescription: string;
     seventhTitle: string;
     seventhDescription: string;
+    seventhList: Array<{ text: string }>
     conclution: string;
 }
