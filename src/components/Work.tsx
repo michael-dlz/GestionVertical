@@ -32,7 +32,7 @@ export default function Work({ titleWork, descriptionWork, categories, requireme
                     <p className="text-sm max-2xl:text-xs ">{descriptionWork}</p>
                     <p className="my-5 text-xs flex items-center gap-1">
                         {categories.map((cate, index) => (
-                            <span key={index} className="bg-lightSecondary text-secondary w-auto px-6 py-1 rounded-sm border border-secondary">{cate}</span>
+                            <span key={index} className="bg-lightSecondary text-secondary w-auto px-6 py-1 rounded-sm">{cate}</span>
                         ))}
                     </p>
                 </div>

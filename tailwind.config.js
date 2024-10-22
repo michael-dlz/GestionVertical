@@ -14,7 +14,7 @@ export default {
         secondary: "#246AF3",
         lightGray: "#ECF0F1",
         spanColor: "#ffbb1e",
-        textBlackp: "#26344B",
+        textBlackp: "#6B7280",
         inputColor: "#ECF0F1",
       },
       width: {

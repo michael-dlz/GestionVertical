@@ -14,12 +14,12 @@ export default function Contact() {
                     <div className="grid items-center grid-cols-2 mt-20 max-lg:grid-cols-1 gap-20">
                         <div className="text-primary rounded-s-3xl max-lg:rounded-r-3xl max-lg:p-10">
                             <h2 className="font-bold text-primary text-3xl ">Contacto</h2>
-                            <p className="text-xs py-5">Contáctenos para obtener respuestas a sus preguntas, recibir comentarios y programar citas.</p>
+                            <p className="text-md max-2xl:text-sm py-5">Contáctenos para obtener respuestas a sus preguntas, recibir comentarios y programar citas.</p>
                             <div className="text-xs font-light">
                                 <div className="grid grid-cols-2 gap-12">
                                     <p className="my-3 flex flex-col items-start gap-4 font-light"> <IconMap size={30} stroke="#246AF3" /> <b className="text-base font-semibold">Oficina Principal</b>{adress}</p>
                                     <p className="my-3 flex flex-col items-start gap-4 font-light"> <IconWhatsApp size={25} stroke="#246AF3" /><b className="text-base font-semibold">WhatsApp - Llamadas</b>{phone}</p>
-                                    <p className="my-3 flex flex-col items-start gap-4 font-light"> <IconEmail size={25} stroke="#246AF3" /><b className="text-base font-semibold">Correo Electrónico</b>{email}</p>
+                                    <p className="my-3 flex flex-col items-start gap-4 font-light "> <IconEmail size={25} stroke="#246AF3" /><b className="text-base font-semibold">Correo Electrónico</b>{email}</p>
                                     <p className="my-3 flex flex-col items-start gap-4 font-light"> <IconCalendar size={25} stroke="#246AF3" /><b className="text-base font-semibold">Horarios de Atención</b>
                                         <ul className="">
                                             {schedule.map((item, index) => (
