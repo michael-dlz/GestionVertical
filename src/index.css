@@ -20,7 +20,7 @@ select {
 }
 
 input:focus {
-    background-color: #e6f5ff;
+    background-color: #FFC947;
     outline: none;
     border: none;
 }

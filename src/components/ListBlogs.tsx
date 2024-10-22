@@ -15,7 +15,7 @@ export default function ListBlogs() {
                     <div className="overflow-hidden">
                         <img className="transform transition-transform duration-300 ease-in-out group-hover:scale-110" src={item.firstImage} alt="" />
                     </div>
-                    <div className="p-4">
+                    <div className="p-6">
                         <div className="flex flex-col gap-2">
                             <p className="text-xs text-textBlackp">{item.date}</p>
                             <div className="flex gap-2 flex-wrap">
