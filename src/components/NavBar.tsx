@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { IconBlog, IconHamburger, IconQuote, IconServices, IconUS, IconWork } from "../Icons/Icons";
+import { IconArroDown, IconBlog, IconHamburger, IconQuote, IconServices, IconUS, IconWork } from "../Icons/Icons";
 import { logoDark, logoLight } from "../data/ContactInfo";
 
 export default function NavBar() {
@@ -91,14 +91,14 @@ export default function NavBar() {
                             <li><Link to="/nosotros" className={`flex items-center gap-2 transition-colors duration-300 ${isScrolled ? 'text-black' : 'text-white'}`}>NOSOTROS</Link></li>
                             <li className="relative">
                                 <button onClick={toggleServicesMenu} className={`flex items-center gap-2 ${isScrolled ? 'text-primary' : 'text-white'}`}>
-                                    SERVICIOS
+                                    SERVICIOS <IconArroDown size={13} />
                                 </button>
                                 {/* Submenú */}
                                 {isServicesOpen && (
                                     <ul className={`absolute left-0 mt-4 w-56 rounded-sm shadow-lg ${isScrolled ? 'bg-white text-primary' : 'bg-primary text-white'}`}>
-                                        <li><Link to="/servicio-preferente" className="block px-4 py-4 hover:bg-secondary">SERVICIO PREFERENTE</Link></li>
-                                        <li><Link to="/servicio-preferente-indeci" className="block px-4 py-4 hover:bg-secondary">SERVICIO PREFRENTE INDECI</Link></li>
-                                        <li><Link to="/servicio-presencial" className="block px-4 py-4 hover:bg-secondary">SERVICIO PRESENCIAL</Link></li>
+                                        <li><Link to="/servicio-preferente" className="block px-4 py-4 hover:bg-secondary hover:text-white">SERVICIO PREFERENTE</Link></li>
+                                        <li><Link to="/servicio-preferente-indeci" className="block px-4 py-4 hover:bg-secondary hover:text-white">SERVICIO PREFRENTE INDECI</Link></li>
+                                        <li><Link to="/servicio-presencial" className="block px-4 py-4 hover:bg-secondary hover:text-white">SERVICIO PRESENCIAL</Link></li>
                                     </ul>
                                 )}
                             </li>
