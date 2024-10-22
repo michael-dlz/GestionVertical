@@ -87,7 +87,7 @@ export default function ServicesPage({
     return (
         <>
             <div className="py-40 h-auto">
-                <div className="2xl:max-w-[70rem] max-w-5xl mx-auto grid grid-cols-2 items-start gap-28 h-auto max-lg:mx-5 max-lg:grid-cols-1">
+                <div className="2xl:max-w-6xl max-w-5xl mx-auto grid grid-cols-2 items-start gap-28 h-auto max-lg:mx-5 max-lg:grid-cols-1">
                     <div className="text-base max-2xl:text-sm">
                         <div className="">
                             <h2 className="text-primary font-bold text-3xl max-2xl:text-2xl">¿Por qué Elegir el {title}?</h2>
@@ -302,7 +302,7 @@ export default function ServicesPage({
                 </div>
             </div>
             <div className="h-full pb-40">
-                <div className="2xl:max-w-[70rem] max-w-5xl mx-auto h-full max-lg:mx-5">
+                <div className="2xl:max-w-6xl max-w-5xl mx-auto h-full max-lg:mx-5">
                     <Swiper
                         slidesPerView={1.3}
                         spaceBetween={30}

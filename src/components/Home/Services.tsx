@@ -12,7 +12,7 @@ export function Services() {
     return (
         <>
         <div className="bg-gradient-to-b from-primary to-primaryGradient h-auto py-40">
-                <div className="2xl:max-w-[70rem] max-w-5xl mx-auto max-lg:mx-5">
+                <div className="2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5">
                     <div className="pb-20 flex flex-col items-start justify-center gap-8 text-wrap">
                         <div className="flex gap-1 text-xs">
                             <span className="bg-lightSecondary text-secondary w-auto px-6 py-1 rounded-lg border border-secondary font-semibold">PAQUETES DE SERVICIOS</span>

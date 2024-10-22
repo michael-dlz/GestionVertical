@@ -6,7 +6,7 @@ export default function Contact() {
     return (
         <>
             <div className="py-40" id="contacto">
-                <div className="2xl:max-w-[70rem] max-w-5xl max-lg:mx-5 h-full mx-auto text-sm">
+                <div className="2xl:max-w-6xl max-w-5xl max-lg:mx-5 h-full mx-auto text-sm">
                     <h1 className="font-bold text-4xl max-2xl:text-3xl text-primary text-center"><span className="text-secondary underline">Cotiza</span> con Nosotros</h1>
                     <div className="grid items-center grid-cols-2 mt-20 max-lg:grid-cols-1">
                         <div className="p-20 text-white bg-primary rounded-s-3xl max-lg:rounded-r-3xl max-lg:p-10">

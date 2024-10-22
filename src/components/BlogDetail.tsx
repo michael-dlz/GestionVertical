@@ -42,7 +42,7 @@ export default function BlogDetail({ dbblogs } : BlogProps) {
         titleBanner="Blog de Noticias"
         imageBanner="https://img.freepik.com/foto-gratis/equipo-trabajando-juntos-proyecto_23-2149325409.jpg?t=st=1728666926~exp=1728670526~hmac=cc75ac9e5dce4ec18529ba4a5c46f846166f1bf7cbda007339c826f4cb21242d&w=1380"
       />
-      <div className="flex items-start 2xl:max-w-[70rem] max-w-5xl mx-auto max-lg:mx-5 mt-48 gap-16 max-lg:flex-col">
+      <div className="flex items-start 2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5 mt-48 gap-16 max-lg:flex-col">
         <div className="w-1/2 max-lg:w-full">
           <div className="">
             <h1 className={styleTitle}>{firstTitle}</h1>
@@ -124,7 +124,7 @@ export default function BlogDetail({ dbblogs } : BlogProps) {
           <Form />
         </div>
       </div>
-      <div className="2xl:max-w-[70rem] max-w-5xl mx-auto max-lg:mx-5 pt-10 pb-40 gap-16">
+      <div className="2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5 pt-10 pb-40 gap-16">
         <h2 className={`${styleTitle} pb-10`}>Enterate de las últimas noticias:</h2>
         <div className="grid grid-cols-3 gap-5">
 

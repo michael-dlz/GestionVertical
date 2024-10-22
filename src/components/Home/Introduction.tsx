@@ -17,7 +17,7 @@ export default function Introduction() {
     return (
         <>
             <div className="py-40 h-auto m-auto items-center">
-                <div className="box-border grid grid-cols-2 max-lg:grid-cols-1 2xl:max-w-[70rem] max-w-5xl mx-auto max-lg:mx-5 gap-28">
+                <div className="box-border grid grid-cols-2 max-lg:grid-cols-1 2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5 gap-28">
                     <div className="w-full flex flex-col items-start justify-center gap-8 text-wrap">
                         <h2 className="font-bold text-4xl text-primary max-2xl:text-3xl">La <span className="text-secondary underline">administración perfecta</span> para tus propiedades</h2>
                         <p className="text-textBlackp text-sm max-2xl:text-sm">Somos expertos en la administración de edificios residenciales y condominios, ofreciendo soluciones personalizadas para la gestión de Juntas de Propietarios. Garantizamos eficiencia, transparencia y cumplimiento de normativas, asegurando la satisfacción de todos los residentes.</p>
