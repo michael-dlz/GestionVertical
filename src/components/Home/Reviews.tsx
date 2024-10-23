@@ -19,7 +19,7 @@ export function Reviews() {
                     <div className="flex gap-1 text-xs text-center justify-center pb-8">
                         <span className="bg-lightSecondary text-secondary w-auto px-6 py-1 rounded-sm font-semibold !font-sans">RESEÑAS</span>
                     </div>
-                    <h1 className="font-extrabold text-4xl max-2xl:text-3xl text-primary text-center">Usuarios <span className="text-secondary underline">Satisfechos</span></h1>
+                    <h1 className="font-extrabold text-4xl text-primary text-center">Usuarios <span className="text-secondary underline">Satisfechos</span></h1>
                     <Swiper
                         slidesPerView={1.2}
                         spaceBetween={30}

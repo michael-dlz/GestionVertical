@@ -62,11 +62,11 @@ export default function WorkUs() {
                 <div className="2xl:max-w-6xl max-w-5xl mx-auto h-auto max-lg:mx-5">
                     <div className="grid grid-cols-[1fr_2fr] items-start gap-5 h-auto max-lg:grid-cols-1">
                         <div className="bg-white shadow-2xl p-10 rounded-2xl grid items-center h-auto sticky top-40 hover:shadow-lg">
-                            <h2 className="text-primary font-bold text-base text-center mb-5 max-2xl:text-xs ">Filtra tu Búsqueda</h2>
+                            <h2 className="text-primary font-bold text-base text-center mb-5 ">Filtra tu Búsqueda</h2>
                             <select
                                 name="category"
                                 id="category"
-                                className="py-4 text-sm max-2xl:text-xs  w-full bg-white"
+                                className="py-4 text-sm  w-full bg-white"
                                 onChange={(e) => setSelectedCategory(e.target.value)}
                             >
                                 <option value="">Categoría de Trabajo (Todos)</option>
@@ -78,7 +78,7 @@ export default function WorkUs() {
                             <select
                                 name="workTime"
                                 id="workTime"
-                                className="py-4 text-sm w-full max-2xl:text-xs "
+                                className="py-4 text-sm w-full "
                                 onChange={(e) => setSelectedWorkTime(e.target.value)}
                             >
                                 <option value="">Horario de Trabajo (Todos)</option>
@@ -100,7 +100,7 @@ export default function WorkUs() {
                                     />
                                 ))
                             ) : (
-                                <p className="text-primary font-semibold text-base max-2xl:text-xs  text-center my-10">No se encontraron trabajos con los filtros seleccionados.</p>
+                                <p className="text-primary font-semibold text-base  text-center my-10">No se encontraron trabajos con los filtros seleccionados.</p>
                             )}
                         </div>
                     </div>

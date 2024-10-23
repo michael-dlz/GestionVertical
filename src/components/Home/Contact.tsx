@@ -10,11 +10,11 @@ export default function Contact() {
                     <div className="flex gap-1 text-xs text-center justify-center pb-8">
                         <span className="bg-lightSecondary text-secondary w-auto px-6 py-1 rounded-sm font-semibold !font-sans">CONTACTO</span>
                     </div>
-                    <h1 className="font-extrabold text-4xl max-2xl:text-3xl text-primary text-center"><span className="text-secondary underline">Cotiza</span> con Nosotros</h1>
+                    <h1 className="font-extrabold text-4xl text-primary text-center"><span className="text-secondary underline">Cotiza</span> con Nosotros</h1>
                     <div className="grid items-center grid-cols-2 mt-20 max-lg:grid-cols-1 gap-20">
                         <div className="text-primary rounded-s-3xl max-lg:rounded-r-3xl max-lg:p-0">
                             <h2 className="font-bold text-primary text-3xl ">Contacto</h2>
-                            <p className="text-md max-2xl:text-sm py-5">Contáctenos para obtener respuestas a sus preguntas, recibir comentarios y programar citas.</p>
+                            <p className="text-md py-5">Contáctenos para obtener respuestas a sus preguntas, recibir comentarios y programar citas.</p>
                             <div className="text-xs font-light">
                                 <div className="grid grid-cols-2 gap-12">
                                     <p className="my-3 flex flex-col items-start gap-4 font-light"> <IconMap size={30} stroke="#246AF3" /> <b className="text-base font-semibold">Oficina Principal</b>{adress}</p>

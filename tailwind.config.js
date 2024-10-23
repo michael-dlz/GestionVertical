@@ -14,7 +14,7 @@ export default {
         lightGray: "#ECF0F1",
         spanColor: "#e69d00",
         ligthSpan: "#fffbeb",
-        textBlackp: "#6B7280",
+        textBlackp: "#474c55",
         inputColor: "#ECF0F1",
       },
       width: {

@@ -13,7 +13,7 @@ export default function Header() {
                         <h2 className="font-extrabold text-5xl">Tu propiedad, nuestra prioridad. Gestión eficaz y transparente para tu bienestar.</h2>
                         <p className="font-semibold text-lg italic">!HAGAMOS DE LA CONVIVENCIA, UN PLACER!</p>
                         <div className="my-5">
-                            <a href="/#Servicios" className="bg-secondary text-white px-7 py-4 rounded-sm text-sm max-2xl:text-xs gap-2 hover:shadow-2xl">Adquiere el Servicio Ideal para TI.</a>
+                            <a href="/#Servicios" className="bg-secondary text-white px-7 py-4 rounded-sm text-sm gap-2 hover:shadow-2xl">Adquiere el Servicio Ideal para TI.</a>
                         </div>
                         <div className="">
                             <h3 className="font-bold text-3xl">+ 1000</h3>
@@ -39,7 +39,7 @@ export default function Header() {
                         <h2 className="font-extrabold text-5xl">Tu propiedad, nuestra prioridad. Gestión eficaz y Transparente para tu Bienestar.</h2>
                         <p className="font-semibold text-lg italic">!HAGAMOS DE LA CONVIVENCIA, UN PLACER!</p>
                         <div className="my-5">
-                            <a href="/#Servicios" className="bg-secondary text-white px-7 py-4 rounded-sm text-sm max-2xl:text-xs gap-2 hover:shadow-2xl">Adquiere el Servicio Ideal para TI.</a>
+                            <a href="/#Servicios" className="bg-secondary text-white px-7 py-4 rounded-sm text-sm gap-2 hover:shadow-2xl">Adquiere el Servicio Ideal para TI.</a>
                         </div>
                         <div className="">
                             <h3 className="font-bold text-3xl">+ 1000</h3>

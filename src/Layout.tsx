@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar";
 export default function Layout() {
     return (
         <>
+        
             <SubNavBar />
             <div>
                 <NavBar />
@@ -14,6 +15,7 @@ export default function Layout() {
                 </main>
             </div>
             <Footer />
+            
         </>
     )
 }

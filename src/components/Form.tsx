@@ -43,7 +43,7 @@ export default function Form({padding} : FormProps) {
     return (
         <>
             <form onSubmit={handleSubmit} className={`w-full h-full bg-white text-s ${padding} rounded-xl`}>
-                <h1 className="mb-7 text-lg font-bold text-secondary text-center max-2xl:text-base">¡No esperes más! Mejora tu gestión hoy mismo.</h1>
+                <h1 className="mb-7 text-lg font-bold text-secondary text-center">¡No esperes más! Mejora tu gestión hoy mismo.</h1>
                 <div className="">
                     <label className="text-xs font-semibold" htmlFor="name">Nombre y Apellido</label>
                     <div className="">
@@ -126,7 +126,7 @@ export default function Form({padding} : FormProps) {
                     </div>
                 </div>
                 <div className="mt-6 w-full">
-                    <button type="submit" disabled={state.submitting} className="w-full bg-secondary text-white px-7 py-5 rounded-sm text-sm max-2xl:text-xs cursor-pointer flex justify-center items-center gap-2 hover:shadow-2xl">
+                    <button type="submit" disabled={state.submitting} className="w-full bg-secondary text-white px-7 py-5 rounded-sm text-sm cursor-pointer flex justify-center items-center gap-2 hover:shadow-2xl">
                         <IconQuote size={20} />Cotiza Ahora</button>
                 </div>
             </form>

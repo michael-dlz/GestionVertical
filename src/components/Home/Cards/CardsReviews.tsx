@@ -22,7 +22,7 @@ export function CardsReviews({ cardreviews }: ReviewsProps) {
                     </div>
                 </div>
                 <div className="py-10">
-                    <p className="text-textBlackp font-light text-lg italic max-2xl:text-sm">"{comment}"</p>
+                    <p className="text-textBlackp font-light text-lg italic">"{comment}"</p>
                 </div>
             </div>
         </>

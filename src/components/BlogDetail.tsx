@@ -34,7 +34,7 @@ export default function BlogDetail() {
       <div className="flex items-start 2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5 mt-48 gap-10 max-lg:flex-col">
         <div className="w-4/5 max-lg:w-full">
           <div className="">
-            <h1 className="font-bold text-2xl max-2xl:text-xl text-primary">{blog.firstTitle}</h1>
+            <h1 className="font-bold text-2xl text-primary">{blog.firstTitle}</h1>
             <div className="flex gap-1 text-xs py-6">
               <p className="bg-lightSecondary text-secondary w-auto px-6 py-1 rounded-sm">{blog.date}</p>
               {blog.category.map((item, index) => (
@@ -45,7 +45,7 @@ export default function BlogDetail() {
               <img className="w-full h-full object-cover" src={blog.firstImage} alt="" />
             </div>
             <div className="">
-              <h2 className="font-bold text-2xl max-2xl:text-xl">Indice</h2>
+              <h2 className="font-bold text-2xl">Indice</h2>
               <ul className="list-disc ml-10 font-light pt-5 text-secondary cursor-pointer">
                 <li><a href={`#${blog.secondTitle}`}>{blog.secondTitle}</a></li>
                 <li><a href={`#${blog.thirstTitle}`}>{blog.thirstTitle}</a></li>
@@ -56,57 +56,57 @@ export default function BlogDetail() {
                 <li><a href="#Conclusión">Conclusión</a></li>
               </ul>
             </div>
-            <div className="py-5 font-light text-md max-2xl:text-sm text-textBlackp">
+            <div className="py-5 font-light text-md text-textBlackp">
               <p className="">{blog.introduction}</p>
             </div>
             <div className="">
-              <h2 id={blog.secondTitle} className="font-bold text-2xl max-2xl:text-xl text-primary">{blog.secondTitle}</h2>
-              <p className="py-5 text-textBlackp font-light text-md max-2xl:text-sm">{blog.secondDescription}</p>
-              <ul className="list-disc text-textBlackp ml-10 font-light text-md max-2xl:text-sm">
+              <h2 id={blog.secondTitle} className="font-bold text-2xl text-primary">{blog.secondTitle}</h2>
+              <p className="py-5 text-textBlackp font-light text-md">{blog.secondDescription}</p>
+              <ul className="list-disc text-textBlackp ml-10 font-light text-md">
                 {blog.secondList.map((item, index) => (
                   <li key={index}>{item.text}</li>
                 ))}
               </ul>
-              <p className="py-5 text-textBlackp font-light text-md max-2xl:text-sm">{blog.secondDescription_2}</p>
+              <p className="py-5 text-textBlackp font-light text-md">{blog.secondDescription_2}</p>
             </div>
             <div className="">
-              <h2 id={blog.thirstTitle} className="font-bold text-2xl max-2xl:text-xl text-primary">{blog.thirstTitle}</h2>
-              <p className="py-5 text-textBlackp font-light text-md max-2xl:text-sm">{blog.thirstDescription}</p>
-              <ul className="list-disc text-textBlackp ml-10 font-light text-md max-2xl:text-sm">
+              <h2 id={blog.thirstTitle} className="font-bold text-2xl text-primary">{blog.thirstTitle}</h2>
+              <p className="py-5 text-textBlackp font-light text-md">{blog.thirstDescription}</p>
+              <ul className="list-disc text-textBlackp ml-10 font-light text-md">
                 {blog.thirstList.map((item, index) => (
                   <li key={index}>{item.text}</li>
                 ))}
               </ul>
             </div>
             <div className="">
-              <h2 id={blog.fourthTitle} className="font-bold text-2xl max-2xl:text-xl pt-5 text-primary">{blog.fourthTitle}</h2>
-              <p className="py-5 text-textBlackp font-light text-md max-2xl:text-sm">{blog.fourthDescription}</p>
-              <ul className="list-disc text-textBlackp ml-10 font-light text-md max-2xl:text-sm">
+              <h2 id={blog.fourthTitle} className="font-bold text-2xl pt-5 text-primary">{blog.fourthTitle}</h2>
+              <p className="py-5 text-textBlackp font-light text-md">{blog.fourthDescription}</p>
+              <ul className="list-disc text-textBlackp ml-10 font-light text-md">
                 {blog.fourthList.map((item, index) => (
                   <li key={index}>{item.text}</li>
                 ))}
               </ul>
             </div>
             <div className="">
-              <h2 id={blog.fifthTitle} className="font-bold text-2xl max-2xl:text-xl pt-5 text-primary">{blog.fifthTitle}</h2>
-              <p className="py-5 text-textBlackp font-light text-md max-2xl:text-sm">{blog.fifthDescription}</p>
-              <ul className="list-disc text-textBlackp ml-10 font-light text-md max-2xl:text-sm">
+              <h2 id={blog.fifthTitle} className="font-bold text-2xl pt-5 text-primary">{blog.fifthTitle}</h2>
+              <p className="py-5 text-textBlackp font-light text-md">{blog.fifthDescription}</p>
+              <ul className="list-disc text-textBlackp ml-10 font-light text-md">
                 {blog.fifthList.map((item, index) => (
                   <li key={index}>{item.text}</li>
                 ))}
               </ul>
             </div>
             <div className="">
-              <h2 id={blog.sixthTitle} className="font-bold text-2xl max-2xl:text-xl pt-5 text-primary">{blog.sixthTitle}</h2>
-              <p className="py-5 text-textBlackp font-light text-md max-2xl:text-sm">{blog.sixthDescription}</p>
+              <h2 id={blog.sixthTitle} className="font-bold text-2xl pt-5 text-primary">{blog.sixthTitle}</h2>
+              <p className="py-5 text-textBlackp font-light text-md">{blog.sixthDescription}</p>
             </div>
             <div className="">
-              <h2 id={blog.seventhTitle} className="font-bold text-2xl max-2xl:text-xl pt-5 text-primary">{blog.seventhTitle}</h2>
-              <p className="py-5 text-textBlackp font-light text-md max-2xl:text-sm">{blog.seventhDescription}</p>
+              <h2 id={blog.seventhTitle} className="font-bold text-2xl pt-5 text-primary">{blog.seventhTitle}</h2>
+              <p className="py-5 text-textBlackp font-light text-md">{blog.seventhDescription}</p>
             </div>
             <div className="">
-              <h2 id="Conclusión" className="font-bold text-2xl max-2xl:text-xl pt-5 text-primary">Conclusión:</h2>
-              <p className="py-5 text-textBlackp font-light text-md max-2xl:text-sm">{blog.conclution}</p>
+              <h2 id="Conclusión" className="font-bold text-2xl pt-5 text-primary">Conclusión:</h2>
+              <p className="py-5 text-textBlackp font-light text-md">{blog.conclution}</p>
             </div>
             <SharedSocials dbblogs={dbblogs[0]} />
           </div>

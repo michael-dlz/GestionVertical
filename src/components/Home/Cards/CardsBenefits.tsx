@@ -15,8 +15,8 @@ export function CardsBenefits({ cardbenefits }: BenefitsProps) {
                     <img className="object-cover w-full h-full" src={image} alt="" />
                 </div>
                 <div className="py-6 text-left">
-                    <h2 className="text-base font-bold text-primary max-2xl:text-sm">{title}</h2>
-                    <p className="text-sm text-textBlackp py-3 max-2xl:text-xs">{description}</p>
+                    <h2 className="text-base font-bold text-primary">{title}</h2>
+                    <p className="text-sm text-textBlackp py-3">{description}</p>
                 </div>
             </div>
         </>

@@ -37,9 +37,12 @@ function AnimatedRoutes() {
                 transition={{ duration: 0.1 }} // Duración de la animación
               >
                 <Helmet>
-                  <title>Gestión Vertical</title>
-                  <meta name="description" content="Bienvenido a Gestión Vertical, especialistas en administración de propiedades en Lima." />
+                  <title>Administración de Propiedades - Gestión Vertical</title>
+                  <meta name="description" content="Especialistas en la gestión y administración de propiedades en Lima." />
                   <meta name="keywords" content="gestión de propiedades, administración de inmuebles, Lima" />
+                  <meta property="og:title" content="Administración de Propiedades - Gestión Vertical" />
+                  <meta property="og:description" content="Ofrecemos servicios de alquiler y venta de inmuebles." />
+                  <meta name="robots" content="index,follow" />
                 </Helmet>
                 <Home />
               </motion.div>
@@ -56,9 +59,12 @@ function AnimatedRoutes() {
                 transition={{ duration: 0.1 }}
               >
                 <Helmet>
-                  <title>Gestión Vertical - Nosotros</title>
+                  <title>Nosotros - Gestión Vertical</title>
                   <meta name="description" content="Conoce más sobre Gestión Vertical y nuestros servicios de administración de propiedades." />
                   <meta name="keywords" content="acerca de, gestión de propiedades, administración de inmuebles" />
+                  <meta property="og:title" content="Nosotros - Gestión Vertical" />
+                  <meta property="og:description"
+                    content="Conoce más sobre Gestión Vertical y nuestros servicios de administración de propiedades."></meta>
                 </Helmet>
                 <About />
               </motion.div>
@@ -75,9 +81,12 @@ function AnimatedRoutes() {
                 transition={{ duration: 0.1 }}
               >
                 <Helmet>
-                  <title>Gestión Vertical - Servicio Preferente</title>
+                  <title>Servicio Preferente - Gestión Vertical</title>
                   <meta name="description" content="Descubre nuestros servicios preferentes en administración de propiedades." />
                   <meta name="keywords" content="servicios preferentes, gestión de propiedades, administración de inmuebles" />
+                  <meta property="og:title" content="Servicio Preferente - Gestión Vertical" />
+                  <meta property="og:description"
+                    content="Descubre nuestros servicios preferentes en administración de propiedades."></meta>
                 </Helmet>
                 <PreferenteService />
               </motion.div>
@@ -94,9 +103,12 @@ function AnimatedRoutes() {
                 transition={{ duration: 0.1 }}
               >
                 <Helmet>
-                  <title>Gestión Vertical - Servicio Preferente Indeci</title>
+                  <title>Servicio Preferente Indeci - Gestión Vertical</title>
                   <meta name="description" content="Conoce el servicio preferente Indeci en Gestión Vertical." />
                   <meta name="keywords" content="Indeci, servicios preferentes, gestión de propiedades" />
+                  <meta property="og:title" content="Servicio Preferente Indeci - Gestión Vertical" />
+                  <meta property="og:description"
+                    content="Conoce el servicio preferente Indeci en Gestión Vertical."></meta>
                 </Helmet>
                 <PreferenteIndeciService />
               </motion.div>
@@ -113,9 +125,12 @@ function AnimatedRoutes() {
                 transition={{ duration: 0.1 }}
               >
                 <Helmet>
-                  <title>Gestión Vertical - Servicio Presencial</title>
+                  <title>Servicio Presencial - Gestión Vertical</title>
                   <meta name="description" content="Servicios presenciales de gestión y administración de propiedades." />
                   <meta name="keywords" content="servicios presenciales, gestión de propiedades, administración de inmuebles" />
+                  <meta property="og:title" content="Servicio Presencial - Gestión Vertical" />
+                  <meta property="og:description"
+                    content="Servicios presenciales de gestión y administración de propiedades."></meta>
                 </Helmet>
                 <Presencial />
               </motion.div>
@@ -132,9 +147,12 @@ function AnimatedRoutes() {
                 transition={{ duration: 0.1 }}
               >
                 <Helmet>
-                  <title>Gestión Vertical - Trabaja con Nosotros</title>
+                  <title>Trabaja con Nosotros - Gestión Vertical</title>
                   <meta name="description" content="Únete al equipo de Gestión Vertical. Descubre nuestras ofertas laborales y oportunidades de crecimiento en la administración de propiedades en Lima." />
                   <meta name="keywords" content="trabajo en gestión de propiedades, empleos en administración de inmuebles, oportunidades laborales Lima" />
+                  <meta property="og:title" content="Trabaja con Nosotros - Gestión Vertical" />
+                  <meta property="og:description"
+                    content="Únete al equipo de Gestión Vertical. Descubre nuestras ofertas laborales y oportunidades de crecimiento en la administración de propiedades en Lima."></meta>
                 </Helmet>
                 <WorkUs />
               </motion.div>
@@ -152,10 +170,11 @@ function AnimatedRoutes() {
                 transition={{ duration: 0.1 }}
               >
                 <Helmet>
-                  <title>Blog de Gestión Vertical - Artículos y Noticias</title>
+                  <title>Blog - Gestión Vertical</title>
                   <meta name="description" content="Descubre los últimos artículos, noticias y consejos sobre la gestión de propiedades y administración inmobiliaria en nuestro blog." />
-                  <meta name="keywords" content="blog gestión de propiedades, artículos administración de inmuebles, noticias inmobiliarias" />
-                  <meta name="robots" content="index, follow" />
+                  <meta property="og:title" content="Blog - Gestión Vertical" />
+                  <meta property="og:description"
+                    content="Descubre los últimos artículos, noticias y consejos sobre la gestión de propiedades y administración inmobiliaria en nuestro blog."></meta>
                 </Helmet>
                 <Blog />
               </motion.div>

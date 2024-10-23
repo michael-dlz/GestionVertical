@@ -17,8 +17,8 @@ export function CardsServices({ cardservice }: ServiceProps) {
                 </div>
                 <div className="flex-1">
                     <div className="p-10">
-                        <h1 className="text-base font-bold max-2xl:text-sm">{title}</h1>
-                        <h2 className="text-textBlackp text-sm py-5 max-2xl:text-xs">{description}</h2>
+                        <h1 className="text-base font-bold">{title}</h1>
+                        <h2 className="text-textBlackp text-sm py-5">{description}</h2>
                         <div className="border-b-2"></div>
                     </div>
                     {/*
@@ -27,7 +27,7 @@ export function CardsServices({ cardservice }: ServiceProps) {
                         <h2 className="text-textBlackp font-medium">{condition}</h2>
                     </div> */}
                     <div className="pb-10 px-10 w-full">
-                        <Link to={url} className="bg-secondary w-full text-white px-7 py-4 rounded-sm text-sm max-2xl:text-xs hover:shadow-2xl">
+                        <Link to={url} className="bg-secondary w-full text-white px-7 py-4 rounded-sm text-sm hover:shadow-2xl">
                             Me Interesa
                         </Link>
                     </div>
