@@ -30,7 +30,7 @@ input:focus-visible {
     border: none;
 }
 
-inpur::selection {
+input::selection {
     outline: none;
     border: none;
 }

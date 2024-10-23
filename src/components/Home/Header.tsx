@@ -9,9 +9,9 @@ export default function Header() {
                 <img className="absolute top-0 left-0 w-full h-full object-cover z-[-1]" src={BackgroundGV}></img>
                 <div className="grid grid-cols-2 max-lg:grid-cols-1 max-lg:mx-5 2xl:max-w-6xl max-w-5xl lg:w-full mx-auto gap-20 ">
                     <div className="flex flex-col justify-center text-white gap-3">
-                        <h1 className="text-sm">Administración de Propiedades</h1>
-                        <h2 className="font-extrabold text-5xl">Tu propiedad, nuestra prioridad. Gestión eficaz y transparente para tu bienestar.</h2>
-                        <p className="font-semibold text-lg italic">!HAGAMOS DE LA CONVIVENCIA, UN PLACER!</p>
+                        <p className="font-semibold text-lg italic">¡Hagamos de la convivencia, un placer!</p>
+                        <h2 className="font-extrabold text-5xl">Gestión eficaz y transparente para tu bienestar.</h2>
+                        <h1 className="text-sm">Administración de Propiedades en Lima</h1>
                         <div className="my-5">
                             <a href="/#Servicios" className="bg-secondary text-white px-7 py-4 rounded-sm text-sm gap-2 hover:shadow-2xl">Adquiere el Servicio Ideal para TI.</a>
                         </div>
