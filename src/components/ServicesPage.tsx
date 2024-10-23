@@ -26,8 +26,8 @@ interface IncluideServices {
 }
 
 const incluideServices: IncluideServices[] = [
-    { title: "Prepuestos de Mantenimiento", text: "Planificamos y ejecutamos tareas de mantenimiento para que todo funcione a la perfección.", Icon: IconQuoteMaintenance },
-    { title: "Prepuestos de Implementación", text: "Identificamos y priorizamos las mejoras que tu edificio necesita.", Icon: IconQuoteImplementation },
+    { title: "presupuestos de Mantenimiento", text: "Planificamos y ejecutamos tareas de mantenimiento para que todo funcione a la perfección.", Icon: IconQuoteMaintenance },
+    { title: "presupuestos de Implementación", text: "Identificamos y priorizamos las mejoras que tu edificio necesita.", Icon: IconQuoteImplementation },
     { title: "Sistemas de Recaudación y Pago de Obligaciones", text: "Establecemos los procesos de recaudación y pago de obligaciones.", Icon: IconPayment },
     { title: "Informes Administrativos Transparentes y Concisos", text: "Administramos tus fondos de manera eficiente y te brindamos informes detallados incluyen: Informe de Observaciones, Informe Financiero, Cronograma de Mantenimiento.", Icon: IconReport },
     { title: "Gestión de Instalaciones", text: "Identificamos todas las instalaciones mediante un Inventario, para elaborar un Plan de Mantenimiento Preventivo respectivo.", Icon: IconManagement },
