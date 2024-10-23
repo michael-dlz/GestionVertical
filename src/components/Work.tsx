@@ -26,7 +26,7 @@ export default function Work({ titleWork, descriptionWork, categories, requireme
     return (
         <>
             <div className="p-10 border rounded-2xl" id={titleWork}>
-                <h1 className="text-base font-semibold">{titleWork}</h1>
+                <h1 className="text-base font-extrabold">{titleWork}</h1>
                 <div className="my-5">
                     <p className="mb-5 flex items-center gap-1 text-sm max-2xl:text-xs "><IconMap stroke="#000" size={15} />{adress}</p>
                     <p className="text-sm max-2xl:text-xs ">{descriptionWork}</p>

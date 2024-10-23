@@ -31,7 +31,7 @@ export default function About() {
         <div className="py-40">
           <div className="grid grid-cols-2 gap-28 items-center 2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5 max-lg:grid-cols-1">
             <div className="">
-              <h1 className="font-bold text-primary text-3xl max-2xl:text-2xl mb-10">Quienes Somos</h1>
+              <h1 className="font-extrabold text-primary text-3xl max-2xl:text-2xl mb-10">Quienes Somos</h1>
               <div className="ml-5 max-2xl:ml-0">
                 <p className="text-base max-2xl:text-xs text-textBlackp">Con más de 11 años de experiencia en la gestión inmobiliaria, nos especializamos en el desarrollo de procesos transparentes y eficientes para la administración de edificios residenciales y condominios. La calidad y excelencia de nuestros servicios garantizan a los propietarios una gestión integral y satisfactoria.
                 </p>
@@ -52,7 +52,7 @@ export default function About() {
               <img className="w-full h-full object-cover" src="https://img.freepik.com/fotos-premium/socios-poniendo-sus-punos-juntos-encima-mesa-cosas-trabajo_603656-2186.jpg?w=1380" alt="" />
             </div>
             <div className="">
-              <h1 className="font-bold text-primary text-3xl mb-10 max-2xl:text-2xl">Nuestra <span className="text-secondary underline">Misión</span></h1>
+              <h1 className="font-extrabold text-primary text-3xl mb-10 max-2xl:text-2xl">Nuestra <span className="text-secondary underline">Misión</span></h1>
               <div className="ml-5 max-2xl:ml-0">
                 <p className="text-smtext-textBlackp max-2xl:text-xs">En Gestión Vertical, nos comprometemos a ofrecer un servicio integral en la administración de edificios y condominios, adaptado a las necesidades de cada comunidad. Promovemos el bienestar de los residentes con una gestión eficiente y transparente, cumpliendo normativas para garantizar un entorno seguro y organizado para cada propietario.</p>
               </div>
@@ -64,7 +64,7 @@ export default function About() {
         <div className="py-40">
           <div className="grid grid-cols-2 gap-28 items-center 2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5 max-lg:grid-cols-1">
             <div className="">
-              <h1 className="font-bold text-primary text-3xl mb-10 max-2xl:text-2xl">Nuestra <span className="text-secondary underline">Visión</span></h1>
+              <h1 className="font-extrabold text-primary text-3xl mb-10 max-2xl:text-2xl">Nuestra <span className="text-secondary underline">Visión</span></h1>
               <div className="ml-5 max-2xl:ml-0">
                 <p className="text-smtext-textBlackp max-2xl:text-xs">Consolidarnos como unas de las empresas líderes en la administración de Juntas de Propietarios, destacando por nuestra innovación y compromiso con la excelencia. Buscamos transformar la gestión de comunidades con soluciones integrales que anticipen las necesidades de propietarios y residentes, mejorando así la experiencia de vida en cada edificio bajo nuestra administración y creando relaciones de confianza duraderas con nuestros clientes.</p></div>
             </div>
@@ -77,7 +77,7 @@ export default function About() {
 
       <div className="bg-gradient-to-tr from-ligthSpan to-lightSecondary h-auto text-center py-40">
         <div className="2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5">
-          <h1 className="font-bold text-primary text-3xl pb-20">Políticas de <span className="text-secondary underline">Cumplimiento</span></h1>
+          <h1 className="font-extrabold text-primary text-3xl pb-20">Políticas de <span className="text-secondary underline">Cumplimiento</span></h1>
           <ul className="list-disc text-left text-textBlackp max-lg:mx-5 max">
             {complianceLegal.map((cump, index) => (
               <li key={index} className="flex items-start gap-4 py-4 text-textBlackp">

@@ -21,7 +21,7 @@ export default function Blog() {
             />
             <div className="bg-lightGray">
                 <div className="2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5 py-40">
-                    <h1 className="text-primary font-bold text-3xl max-2xl:text-2xl text-center">Explora todos nuestros artículos</h1>
+                    <h1 className="text-primary font-extrabold text-3xl max-2xl:text-2xl text-center">Explora todos <span className="text-secondary underline">nuestros artículos</span></h1>
                     <h2 className="text-textBlackp text-lg pt-3 text-center pb-20">Recursos, consejos e información para nuestros usuarios</h2>
                     <div className="grid grid-cols-3 gap-5 max-lg:grid-cols-1">
                         <ListBlogs />

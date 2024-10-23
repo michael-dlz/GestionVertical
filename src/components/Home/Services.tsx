@@ -15,10 +15,10 @@ export function Services() {
                 <div className="2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5">
                     <div className="pb-20 flex flex-col items-start justify-center gap-8 text-wrap">
                         <div className="flex gap-1 text-xs">
-                            <span className="bg-ligthSpan text-spanColor w-auto px-6 py-1 rounded-sm font-semibold !font-sans">SERVICIOS</span>
+                            <span className="bg-lightSecondary text-secondary w-auto px-6 py-1 rounded-sm font-semibold !font-sans">SERVICIOS</span>
                         </div>
-                        <h2 className="font-bold text-white text-4xl max-2xl:text-3xl">¿Buscas una <span className="text-lightSecondary underline">Administración de Edificios Eficiente?</span></h2>
-                        <p className="text-sm text-white w-2/3 max-lg:w-full max-2xl:text-sm">La gestión adecuada de las comunidades residenciales es fundamental para asegurar la convivencia armoniosa y el mantenimiento óptimo de las instalaciones. GESTIÓN VERTICAL ofrece un enfoque especializado para diferentes tipos de edificaciones, adaptándose a las necesidades específicas de cada una. A continuación, se detallan los servicios disponibles para las modalidades de administración residencial: Preferente, Indeci y Presencial.</p>
+                        <h2 className="font-extrabold text-white text-4xl max-2xl:text-3xl">¿Buscas una <span className="text-lightSecondary underline">Administración de Edificios Eficiente?</span></h2>
+                        <p className="text-sm text-lightSecondary w-2/3 max-lg:w-full max-2xl:text-sm">La gestión adecuada de las comunidades residenciales es fundamental para asegurar la convivencia armoniosa y el mantenimiento óptimo de las instalaciones. GESTIÓN VERTICAL ofrece un enfoque especializado para diferentes tipos de edificaciones, adaptándose a las necesidades específicas de cada una. A continuación, se detallan los servicios disponibles para las modalidades de administración residencial: Preferente, Indeci y Presencial.</p>
                     </div>
                     <div className="flex gap-20 items-center">
                         <Swiper

@@ -91,11 +91,11 @@ export default function ServicesPage({
                 <div className="2xl:max-w-6xl max-w-5xl mx-auto grid grid-cols-2 items-start gap-28 h-auto max-lg:mx-5 max-lg:grid-cols-1">
                     <div className="text-base max-2xl:text-sm">
                         <div className="">
-                            <h2 className="text-primary font-bold text-3xl max-2xl:text-2xl">¿Por qué Elegir el {title}?</h2>
+                            <h2 className="text-primary font-extrabold text-3xl max-2xl:text-2xl">¿Por qué Elegir el <span className="text-secondary underline">{title}?</span></h2>
                             <p className="text-textBlackp py-10">{whyTitle}</p>
                         </div>
                         <div className="border-b-4">
-                            <h2 className="text-primary font-bold text-3xl max-2xl:text-2xl">¿Qué incluyen nuestros Servicios?</h2>
+                            <h2 className="text-primary font-extrabold text-3xl max-2xl:text-2xl">¿Qué incluyen nuestros Servicios?</h2>
                             <div className="py-10">
                                 {incluideServices.map((serv, index) => (
                                     <div key={index} className="flex items-start gap-4 py-4 text-textBlackp">
@@ -111,7 +111,7 @@ export default function ServicesPage({
                             </div>
                         </div>
                         <div className="pt-10">
-                            <h2 className="text-primary font-bold text-3xl max-2xl:text-2xl">Características de nuestro {title}</h2>
+                            <h2 className="text-primary font-extrabold text-3xl max-2xl:text-2xl">Características de nuestro <span className="text-secondary underline">{title}</span></h2>
                             <div className="py-10">
                                 {whyTexts.map((why, index) => (
                                     <div key={index} className="flex items-start gap-4 py-4 text-textBlackp">
@@ -127,7 +127,7 @@ export default function ServicesPage({
                             </div>
                         </div>
                         <div>
-                            <h2 className="text-primary font-bold text-3xl max-2xl:text-2xl">Beneficios de Elegir nuestro {title}</h2>
+                            <h2 className="text-primary font-extrabold text-3xl max-2xl:text-2xl">Beneficios de Elegir nuestro <span className="text-secondary underline">{title}</span></h2>
                             <div className="py-10">
                                 {benefitsTexts.map((benefits, index) => (
                                     <p key={index} className="flex items-center gap-3 mb-4 text-textBlackp">
