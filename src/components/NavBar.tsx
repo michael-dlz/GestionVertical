@@ -87,7 +87,7 @@ export default function NavBar() {
                     <div className="flex gap-16 items-center font-bold">
                         <Link to="/"><img src={logoDark} alt="" /></Link>
                         {/* Menú de Escritorio */}
-                        <ul className=" lg:flex gap-10 text-xs tracking-wide inline-flex">
+                        <ul className="hidden lg:flex gap-10 text-xs tracking-wide inline-flex">
                             <li><Link to="/nosotros" className={`flex items-center gap-2 transition-colors duration-300 ${isScrolled ? 'text-black' : 'text-primary'}`}>NOSOTROS</Link></li>
                             <li className="relative">
                                 <button onClick={toggleServicesMenu} className={`flex items-center gap-2 ${isScrolled ? 'text-primary' : 'text-primary'}`}>
