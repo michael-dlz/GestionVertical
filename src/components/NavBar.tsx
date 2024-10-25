@@ -82,7 +82,7 @@ export default function NavBar() {
             )}
 
             {/* Navbar Principal */}
-            <div className={`sticky w-full left-0 top-0 z-40 py-2 transition-all duration-300 bg-white ${isScrolled ? 'shadow-2xl' : "shadow-none"}`}>
+            <div className={`sticky w-full left-0 top-0 z-40 py-2 transition-all duration-300 bg-white ${isScrolled ? 'shadow-md' : "shadow-none"}`}>
                 <div className="flex justify-between 2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5 items-center">
                     <div className="flex gap-16 items-center font-bold">
                         <Link to="/"><img src={logoDark} alt="" className="w-22"/></Link>
