@@ -92,7 +92,7 @@ export default function ServicesPage({
                     <div className="text-base">
                         <div className="">
                             <h2 className="text-primary font-extrabold text-3xl">¿Por qué Elegir el <span className="text-secondary underline">{title}?</span></h2>
-                            <p className="text-textBlackp py-10">{whyTitle}</p>
+                            <p className="text-textBlackp text-sm py-10">{whyTitle}</p>
                         </div>
                         <div className="border-b-4">
                             <h2 className="text-primary font-extrabold text-3xl">¿Qué incluyen nuestros Servicios?</h2>
@@ -130,8 +130,8 @@ export default function ServicesPage({
                             <h2 className="text-primary font-extrabold text-3xl">Beneficios de Elegir nuestro <span className="text-secondary underline">{title}</span></h2>
                             <div className="py-10">
                                 {benefitsTexts.map((benefits, index) => (
-                                    <p key={index} className="flex items-center gap-3 mb-4 text-textBlackp">
-                                        <div className="p-3 shadow-lg bg-lightSecondary rounded-xl border border-secondary">
+                                    <p key={index} className="flex items-center gap-3 mb-4 text-textBlackp text-sm">
+                                        <div className="p-3 shadow-lg bg-lightSecondary rounded-xl border text-sm border-secondary">
                                             <benefits.Icon size={30} stroke="#246AF3" />
                                         </div>
                                         {benefits.text}</p>
@@ -139,7 +139,7 @@ export default function ServicesPage({
                             </div>
                         </div>
                         <div className="">
-                            <h2>También puedes:</h2>
+                            <h2 className="text-sm">También puedes:</h2>
                             <div className="">
                                 <div className="flex gap-3 items-center mt-6">
                                     <a href={`https://wa.me/${phone}?text=Hola,%20Me%20interesaría%20poder%20cotizar%20el%20${encodeURIComponent(title)}`} className="border border-secondary text-secondary px-7 py-4 hover:bg-secondary hover:text-white text-left rounded-sm text-sm hover:shadow-2xl max-lg:px-4">
@@ -261,6 +261,9 @@ export default function ServicesPage({
                                 )}
                             </div>
                         </div>
+
+                        {/*
+                                
                         <div className="bg-gradient-to-b from-secondary to-secondary text-white p-20 max-lg:p-10 shadow-2xl mt-20 w-full rounded-2xl">
                             <h2 className="text-white mb-4 font-bold text-3xl">¡Oferta Exclusiva para Tu Residencia!</h2>
                             <p className="text-sm mb-6 text-left">
@@ -277,6 +280,7 @@ export default function ServicesPage({
 
                             <p className="text-xs text-left mt-6">*Promoción válida hasta el 31 de octubre, 2024</p>
                         </div>
+                                */}
 
 
                     </div>
@@ -331,19 +335,19 @@ export default function ServicesPage({
                             },
                         }}
                         modules={[Autoplay]}
-                        className="mySwiper3 w-full  grid"
+                        className="mySwiper3 w-full h-72  grid"
                     >
-                        <SwiperSlide className="bg-primary text-white p-10 flex flex-col justify-center rounded-2xl overflow-hidden shadow-2xl">
+                        <SwiperSlide className="bg-primary text-white p-10 flex flex-col justify-center h-72 rounded-2xl overflow-hidden shadow-2xl">
                             <h2 className="font-bold text-lg pb-6">Nos Adecuamos a tu Necesidad</h2>
-                            <p className="text-sm">{needTitle}</p>
+                            <p className="text-xs">{needTitle}</p>
                         </SwiperSlide>
-                        <SwiperSlide className="rounded-2xl overflow-hidden">
+                        <SwiperSlide className="rounded-2xl overflow-hidden h-72">
                             <img className="w-full h-full object-cover" src={oneImg} alt="" />
                         </SwiperSlide>
-                        <SwiperSlide className="rounded-2xl overflow-hidden">
+                        <SwiperSlide className="rounded-2xl overflow-hidden h-72">
                             <img className="w-full h-full object-cover" src={twoImg} alt="" />
                         </SwiperSlide>
-                        <SwiperSlide className="rounded-2xl overflow-hidden">
+                        <SwiperSlide className="rounded-2xl overflow-hidden h-72">
                             <img className="w-full h-full object-cover" src={threeImg} alt="" />
                         </SwiperSlide>
                     </Swiper>

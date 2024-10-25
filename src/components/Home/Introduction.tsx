@@ -1,5 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
+import CloudinaryImage from "../CloudinaryImage";
+import Images from "../../assets";
 
 import 'swiper/css';
 import 'swiper/css/effect-cards';
@@ -8,26 +10,11 @@ import "../../index.css"
 
 import { EffectCards, Autoplay } from "swiper/modules";
 
-const firstImage = "https://img.freepik.com/foto-gratis/tiro-vertical-edificio-blanco-cielo-despejado_181624-4575.jpg?t=st=1728579896~exp=1728583496~hmac=6040e8a247a023b964663f9902b936d878d7a5b42690ebb4eb51b213a1d5ff79&w=740";
-const secondImage = "https://img.freepik.com/foto-gratis/disparo-angulo-fachada-edificio-moderno-blanco-cielo-azul-claro_181624-48219.jpg?t=st=1728579904~exp=1728583504~hmac=4bf6dfc2503bd977f2666a15d1609c38b8f5524087a0b10e9f554ad84ff2b819&w=1380";
-const thirdImage = "https://img.freepik.com/fotos-premium/cerca-arquitectura-moderna-gran-teatro_1112-8984.jpg?w=1380";
-const fourthImage = "https://img.freepik.com/fotos-premium/edificio-cesped-verde-cielo-azul-algunas-nubes_605423-148964.jpg?w=1380";
-
 export default function Introduction() {
     return (
         <>
             <div className="py-40 h-auto m-auto items-center">
-                <div className="box-border grid grid-cols-2 max-lg:grid-cols-1 2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5 gap-28">
-                    <div className="w-full flex flex-col items-start justify-center gap-8 text-wrap">
-                        <div className="flex gap-1 text-xs">
-                            <span className="bg-lightSecondary text-secondary w-auto px-6 py-1 rounded-sm font-semibold !font-sans">SOBRE NOSOTROS</span>
-                        </div>
-                        <h2 className="font-extrabold text-4xl text-primary">La <span className="text-secondary underline">administración perfecta</span> para tus propiedades</h2>
-                        
-                        <p className="text-textBlackp text-sm">Somos expertos en la administración de edificios residenciales y condominios, ofreciendo soluciones personalizadas para la gestión de Juntas de Propietarios. Garantizamos eficiencia, transparencia y cumplimiento de normativas, asegurando la satisfacción de todos los residentes.</p>
-                        <p className="font-semibold">¡Descubre el valor de una gestión con éxito en los resultados!</p>
-                        <Link to="/contacto" className="bg-secondary text-white px-7 py-4 rounded-sm text-sm hover:shadow-2xl">Contactános</Link>
-                    </div>
+                <div className="box-border grid grid-cols-2 max-lg:grid-cols-1 2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5 gap-28 items-center">
                     <div className="w-full h-full max-lg:overflow-x-hidden">
                         <Swiper
                             effect={"cards"}
@@ -39,11 +26,21 @@ export default function Introduction() {
                             modules={[Autoplay, EffectCards]}
                             className="mySwiper w-full h-96"
                         >
-                            <SwiperSlide><img src={firstImage} alt="" /></SwiperSlide>
-                            <SwiperSlide><img src={secondImage} alt="" /></SwiperSlide>
-                            <SwiperSlide><img src={thirdImage} alt="" /></SwiperSlide>
-                            <SwiperSlide><img src={fourthImage} alt="" /></SwiperSlide>
+                            <SwiperSlide><CloudinaryImage name="img_edf_grn_1"/></SwiperSlide>
+                            <SwiperSlide><CloudinaryImage name="img_edf_med_2"/></SwiperSlide>
+                            <SwiperSlide><CloudinaryImage name="img_edf_pqñ_5"/></SwiperSlide>
+                            <SwiperSlide><CloudinaryImage name="img_edf_grn_5"/></SwiperSlide>
                         </Swiper>
+                    </div>
+                    <div className="w-full flex flex-col items-start justify-center gap-8 text-wrap">
+                        <div className="flex gap-1 text-xs">
+                            <span className="bg-lightSecondary text-secondary w-auto px-6 py-1 rounded-sm font-semibold !font-sans">SOBRE NOSOTROS</span>
+                        </div>
+                        <h2 className="font-extrabold text-4xl text-primary">La <span className="text-secondary underline">administración perfecta</span> para tus propiedades</h2>
+                        
+                        <p className="text-textBlackp text-sm">Somos expertos en la administración de edificios residenciales y condominios, ofreciendo soluciones personalizadas para la gestión de Juntas de Propietarios. Garantizamos eficiencia, transparencia y cumplimiento de normativas, asegurando la satisfacción de todos los residentes. </p>
+                        <p className="font-semibold">¡Descubre el valor de una gestión con éxito en los resultados!</p>
+                        <Link to="/contacto" className="bg-secondary text-white px-7 py-4 rounded-sm text-sm hover:shadow-2xl">Contactános</Link>
                     </div>
                 </div>
             </div>

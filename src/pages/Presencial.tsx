@@ -23,18 +23,18 @@ export default function Presencial() {
     return (
         <>
             <SubsHeader
-                titleBanner="Servicio Presencial"
+                titleBanner="Residencial Presencial"
                 imageBanner="https://img.freepik.com/foto-gratis/vista-ciudad-edificios-apartamentos-vegetacion-verde_23-2150439367.jpg?t=st=1728686251~exp=1728689851~hmac=79a8273804d5274990da3d855ac5b1c850311875f3d83690ab9e7971f93007df&w=1380"
             />
 
             <ServicesPage
-                title="Servicio Presencial"
+                title="Residencial Presencial"
                 whyTitle="Este servicio está pensado para edificios con más de 80 departamentos, donde la atención presencial es crucial. Se garantiza una gestión a tiempo completo, asegurando la atención inmediata a las necesidades de los residentes."
                 descriptionTitle="Servicio ideal para edificios con muchos propietarios y/o muchas instalaciones donde parte de nuestro equipo estará presente en la gestión de la junta de propietarios."
                 needTitle="Somos un equipo de profesionales especializados en la administración de edificios residenciales, comprometidos con la gestión eficiente de las Juntas de Propietarios y con el cumplimiento de las normativas legales vigentes. Con años de experiencia en el sector, nos dedicamos a proporcionar soluciones personalizadas para cada comunidad, adaptándonos a las particularidades de edificios grandes o pequeños."
-                oneImg="https://img.freepik.com/foto-gratis/paisaje-urbano-tokio-dia_23-2149209889.jpg?t=st=1728686205~exp=1728689805~hmac=724b8c80526abd078a070b29fb3f9f3a41bcfe5dcf24faa97e8a040ada438c32&w=1380"
-                twoImg="https://img.freepik.com/foto-gratis/angulo-rascacielos-ciudad_23-2148798665.jpg?t=st=1728686222~exp=1728689822~hmac=89868d30fbc40b362323a7e6d5a8c7d90f4e6fd7094ce82330c8561d2d4a4014&w=1380"
-                threeImg="https://img.freepik.com/fotos-premium/rascacielos-apartamentos-residenciales-suburbio-dormitorio-distrito-baltupiai-vilnius-lituania_250132-21324.jpg?w=1060"
+                oneImg="https://res.cloudinary.com/degbnkdoh/image/upload/v1729895208/edificios_grandes_3_pjrgyh.jpg"
+                twoImg="https://res.cloudinary.com/degbnkdoh/image/upload/v1729895207/edificios_grandes_5_mkuo7u.jpg"
+                threeImg="https://res.cloudinary.com/degbnkdoh/image/upload/v1729895209/edificios_grandes_11_uael5i.jpg"
                 priceService="Se negociará de acorde al caso"
                 conditionService=""
                 whyTexts={whyTexts}

@@ -25,7 +25,7 @@ export default function About() {
     <>
       <SubsHeader
         titleBanner="Acerca de Nosotros"
-        imageBanner="https://img.freepik.com/foto-gratis/equipo-trabajando-juntos-proyecto_23-2149325409.jpg?t=st=1728666926~exp=1728670526~hmac=cc75ac9e5dce4ec18529ba4a5c46f846166f1bf7cbda007339c826f4cb21242d&w=1380"
+        imageBanner="https://res.cloudinary.com/degbnkdoh/image/upload/v1729898880/quienes_somos-min_pslbmh.jpg"
       />
       <div className="">
         <div className="py-40">
@@ -41,7 +41,7 @@ export default function About() {
               </div>
             </div>
             <div className="overflow-hidden rounded-3xl shadow-2xl h-80">
-              <img className="w-full h-full object-cover" src="https://img.freepik.com/foto-gratis/equipo-trabajando-juntos-proyecto_23-2149325415.jpg?t=st=1728667408~exp=1728671008~hmac=7670ea243aabc6b8f9f72661d6f17ec28fea7927eeb1432094d08cfbfc4361e8&w=1380" alt="" />
+              <img className="w-full h-full object-cover" src="https://res.cloudinary.com/degbnkdoh/image/upload/v1729898880/quienes_somos-min_pslbmh.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@ export default function About() {
         <div className="bg-gradient-to-tr from-ligthSpan to-lightSecondary h-auto py-40">
           <div className="grid grid-cols-2 gap-28 items-center 2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5 max-lg:grid-cols-1">
             <div className="overflow-hidden rounded-3xl shadow-2xl h-80">
-              <img className="w-full h-full object-cover" src="https://img.freepik.com/fotos-premium/socios-poniendo-sus-punos-juntos-encima-mesa-cosas-trabajo_603656-2186.jpg?w=1380" alt="" />
+              <img className="w-full h-full object-cover" src="https://res.cloudinary.com/degbnkdoh/image/upload/v1729895205/cumplimiento_normativo_mlrmbh.jpg" alt="" />
             </div>
             <div className="">
               <h1 className="font-extrabold text-primary text-3xl mb-10">Nuestra <span className="text-secondary underline">Misión</span></h1>
@@ -69,7 +69,7 @@ export default function About() {
                 <p className="text-smtext-textBlackp">Consolidarnos como unas de las empresas líderes en la administración de Juntas de Propietarios, destacando por nuestra innovación y compromiso con la excelencia. Buscamos transformar la gestión de comunidades con soluciones integrales que anticipen las necesidades de propietarios y residentes, mejorando así la experiencia de vida en cada edificio bajo nuestra administración y creando relaciones de confianza duraderas con nuestros clientes.</p></div>
             </div>
             <div className="overflow-hidden rounded-3xl shadow-2xl h-80">
-              <img className="w-full h-full object-cover" src="https://img.freepik.com/foto-gratis/objetivos-exito-estrategia-negocio_1421-33.jpg?t=st=1728668602~exp=1728672202~hmac=4e6bd40c1ed42b6310b7a9576283a8d019f5686df83d30026cd4be347df31c27&w=1380" alt="" />
+              <img className="w-full h-full object-cover" src="https://res.cloudinary.com/degbnkdoh/image/upload/v1729895206/close-up-businessman-businesswoman-holding-documents-standing-front-building_ya20uy.jpg" alt="" />
             </div>
           </div>
         </div>

@@ -82,28 +82,28 @@ export default function NavBar() {
             )}
 
             {/* Navbar Principal */}
-            <div className={`sticky w-full left-0 top-0 z-40 py-4 transition-all duration-300 bg-white ${isScrolled ? 'shadow-2xl' : "shadow-none"}`}>
+            <div className={`sticky w-full left-0 top-0 z-40 py-2 transition-all duration-300 bg-white ${isScrolled ? 'shadow-2xl' : "shadow-none"}`}>
                 <div className="flex justify-between 2xl:max-w-6xl max-w-5xl mx-auto max-lg:mx-5 items-center">
                     <div className="flex gap-16 items-center font-bold">
-                        <Link to="/"><img src={logoDark} alt="" /></Link>
+                        <Link to="/"><img src={logoDark} alt="" className="w-22"/></Link>
                         {/* Menú de Escritorio */}
                         <ul className="hidden lg:flex gap-10 text-xs tracking-wide inline-flex">
-                            <li><Link to="/nosotros" className={`flex items-center gap-2 transition-colors duration-300 ${isScrolled ? 'text-black' : 'text-primary'}`}>NOSOTROS</Link></li>
+                            <li><Link to="/nosotros" className={`flex items-center gap-2 transition-colors duration-300 ${isScrolled ? 'text-black' : 'text-primary'}`}>Nosotros</Link></li>
                             <li className="relative">
                                 <button onClick={toggleServicesMenu} className={`flex items-center gap-2 ${isScrolled ? 'text-primary' : 'text-primary'}`}>
-                                    SERVICIOS <IconArroDown size={13} />
+                                    Servicios <IconArroDown size={13} />
                                 </button>
                                 {/* Submenú */}
                                 {isServicesOpen && (
-                                    <ul className={`absolute left-0 mt-4 z-50 w-56 rounded-sm shadow-lg ${isScrolled ? 'bg-white text-primary' : 'bg-white text-primary'}`}>
-                                        <li><Link to="/servicio-preferente" className="block px-4 py-4 hover:bg-secondary hover:text-white">SERVICIO PREFERENTE</Link></li>
-                                        <li><Link to="/servicio-preferente-indeci" className="block px-4 py-4 hover:bg-secondary hover:text-white">SERVICIO PREFRENTE INDECI</Link></li>
-                                        <li><Link to="/servicio-presencial" className="block px-4 py-4 hover:bg-secondary hover:text-white">SERVICIO PRESENCIAL</Link></li>
+                                    <ul className={`absolute left-0 mt-5 z-50 w-56 rounded-sm shadow-lg ${isScrolled ? 'bg-white text-primary' : 'bg-white text-primary'}`}>
+                                        <li><Link to="/servicio-preferente" className="block px-4 py-4 hover:bg-secondary hover:text-white">Residencial Preferente</Link></li>
+                                        <li><Link to="/servicio-preferente-indeci" className="block px-4 py-4 hover:bg-secondary hover:text-white">Residencial INDECI</Link></li>
+                                        <li><Link to="/servicio-presencial" className="block px-4 py-4 hover:bg-secondary hover:text-white">Residencial Presencial</Link></li>
                                     </ul>
                                 )}
                             </li>
-                            <li><Link to="/trabaja-con-nosotros" className={`flex items-center gap-2 transition-colors duration-300 ${isScrolled ? 'text-primary' : 'text-primary'}`}>TRABAJA CON NOSOTROS</Link></li>
-                            <li><Link to="/blog" className={`flex items-center gap-2 transition-colors duration-300 ${isScrolled ? 'text-primary' : 'text-primary'}`}>BLOG</Link></li>
+                            <li><Link to="/trabaja-con-nosotros" className={`flex items-center gap-2 transition-colors duration-300 ${isScrolled ? 'text-primary' : 'text-primary'}`}>Trabaja con Nosotros</Link></li>
+                            <li><Link to="/blog" className={`flex items-center gap-2 transition-colors duration-300 ${isScrolled ? 'text-primary' : 'text-primary'}`}>Blog</Link></li>
                         </ul>
                     </div>
                     {/* Botón de Hamburguesa para Móviles */}
@@ -115,7 +115,7 @@ export default function NavBar() {
                         <IconHamburger stroke="#000" />
                     </button>
                     {/* Botón de Contacto */}
-                    <a href="/#contacto" className="bg-secondary text-white px-7 py-4 rounded-sm text-sm flex items-center gap-2 hidden hover:shadow-2xl lg:flex">
+                    <a href="/#contacto" className="bg-secondary text-white px-4 py-3 rounded-sm text-xs flex items-center gap-2 hidden hover:shadow-2xl lg:flex">
                         <IconQuote size={20} />
                         Realiza tu Cotización
                     </a>

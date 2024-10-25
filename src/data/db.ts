@@ -3,29 +3,29 @@ import { TypeReviews, TypeBenefits, TypeServices } from "../types"
 export const dbservices: TypeServices[] = [
     {
         id: 1,
-        title: "Servicio Preferente",
-        description: "Servicio de administración de Junta de Propietarios para edificios residenciales con hasta 12 departamentos, que no cuenten con Instalaciones INDECI.",
+        title: "Residencial Preferente",
+        description: "Administración de Junta de Propietarios",
         price: "Entre S/ 60,00 - S/ 100,00",
-        condition: "(precio por departamento, máximo 12)",
+        condition: "Edificios de baja densidad: hasta 12 departamentos",
         image: "https://img.freepik.com/fotos-premium/diseno-arquitectonico-moderno-edificio-balcones_605022-179383.jpg?w=740",
         url: "/servicio-preferente",
     },
     {
         id: 2,
-        title: "Servicio Preferente Indeci",
-        description: "Servicio de administración de Junta de Propietarios para edificios residenciales con pocos departamentos, que cuenten con instalaciones INDECI.",
+        title: "Residencial INDECI",
+        description: "Administración de Junta de Propietarios con Normativa INDECI",
         price: "Entre S/ 20,00 - S/ 60,00",
-        condition: "(precio por departamento, mínimo 12, máximo 100)",
-        image: "https://img.freepik.com/fotos-premium/edificios-residenciales-modernos-gran-altura-munich-alemania_1048944-2246915.jpg?w=1380",
+        condition: "Edificios de densidad media: hasta 80 departamentos",
+        image: "https://res.cloudinary.com/degbnkdoh/image/upload/w_560/f_auto/q_auto/edificios_medianos_9_tmss4x.jpg",
         url: "/servicio-preferente-indeci",
     },
     {
         id: 3,
-        title: "Servicio Presencial",
-        description: "Servicio ideal para edificios con múltiples propietarios y/o instalaciones, donde nuestro equipo se involucra activamente en la gestión de la Junta de Propietarios.",
+        title: "Residencial Presencial",
+        description: "Administración de Junta de Propietarios con Atención del equipo presencial",
         price: "Precio Negociable",
-        condition: "(De acorde al caso)",
-        image: "https://img.freepik.com/foto-gratis/angulo-edificios-oficinas-ciudad_23-2148798680.jpg?t=st=1728608053~exp=1728611653~hmac=4e94045a867539c7d647810e8ae648bcc94dd0f358ed968089ca89692d78c857&w=1380",
+        condition: "Edificios de alta densidad: más de 80 departamentos",
+        image: "https://res.cloudinary.com/degbnkdoh/image/upload/w_560/f_auto/q_auto/edificios_grandes_9_ppwn4l.jpg",
         url: "/servicio-presencial",
     },
 ]
@@ -33,7 +33,7 @@ export const dbservices: TypeServices[] = [
 export const dbbenefits: TypeBenefits[] = [
     {
         id: 1,
-        image: "https://img.freepik.com/foto-gratis/hombre-sujetando-promocionando-despertador_144627-61291.jpg?t=st=1728588897~exp=1728592497~hmac=e068a3af4294c484a0ac802253a545f6e07820d3da0440f23a6f6e389af660a6&w=1380",
+        image: "https://res.cloudinary.com/degbnkdoh/image/upload/w_560/f_auto/q_auto/ahorro_de_tiempo_2_rferzr.jpg",
         title: "Ahorro de Tiempo",
         description: "Nos encargamos de la gestión administrativa, permitiéndote enfocarte en lo que realmente importa.",
     },
@@ -63,7 +63,7 @@ export const dbbenefits: TypeBenefits[] = [
     },
     {
         id: 6,
-        image: "https://img.freepik.com/foto-gratis/retrato-guardia-seguridad-masculino-estacion-radio-pantallas-camara_23-2150368714.jpg?t=st=1728695548~exp=1728699148~hmac=2e4809482c14cb3fe824195f3618fb91091179d64ef49716f7ad2f35cdd55f13&w=1380",
+        image: "https://res.cloudinary.com/degbnkdoh/image/upload/w_560/f_auto/q_auto/seguridad-min_jnonrl.jpg",
         title: "Seguridad Garantizada",
         description: "Implementamos tecnologías avanzadas y procesos efectivos que protegen a los residentes y sus bienes, brindando tranquilidad las 24 horas del día.",
     },

@@ -7,7 +7,7 @@ interface ServiceProps {
 
 export function CardsServices({ cardservice }: ServiceProps) {
 
-    const { title, description, image, url } = cardservice
+    const { title, condition, image, url } = cardservice
 
     return (
         <>
@@ -18,7 +18,7 @@ export function CardsServices({ cardservice }: ServiceProps) {
                 <div className="flex-1">
                     <div className="p-10">
                         <h1 className="text-base font-bold">{title}</h1>
-                        <h2 className="text-textBlackp text-sm py-5">{description}</h2>
+                        <h2 className="text-textBlackp text-sm py-5">{condition}</h2>
                         <div className="border-b-2"></div>
                     </div>
                     {/*

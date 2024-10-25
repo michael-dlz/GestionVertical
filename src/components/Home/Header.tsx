@@ -5,7 +5,7 @@ export default function Header() {
     return (
 
         <div className="h-auto w-full">
-            <div className="flex relative flex-col justify-center w-full h-full py-10">
+            <div className="flex relative flex-col justify-center w-full h-full py-20">
                 <img className="absolute top-0 left-0 w-full h-full object-cover z-[-1]" src={BackgroundGV}></img>
                 <div className="grid grid-cols-2 max-lg:grid-cols-1 max-lg:mx-5 2xl:max-w-6xl max-w-5xl lg:w-full mx-auto gap-20 ">
                     <div className="flex flex-col justify-center text-white gap-3">
