@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
 import CloudinaryImage from "../CloudinaryImage";
-import Images from "../../assets";
 
 import 'swiper/css';
 import 'swiper/css/effect-cards';
